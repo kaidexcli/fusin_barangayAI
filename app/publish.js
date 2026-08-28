@@ -132,32 +132,10 @@ function hideOwnerPitchFooter() {
 // On a published site the credit splits in two so the maker's name can carry
 // the weight: a badge with who built it, the honest small print under it.
 // Local and unpublished copies keep the plain one-line caption.
-function welcomeBriefHTML() {
-  const cfg = window.PUBLISHED_CONFIG;
-  if (!window.IS_VISITOR || !cfg) return 'Built by Benedict Fusin';
-  const who = (cfg.creator_name || '').trim();
-  return `
-    <span class="welcome-credit">
-      <span class="welcome-credit-label">Built by</span>
-      <span class="welcome-credit-name">${escHtml(who || 'a student')}</span>
-    </span>
-    <span class="welcome-credit-note">at a Auren AI Code Camp � public demo, hosted model</span>`;
-}
+function welcomeBriefHTML() { return "Built by Benedict Fusin"; }
 
 function renderPublishedCredit() {
-  const host = document.getElementById('input-area');
-  const cfg = window.PUBLISHED_CONFIG;
-  if (!host || !cfg || document.getElementById('published-credit')) return;
-
-  const name = (cfg.settings && cfg.settings.ai_name) || AI_NAME;
-  const who = (cfg.creator_name || '').trim();
-  const el = document.createElement('div');
-  el.className = 'published-credit';
-  el.id = 'published-credit';
-  el.innerHTML = `
-    <div class="published-credit-main">${escHtml(name)} � built by ${escHtml(who || 'a student')} at a Auren AI Code Camp</div>
-    <div class="published-credit-note">This public demo answers using a hosted model. The real one runs offline on ${escHtml(who || 'their')}${who ? "'s" : ''} own computer � free, private, no subscription. <a href="https://github.com/Spod101/auren_ai" target="_blank" rel="noopener">Build your own ?</a></div>`;
-  host.appendChild(el);
+  return;
 }
 
 // -- EXPORT (the Publish button) ---------------------------------------
@@ -306,6 +284,7 @@ window.exportPublishConfig    = exportPublishConfig;
 window.updatePublishSummary   = updatePublishSummary;
 window.gotoSettingsField      = gotoSettingsField;
 window.previewAsVisitor       = previewAsVisitor;
+
 
 
 
