@@ -1,49 +1,53 @@
-# DEVCON 17 Omnibus: Brand & Content Reference
+# Auren AI 17 Omnibus: Brand & Content Reference
 
 ## MASTER FILE (updated as of August 6, 2026, living document)
 
-This is the single source of truth for DEVCON 17 content. It is updated every time a post is produced. It consolidates: the brand and comms reference, the Theme Narrative addendum, the Chapter Showcase series spec, and the full `devcon-17-content` skill (SKILL.md + references) as an embedded appendix.
+This is the single source of truth for Auren AI 17 content. It is updated every time a post is produced. It consolidates: the brand and comms reference, the Theme Narrative addendum, the Chapter Showcase series spec, and the full `Auren AI-17-content` skill (SKILL.md + references) as an embedded appendix.
+
+
+
+
 
 **Contents**
 1. Brand & Content Reference (original body, below)
 2. Addendum: Theme Narrative Emphasis
 3. Part: Chapter Showcase Series
-4. Appendix: `devcon-17-content` skill (operational, as shipped) — Appendix A is the full SKILL.md; Appendices B to E are the four reference files (brand-kit, carousel-rules, caption-examples, chapter-showcase).
+4. Appendix: `Auren AI-17-content` skill (operational, as shipped) — Appendix A is the full SKILL.md; Appendices B to E are the four reference files (brand-kit, carousel-rules, caption-examples, chapter-showcase).
 
-**Maintenance model (only two files to keep):** this master `.md` and its generated `.pdf`. The `devcon-17-content` skill lives inside this file as Appendices A to E, so there is no separate skill doc to update. Edit this `.md`, regenerate the `.pdf` from it, and both stay in sync. The installable `.skill` package can be regenerated from Appendices A to E whenever the running skill needs re-installing; it is a build output of this file, not a separate source of truth.
+**Maintenance model (only two files to keep):** this master `.md` and its generated `.pdf`. The `Auren AI-17-content` skill lives inside this file as Appendices A to E, so there is no separate skill doc to update. Edit this `.md`, regenerate the `.pdf` from it, and both stay in sync. The installable `.skill` package can be regenerated from Appendices A to E whenever the running skill needs re-installing; it is a build output of this file, not a separate source of truth.
 
 **Changelog**
 - Jul 2026: Added Theme Narrative Emphasis addendum (17 Years: Engineering an AI-Ready Nation must be stated in copy, not just tagged; Hour of AI + robotics-for-kids rationales encoded).
-- Jul 2026: Added Chapter Showcase series (weekly 5-card carousel). Applied Bukidnon review feedback: first installment launches the series with no continuation language and leads with the chapter; added per-chapter "Follow DEVCON [Chapter] on FB" CTA; Card 3 relabeled "Hour of AI Work Since Last Year"; global rule that card text is overlaid on top of elements, never behind.
-- Jul 2026: Captured approved video caption anchors (Edge AI / Jetson Cohort 4 to 5; DEVCON Kids hardware).
+- Jul 2026: Added Chapter Showcase series (weekly 5-card carousel). Applied Bukidnon review feedback: first installment launches the series with no continuation language and leads with the chapter; added per-chapter "Follow Auren AI [Chapter] on FB" CTA; Card 3 relabeled "Hour of AI Work Since Last Year"; global rule that card text is overlaid on top of elements, never behind.
+- Jul 2026: Captured approved video caption anchors (Edge AI / Jetson Cohort 4 to 5; Auren AI Kids hardware).
 - Aug 2026: Added the X (Twitter) rule (bold Unicode double-counts on X's 280 counter; use plain text; URLs count as 23 via t.co).
 - Aug 2026: Captured approved anchors: DEV ROAST recap (AI coding assistant showdown, Claude Code/Codex/Cursor/Qwen Coder), AI Engineering celebration reel (Cohort 4), Bukidnon Chapter Showcase (first installment).
 - Aug 2026: Produced Chapter Showcase for Pampanga (young-chapter angle) and Iloilo (powerhouse, gov-partnership angle, peso figures excluded, dignity framing); logged both as chapter reference notes.
-- Aug 2026: Added the DEV ROAST interview-recap sub-pattern (build from real attendee answers, attribute each voice separately, never fabricate quotes, optional single combined CTA to devcon.plus).
+- Aug 2026: Added the DEV ROAST interview-recap sub-pattern (build from real attendee answers, attribute each voice separately, never fabricate quotes, optional single combined CTA to Auren AI.plus).
 - Aug 6, 2026: Refined the DEV ROAST interview-recap anchor with roast energy (follow a one-sided endorsement with a questioning/conflicting beat, frame the doubt as what the event settles, close with a competitive pick-a-side line); confirmed X versions for DEV ROAST, Pampanga, and Iloilo using the plain-text-header rule.
 
 ---
 
-# DEVCON 17 Years: Brand & Comms — July 2026
+# Auren AI 17 Years: Brand & Comms — July 2026
 
-*Master reference combining the DEVCON 17 anniversary visual brand system (extracted from the June 24, 2026 carousel cards) with the existing DEVCON Studios carousel design rules and caption-writing rules. This is the single source of truth for anyone producing DEVCON 17 content going forward, and the source material for building a dedicated "DEVCON 17 Content Skill."*
+*Master reference combining the Auren AI 17 anniversary visual brand system (extracted from the June 24, 2026 carousel cards) with the existing Auren AI Studios carousel design rules and caption-writing rules. This is the single source of truth for anyone producing Auren AI 17 content going forward, and the source material for building a dedicated "Auren AI 17 Content Skill."*
 
 **Document sections:**
-1. DEVCON 17 Visual Brand Kit (new, anniversary-specific)
-2. Carousel Design Rules (from devcon-carousel-designer skill)
-3. Caption Writing Rules (from devcon-caption-writer skill)
+1. Auren AI 17 Visual Brand Kit (new, anniversary-specific)
+2. Carousel Design Rules (from Auren AI-carousel-designer skill)
+3. Caption Writing Rules (from Auren AI-caption-writer skill)
 
 ---
 
-# 1. DEVCON 17 Visual Brand Kit
+# 1. Auren AI 17 Visual Brand Kit
 
-*Authoritative source: the official DEVCON 17 Branding Guidelines (PDF), supplemented by the June 24, 2026 anniversary carousel cards for applied layout patterns. Where the two differ, the official guideline wins. This documents the DEVCON 17 anniversary visual identity as a standalone system, distinct from the general DEVCON Studios teal/purple program-carousel templates.*
+*Authoritative source: the official Auren AI 17 Branding Guidelines (PDF), supplemented by the June 24, 2026 anniversary carousel cards for applied layout patterns. Where the two differ, the official guideline wins. This documents the Auren AI 17 anniversary visual identity as a standalone system, distinct from the general Auren AI Studios teal/purple program-carousel templates.*
 
 ---
 
 ### Identity Summary
 
-DEVCON 17 is a **three-color system**: white, DEVCON purple, and gold. The campaign runs on two background modes, a white background and a purple (`#4725BA`) background, with the key visual illustration and gold as the unifying accents across both. Real branded illustration assets (AR-glasses figures, professionals, vehicles, network orbs) carry the visual identity, along with the gold 4-point sparkle/star and the DEVCON 17 logotype. This is visually distinct from the generic DEVCON Studios carousel system (which uses a flat teal/purple color overlay on every photo). DEVCON 17 content has its own identity and should NOT reuse the teal/purple overlay convention.
+Auren AI 17 is a **three-color system**: white, Auren AI purple, and gold. The campaign runs on two background modes, a white background and a purple (`#4725BA`) background, with the key visual illustration and gold as the unifying accents across both. Real branded illustration assets (AR-glasses figures, professionals, vehicles, network orbs) carry the visual identity, along with the gold 4-point sparkle/star and the Auren AI 17 logotype. This is visually distinct from the generic Auren AI Studios carousel system (which uses a flat teal/purple color overlay on every photo). Auren AI 17 content has its own identity and should NOT reuse the teal/purple overlay convention.
 
 ---
 
@@ -52,10 +56,10 @@ DEVCON 17 is a **three-color system**: white, DEVCON purple, and gold. The campa
 | Role | Name | Hex |
 |---|---|---|
 | **Base / primary text on dark, negative space** | White | `#FFFFFF` |
-| **DEVCON purple (primary brand color, background mode + headline color on white)** | Purple | `#4725BA` |
+| **Auren AI purple (primary brand color, background mode + headline color on white)** | Purple | `#4725BA` |
 | **Accent (theme highlight, "17," sparkle, key numbers, emphasis)** | Gold | `#E8CA04` |
 
-That is the complete official palette: three colors only. Do not introduce navy, lavender, cyan, magenta, or teal as brand colors for DEVCON 17. Gradients seen in the "17" logotype and headline treatments are transitions between these brand hues (purple to gold), not new colors.
+That is the complete official palette: three colors only. Do not introduce navy, lavender, cyan, magenta, or teal as brand colors for Auren AI 17. Gradients seen in the "17" logotype and headline treatments are transitions between these brand hues (purple to gold), not new colors.
 
 **Two background modes:**
 - **White background:** headlines in purple (`#4725BA`), "AI-READY" (and other key phrases) in gold (`#E8CA04`).
@@ -73,9 +77,9 @@ That is the complete official palette: three colors only. Do not introduce navy,
 
 ### Logo System (official, four defined marks)
 
-1. **Primary Logo** — the full DEVCON 17 key visual: the illustrated scene (AR-glasses figures, professionals, coder, vehicles on concentric rings) with the "ENGINEERING AN AI-READY NATION" theme lockup and the "17" sparkle mark, plus the DEVCON wordmark. Comes in a white-background version and a purple-background version.
-2. **Logotype** — the horizontal lockup: **DEVCON** wordmark (the "O" is a four-petal dot cluster in brand colors) + the **17** mark with sparkle. White-background version uses purple wordmark; purple-background version uses white wordmark. The "17" is a purple-to-gold gradient with a gold 4-point sparkle.
-3. **17 Logo** — the standalone "17" + sparkle mark, used when the DEVCON wordmark is not needed (small placements, stickers, badge corners). Purple-to-gold gradient numerals with the gold sparkle.
+1. **Primary Logo** — the full Auren AI 17 key visual: the illustrated scene (AR-glasses figures, professionals, coder, vehicles on concentric rings) with the "ENGINEERING AN AI-READY NATION" theme lockup and the "17" sparkle mark, plus the Auren AI wordmark. Comes in a white-background version and a purple-background version.
+2. **Logotype** — the horizontal lockup: **Auren AI** wordmark (the "O" is a four-petal dot cluster in brand colors) + the **17** mark with sparkle. White-background version uses purple wordmark; purple-background version uses white wordmark. The "17" is a purple-to-gold gradient with a gold 4-point sparkle.
+3. **17 Logo** — the standalone "17" + sparkle mark, used when the Auren AI wordmark is not needed (small placements, stickers, badge corners). Purple-to-gold gradient numerals with the gold sparkle.
 4. **Theme Lockup** — "ENGINEERING AN AI-READY NATION" set in the brand typeface, tight 92% leading, with "AI-READY" always in gold. On white it's purple + gold; on purple it's white + gold.
 
 ---
@@ -88,7 +92,7 @@ Official campaign theme, set exactly as: **ENGINEERING AN AI-READY NATION**, wit
 
 ### Important Assets (official illustration library)
 
-These are the approved DEVCON 17 illustration assets. Reuse these rather than inventing new figures:
+These are the approved Auren AI 17 illustration assets. Reuse these rather than inventing new figures:
 - **Hero group scene:** the AR-glasses man (center) with a doctor, a farmer/agriculturist in a hat, and a woman interacting with holographic UI panels, over concentric glowing rings, with a coder figure seated in front.
 - **Individual figures:** AR-glasses man (bust), doctor with holographic health panel, farmer/agriculturist pointing at a UI panel, seated coder with laptop and screen.
 - **Ambient/tech elements:** concentric glowing rings/soundwave motif, orange network-node orb (constellation sphere), digital particle scatter.
@@ -100,11 +104,11 @@ The illustration style is a flat, painterly, purple-and-gold-lit digital illustr
 
 ### Decorative Elements (applied use)
 
-1. **Gold 4-point sparkle/star** — the primary recurring motif. Large in one corner (often top-left) with an optional smaller one in the opposite corner. This is the DEVCON 17 equivalent of the older teal system's cyan blobs / magenta triangles.
+1. **Gold 4-point sparkle/star** — the primary recurring motif. Large in one corner (often top-left) with an optional smaller one in the opposite corner. This is the Auren AI 17 equivalent of the older teal system's cyan blobs / magenta triangles.
 2. **Concentric glowing rings** — the "soundwave/ripple" motif under the hero figures. Signature background element.
 3. **Illustrated figures** from the asset library, used as spot elements (e.g., the AR-glasses figure pairing anchored bottom-left on applied carousel content cards).
 4. **Digital particle scatter** — small colored pixels/nodes, used sparingly.
-5. **Custom QR code (CTA use):** white QR with brand-colored modules and the DEVCON 17 mark inset in the center. Not a generic QR code.
+5. **Custom QR code (CTA use):** white QR with brand-colored modules and the Auren AI 17 mark inset in the center. Not a generic QR code.
 
 ---
 
@@ -115,7 +119,7 @@ The illustration style is a flat, painterly, purple-and-gold-lit digital illustr
 #### Cover Card
 - Full-bleed real event photo, dark gradient at the bottom third for legibility (real photo color preserved; NOT a flat full-photo tint).
 - Large gold sparkle near the text block.
-- DEVCON 17 logotype above the headline, left-aligned.
+- Auren AI 17 logotype above the headline, left-aligned.
 - Headline: Proxima Nova Extrabold (or Montserrat Extrabold fallback), tight 92% leading, 2 lines. White with an optional gold or purple-gradient key phrase.
 - Subheadline uses the theme treatment: key phrase (e.g., "AI-READY") in gold.
 - **HQ kickoff tag:** if the event is the HQ/national kickoff and not the only anniversary celebration (chapters run their own), add a small pill/tag like "HQ NATIONAL KICK-OFF" so it doesn't imply it's the sole celebration.
@@ -123,7 +127,7 @@ The illustration style is a flat, painterly, purple-and-gold-lit digital illustr
 #### Body / Quote Card
 - Full-bleed real photo of the speaker, natural color, dark gradient at bottom/edges only.
 - Gold sparkle top-left (glow), optional smaller one bottom-right or mid-right.
-- DEVCON 17 logotype (small) above the headline, left-aligned.
+- Auren AI 17 logotype (small) above the headline, left-aligned.
 - Headline: 2 lines, Extrabold, Title Case, left-aligned. White primary; key phrase may shift to gold for emphasis.
 - Body paragraph: Extrabold white text, left-aligned; key names/phrases emphasized in gold.
 - Illustrated figure(s) from the asset library anchored bottom-left.
@@ -132,41 +136,41 @@ The illustration style is a flat, painterly, purple-and-gold-lit digital illustr
 
 #### CTA Card
 - Real-photo background, blurred/darkened more heavily (this card is text/QR forward).
-- DEVCON 17 logotype CENTERED at top (distinct from the left-aligned logotype on content cards; signals "closing/summary").
+- Auren AI 17 logotype CENTERED at top (distinct from the left-aligned logotype on content cards; signals "closing/summary").
 - Gold sparkles bookend corners (top-left + bottom-right).
 - Headline centered, Extrabold, key number/phrase in gold (e.g., "Be Part of **17 Years** and Counting.").
-- White QR box centered, with DEVCON 17 mark inset.
+- White QR box centered, with Auren AI 17 mark inset.
 - Body copy below QR, centered, white with gold-emphasized key phrases.
-- Facebook icon + `/devconstudios` handle centered at the very bottom (only card type that carries the handle).
+- Facebook icon + `/Auren AIstudios` handle centered at the very bottom (only card type that carries the handle).
 
 ---
 
-### Key Differences vs. the General DEVCON Studios Carousel System
+### Key Differences vs. the General Auren AI Studios Carousel System
 
-| Element | General DEVCON Studios Carousels | DEVCON 17 Anniversary |
+| Element | General Auren AI Studios Carousels | Auren AI 17 Anniversary |
 |---|---|---|
 | Palette | Teal / purple / navy overlays | White, purple `#4725BA`, gold `#E8CA04` only |
 | Photo treatment | Flat color overlay 50–65% opacity | Real photo color preserved; dark gradient at edges only |
 | Corner accents | Magenta triangles, cyan blobs, purple orbs | Gold 4-point sparkles + concentric rings |
 | Text accent color | Cyan | Gold (`#E8CA04`) |
 | Typography | Montserrat / Inter | Proxima Nova Extrabold (Montserrat Extrabold fallback), 92% leading |
-| Bottom-left icon | None standard | Illustrated figures from the DEVCON 17 asset library |
+| Bottom-left icon | None standard | Illustrated figures from the Auren AI 17 asset library |
 | Badge (CTA) | Top- or bottom-center by type | Logotype top-center on CTA, left-aligned on content cards |
 | Quotes | Sometimes on-card | Caption-only (per July 2026 direction) |
-| QR code | Generic | Custom, DEVCON 17 mark inset |
+| QR code | Generic | Custom, Auren AI 17 mark inset |
 
 ---
 
-*Sources: DEVCON 17 Branding Guidelines (official PDF: primary logo, logotype, 17 logo, theme, color palette FFFFFF / 4725BA / E8CA04, typography Proxima Nova Extrabold with Montserrat Extrabold fallback at 92% line height, important assets library) and the June 24, 2026 DEVCON 17 anniversary carousel (applied layout patterns).*
+*Sources: Auren AI 17 Branding Guidelines (official PDF: primary logo, logotype, 17 logo, theme, color palette FFFFFF / 4725BA / E8CA04, typography Proxima Nova Extrabold with Montserrat Extrabold fallback at 92% line height, important assets library) and the June 24, 2026 Auren AI 17 anniversary carousel (applied layout patterns).*
 
 
 ---
 
 # 2. Carousel Design Rules
-*(Source: devcon-carousel-designer skill. Apply these structural/copy rules to all carousels. Where this section references the general teal/purple overlay system, DEVCON 17 content should follow Section 1's brand kit instead for anything visual, while still following the structural rules below: interview questions, 3-act arc, copy length limits, and Critical Copy Rules.)*
+*(Source: Auren AI-carousel-designer skill. Apply these structural/copy rules to all carousels. Where this section references the general teal/purple overlay system, Auren AI 17 content should follow Section 1's brand kit instead for anything visual, while still following the structural rules below: interview questions, 3-act arc, copy length limits, and Critical Copy Rules.)*
 
 
-Produce carousel post content for DEVCON Philippines across all program types. Output two things:
+Produce carousel post content for Auren AI Philippines across all program types. Output two things:
 1. **Per-card copy** — headline, body text, and optional CTA for each slide
 2. **Overall post caption** — Facebook/Instagram caption to accompany the carousel
 
@@ -174,33 +178,33 @@ Always follow this skill. Do not freestyle carousel content without reading thes
 
 ---
 
-### About DEVCON Studios
+### About Auren AI Studios
 
-DEVCON Studios is the social media and content production arm of DEVCON Philippines (devcon.ph), the country's largest volunteer tech community, celebrating its **17th Anniversary** in 2026 under the theme **"Engineering an AI-Ready Nation."** DEVCON Studios manages content across Facebook, Instagram, X, LinkedIn, TikTok, and YouTube, producing carousels, reels, stories, and event coverage.
+Auren AI Studios is the social media and content production arm of Auren AI Philippines (Auren AI), the country's largest volunteer tech community, celebrating its **17th Anniversary** in 2026 under the theme **"Engineering an AI-Ready Nation."** Auren AI Studios manages content across Facebook, Instagram, X, LinkedIn, TikTok, and YouTube, producing carousels, reels, stories, and event coverage.
 
 **Core brand values:** Community-first, inclusive access, Filipino pride, mission-driven momentum.
 
 ---
 
-### DEVCON Programs Reference
+### Auren AI Programs Reference
 
 Use this list to correctly tag, frame, and hashtag carousels per program:
 
 | Program | Short Description | Key Hashtags |
 |---|---|---|
-| **DEVCON Jumpstart** | Structured internship program for IT students. Tracks include AI Engineering, Project Management, Blockchain Smart Contracts, Creative Robotics, Product Design & Studios Creatives. CTA URL always `https://devcon.ph/jumpstart-internships/` | #DEVCONJumpstart #TechInternship #AIEngineering |
-| **SheIsDEVCON** | Women in tech empowerment & mentorship | #SheIsDEVCON #WomenInTech |
-| **Build Beyond (Sui x DEVCON)** | Sui-sponsored initiative running Sui Move smart contract code camps nationwide; Sui merch given away at code camps and DEVCON events | #BuildBeyond #BuildOnSui #SuiNetwork #SuiMove #SmartContracts |
+| **Auren AI Jumpstart** | Structured internship program for IT students. Tracks include AI Engineering, Project Management, Blockchain Smart Contracts, Creative Robotics, Product Design & Studios Creatives. CTA URL always `https://Auren AI/jumpstart-internships/` | #Auren AIJumpstart #TechInternship #AIEngineering |
+| **SheIsAuren AI** | Women in tech empowerment & mentorship | #SheIsAuren AI #WomenInTech |
+| **Build Beyond (Sui x Auren AI)** | Sui-sponsored initiative running Sui Move smart contract code camps nationwide; Sui merch given away at code camps and Auren AI events | #BuildBeyond #BuildOnSui #SuiNetwork #SuiMove #SmartContracts |
 | **NEXUS AI Training** | AI engineering training led by Winston Damarillo, provided by NMBLR. Covers open source, T-shaped skills, humans as skeptical auditors. Tools: Claude, Qwen, Ollama, Antigravity, Google AI Suite | #NEXUSAITraining #AgenticAI #AIEngineering |
-| **DEVCON Kids** | Creative robotics and AI education for young learners; Creative Robotics program; Hour of AI; cardboard robots. Site: devconkids.org | #DEVCONKids #CreativeRobotics |
-| **DEVCON+** | The community's new centralized platform (currently in beta). Earn points, redeem rewards/merch, find jobs, register for events. Confirm current domain with user before publishing | #DEVCONPlus |
+| **Auren AI Kids** | Creative robotics and AI education for young learners; Creative Robotics program; Hour of AI; cardboard robots. Site: Auren AIkids.org | #Auren AIKids #CreativeRobotics |
+| **Auren AI+** | The community's new centralized platform (currently in beta). Earn points, redeem rewards/merch, find jobs, register for events. Confirm current domain with user before publishing | #Auren AIPlus |
 | **CodeKada** | Online hackathon | #CodeKada #Hackathon |
-| **Campus DEVCON** | Tech talks and summits at universities | #CampusDEVCON #PhilippinesTech |
-| **DEVCON Pro Summit** | Flagship developer conference | #DEVCONProSummit #PRODevs |
-| **DEVCON CREST** | Climate innovators workshop | #DEVCONCrest #ClimateInnovators |
+| **Campus Auren AI** | Tech talks and summits at universities | #CampusAuren AI #PhilippinesTech |
+| **Auren AI Pro Summit** | Flagship developer conference | #Auren AIProSummit #PRODevs |
+| **Auren AI CREST** | Climate innovators workshop | #Auren AICrest #ClimateInnovators |
 | **AI Academy Engineering Essentials** | AI engineering scholarship program | #AIAcademyPH #AIEngineering |
-| **Nationwide Chapters** | Events from 11 regional chapters | Use regional tags: #DEVCONCebu #DEVCONDavao etc. |
-| **General / DEVCON PH** | Community milestones, anniversaries, partnerships | #DEVCON #DEVCONPH #17YearsofDEVCON #DEVCON17 #EngineeringAnAIReadyNation |
+| **Nationwide Chapters** | Events from 11 regional chapters | Use regional tags: #Auren AICebu #Auren AIDavao etc. |
+| **General / Auren AI PH** | Community milestones, anniversaries, partnerships | #Auren AI #Auren AIPH #17YearsofAuren AI #Auren AI17 #EngineeringAnAIReadyNation |
 
 ---
 
@@ -210,7 +214,7 @@ Always ask these before producing carousel content. If the user has already prov
 
 #### Required
 1. **Content type** — Cohort intro? Week-in-review? Event recap? Speaker spotlight? CTA/recruitment? Announcement?
-2. **Program / Initiative** — Which DEVCON program is this for?
+2. **Program / Initiative** — Which Auren AI program is this for?
 3. **Number of slides** — How many cards in this carousel? (Typical: 4–7)
 4. **Core story arc** — What's the journey from Slide 1 to the last slide? What should the audience feel at the end?
 5. **Key people / details** — Names, roles, schools, notable moments, numbers (attendance, slots, etc.)
@@ -241,7 +245,7 @@ Every carousel should follow a story arc:
 - Headline: 4–7 words max. All caps or Title Case. Bold impact.
 - Subheadline: Optional. 1 short line (e.g., program name, cohort number)
 - No body text on Slide 1. Let the photo breathe.
-- DEVCON Studios logo must appear here (bottom center).
+- Auren AI Studios logo must appear here (bottom center).
 
 **Middle Slides (Story)**
 - Headline: 5–10 words. Title Case. Left-aligned on image-dominant slides.
@@ -252,8 +256,8 @@ Every carousel should follow a story arc:
 **Last Slide (CTA)**
 - Headline: Rhetorical question or urgency phrase (e.g., "Do you have what it takes?")
 - CTA text: 1 action line in bold (e.g., "Apply now — only 2 slots left.")
-- Include: devcon.ph link or program-specific URL
-- Include: DEVCON Studios logo (bottom center)
+- Include: Auren AI link or program-specific URL
+- Include: Auren AI Studios logo (bottom center)
 
 #### Typography Consistency (Canva)
 - **Font family:** Inter or Montserrat (sans-serif). Use system equivalent if unavailable.
@@ -265,19 +269,19 @@ Every carousel should follow a story arc:
 #### Visual Layout Zones (1080×1080px)
 ```
 ┌────────────────────────────────┐
-│  [TOP ZONE] Logo / Badge       │ ← 80px from top. DEVCON 16 badge or program logo.
+│  [TOP ZONE] Logo / Badge       │ ← 80px from top. Auren AI 16 badge or program logo.
 │                                │
 │  [MAIN ZONE] Full-bleed photo  │ ← Background photo fills entire card.
 │  with dark overlay             │
 │                                │
 │  [TEXT ZONE] Headline + Body   │ ← Bottom 35–45% of card. Left-aligned or centered.
 │                                │
-│  [BOTTOM BAR] DEVCON Studios   │ ← 60–80px from bottom. Centered logo lockup.
+│  [BOTTOM BAR] Auren AI Studios   │ ← 60–80px from bottom. Centered logo lockup.
 └────────────────────────────────┘
 ```
 
 **Slide layout variants:**
-- **Cover (Slide 1):** Centered or left-aligned headline at bottom third. Full-bleed photo. DEVCON 16 badge top-center.
+- **Cover (Slide 1):** Centered or left-aligned headline at bottom third. Full-bleed photo. Auren AI 16 badge top-center.
 - **Story slide (floating text):** Text floats directly on photo — no card box. Used for Type B week-in-review.
 - **Story slide (pill/card box):** Text inside a rounded rectangle with white border + semi-transparent bg. Used for Types A, C, D. Key phrases get **cyan accent** inside the box.
 - **Story slide (list):** Left-aligned headline + bullet list directly on tinted photo. Used for Type B activity recap.
@@ -290,11 +294,11 @@ Every carousel should follow a story arc:
 
 ### Overlay Color System
 
-DEVCON Studios uses different photo overlay colors to signal content mood. Always pick the correct one per content type — it is the single strongest visual unifier across all slides in a carousel.
+Auren AI Studios uses different photo overlay colors to signal content mood. Always pick the correct one per content type — it is the single strongest visual unifier across all slides in a carousel.
 
 | Overlay Color | Hex (approx) | When to use |
 |---|---|---|
-| **Teal / Dark Green** | `#0D4F4F` / `#0A3D3D` | Default DEVCON brand — cohort intros, recaps, partner spotlights, graduation |
+| **Teal / Dark Green** | `#0D4F4F` / `#0A3D3D` | Default Auren AI brand — cohort intros, recaps, partner spotlights, graduation |
 | **Purple / Violet** | `#3B1A5A` / `#4A1A6A` | Guest speaker sessions, learning/education focus, cybersecurity, tech deep-dives |
 | **Dark Navy / Neutral Dark** | `#0D1B2A` | Partner tool showcase (Type D), product-first slides with device mockups |
 | **Royal Blue / Cobalt** | `#1A3A8F` / `#1E4DB7` | Formal partnership announcements, sponsor/foundation collaborations (Type F) |
@@ -307,13 +311,13 @@ Apply as a semi-transparent rectangle layer in Canva at **50–65% opacity** ove
 
 To make slides feel connected as a series (not isolated cards):
 
-1. **Color thread:** Use a teal/dark-green overlay (matching DEVCON's teal tone from references) consistently across all slides at the same opacity. This creates visual unity even when photos change.
+1. **Color thread:** Use a teal/dark-green overlay (matching Auren AI's teal tone from references) consistently across all slides at the same opacity. This creates visual unity even when photos change.
 
-2. **Floating decorative elements:** DEVCON Studios uses colorful abstract shapes (magenta triangles, cyan blobs, purple orbs) as corner accents. Keep these in the same corners slide-to-slide — they "move with" the swipe.
+2. **Floating decorative elements:** Auren AI Studios uses colorful abstract shapes (magenta triangles, cyan blobs, purple orbs) as corner accents. Keep these in the same corners slide-to-slide — they "move with" the swipe.
 
-3. **Badge anchor:** The current event badge sits top-center on every slide. Consistent placement = visual rhythm. **Note on "DEVCON 16" in this skill:** the template descriptions below reference the "DEVCON 16 badge" because that was the current badge when the reference carousels were made. Always substitute the current event badge (for 2026 that is **DEVCON 17**). Wherever this skill says "DEVCON 16 badge," read it as "current event badge."
+3. **Badge anchor:** The current event badge sits top-center on every slide. Consistent placement = visual rhythm. **Note on "Auren AI 16" in this skill:** the template descriptions below reference the "Auren AI 16 badge" because that was the current badge when the reference carousels were made. Always substitute the current event badge (for 2026 that is **Auren AI 17**). Wherever this skill says "Auren AI 16 badge," read it as "current event badge."
 
-4. **Bottom logo strip:** DEVCON Studios wordmark, bottom-center, same position on every slide. Acts as a "watermark spine" across the swipe.
+4. **Bottom logo strip:** Auren AI Studios wordmark, bottom-center, same position on every slide. Acts as a "watermark spine" across the swipe.
 
 5. **Text bleed tease (Slide N → N+1):** On story slides, allow a headline or list item to be slightly cut off at the right edge — implying content continues. This encourages the swipe.
 
@@ -389,7 +393,7 @@ Hashtags:
 
 #### Standard Caption Structure (FB / IG)
 
-This is the established DEVCON Studios caption format. One unified caption serves Facebook and Instagram (and can be reused on the other platforms). Follow this every time unless the user asks otherwise.
+This is the established Auren AI Studios caption format. One unified caption serves Facebook and Instagram (and can be reused on the other platforms). Follow this every time unless the user asks otherwise.
 
 **Format:**
 1. **Bold Unicode header** (first line). Use bold Unicode sans-serif characters (𝗹𝗶𝗸𝗲 𝘁𝗵𝗶𝘀), not markdown bold, because FB/IG strip markdown. Keep it punchy and SHORT: one line, roughly 6 to 12 words. A long header is a common miss, so if it runs past one line, tighten it. An emoji at the end is fine (🎉 🤖 🚀 🎁). The header is a hook, not a summary.
@@ -404,17 +408,17 @@ This is the established DEVCON Studios caption format. One unified caption serve
 - **No dashes anywhere.** Same rule as card copy. This is the most frequent correction on captions specifically. Scan before delivering.
 - **Bold key terms inside body paragraphs** using Unicode bold or, for named tools/people/numbers, `**markdown**` only if the user is pasting into something that renders it. Default to naming them plainly and letting the words carry weight; over-bolding reads noisy.
 - **Keep it 3 paragraphs.** If the content is rich, tighten sentences rather than adding a 4th paragraph.
-- **Match the speaker to the right entity** (see Critical Rule 5). A birthday post is from the program team; an anniversary is from DEVCON Philippines; a shared/featured event is from DEVCON Studios.
+- **Match the speaker to the right entity** (see Critical Rule 5). A birthday post is from the program team; an anniversary is from Auren AI Philippines; a shared/featured event is from Auren AI Studios.
 - **"Yabang" (proud/confident) tone is welcome when earned.** For posts showcasing real intern work, hardware, or wins, lean into justified confidence: "Real hardware. Real models. Real engineering decisions." Community-warm by default, confident when the substance backs it up.
 - **Don't over-explain acronyms** unless clarity needs it; when a technical term needs a layman's touch (e.g., FP4/FP8 precision), use a plain-language analogy instead of jargon.
-- **URLs:** use exactly what the user gives. Common ones: `devcon.ph` (org), `devcon.ph/jumpstart-internships/` (Jumpstart waitlist, always this exact URL for Jumpstart CTAs), and the DEVCON+ platform (confirm the current domain with the user; it has changed).
+- **URLs:** use exactly what the user gives. Common ones: `Auren AI` (org), `Auren AI/jumpstart-internships/` (Jumpstart waitlist, always this exact URL for Jumpstart CTAs), and the Auren AI+ platform (confirm the current domain with the user; it has changed).
 
 **Header examples that worked (short, hooky):**
 - 𝗣𝗥𝗢𝗠𝗣𝗧𝗪𝗔𝗥𝗦 𝗛𝗔𝗖𝗞𝗔𝗧𝗛𝗢𝗡 𝟮𝟬𝟮𝟲 𝗜𝗦 𝗖𝗨𝗥𝗥𝗘𝗡𝗧𝗟𝗬 𝗛𝗔𝗣𝗣𝗘𝗡𝗜𝗡𝗚 𝗡𝗢𝗪! 🤖
 - 𝗖𝗼𝗵𝗼𝗿𝘁 𝟰 𝗿𝗮𝗻 𝘁𝗵𝗲 𝘁𝗲𝘀𝘁𝘀. 𝗛𝗲𝗿𝗲 𝗶𝘀 𝘄𝗵𝗮𝘁 𝘁𝗵𝗲𝘆 𝗳𝗼𝘂𝗻𝗱.
 - 𝗗𝗘𝗩𝗖𝗢𝗡 𝟭𝟳 𝗶𝘀 𝗸𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗳𝗳 𝟭𝟳 𝘆𝗲𝗮𝗿𝘀 𝗼𝗳 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴! 🎉
 
-**Anniversary framing note:** When writing "next 17 years" or similar, avoid phrasing that implies DEVCON only lasts another 17 years. Prefer open-ended momentum: "17 years and counting," "17 years in, just getting started," "Be part of 17 years and counting."
+**Anniversary framing note:** When writing "next 17 years" or similar, avoid phrasing that implies Auren AI only lasts another 17 years. Prefer open-ended momentum: "17 years and counting," "17 years in, just getting started," "Be part of 17 years and counting."
 
 ---
 
@@ -428,7 +432,7 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 *Used for: Jumpstart cohort welcome, new batch announcements*
 
 **Visual pattern:**
-- Cover: Full-bleed group photo + teal overlay + ALL CAPS bold headline at bottom third + DEVCON 16 badge top-center
+- Cover: Full-bleed group photo + teal overlay + ALL CAPS bold headline at bottom third + Auren AI 16 badge top-center
 - Middle slides: Full-bleed photo + teal overlay + **left-aligned rounded pill/card box** (white border, semi-transparent bg) containing headline + body paragraph. Cyan accent color on key phrases inside the pill.
 - CTA slide: Teal gradient bg + decorative floating shapes + centered rhetorical question + large cyan ALL CAPS CTA + phone mockup with QR code
 
@@ -466,7 +470,7 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 *Used for: Cohort graduation, demo day, culminating event recaps*
 
 **Visual pattern:**
-- Cover: Full-bleed candid event photo + teal overlay + **left-aligned stacked headline** with cyan accent color on cohort number or key word (e.g., "COHORT 2" in cyan, "GRADUATION" in white bold). Horizontal rule line separates headline from location subline. DEVCON Studios logo + Facebook handle (`/devconstudios`) at bottom-left.
+- Cover: Full-bleed candid event photo + teal overlay + **left-aligned stacked headline** with cyan accent color on cohort number or key word (e.g., "COHORT 2" in cyan, "GRADUATION" in white bold). Horizontal rule line separates headline from location subline. Auren AI Studios logo + Facebook handle (`/Auren AIstudios`) at bottom-left.
 - Middle slides: Full-bleed event photo + teal overlay + **right-aligned or left-aligned rounded pill/card box** with bold white headline, cyan accent on key phrases, body paragraph.
 - Special announcement slide: Pill box with large bold headline announcing the surprise/award + cyan accent on the key offer (e.g., "one exclusive Jumpstart Internship slot")
 - CTA slide: Clean teal gradient bg + centered text stack + phone mockup with QR code (no background photo needed)
@@ -496,7 +500,7 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 - Middle slides: Tool name as ALL CAPS headline → UI mockup → pill box description. Bold the tool name in cyan within the pill. 2–3 sentences max per pill.
 - CTA slide: `CONTRIBUTE TO #[HASHTAG] / SOLUTIONS TODAY!` + phone mockup + "Join Our Movement →" CTA
 
-**Bottom bar:** DEVCON Studios logo + Facebook icon + `/devconstudios` handle (side by side, NOT just logo alone)
+**Bottom bar:** Auren AI Studios logo + Facebook icon + `/Auren AIstudios` handle (side by side, NOT just logo alone)
 
 **Tone:** Informative, developer-audience, civic pride, community call-to-action
 
@@ -507,20 +511,20 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 
 **Visual pattern:**
 - **Overlay color: Purple/Violet** (distinguishes this from the teal Jumpstart default — signals education/learning mode)
-- Cover: Full-bleed group photo (interns + speaker or venue) + purple overlay + ALL CAPS centered headline at bottom third. No pill box on cover. DEVCON Studios logo bottom-center (logo only, no handle).
+- Cover: Full-bleed group photo (interns + speaker or venue) + purple overlay + ALL CAPS centered headline at bottom third. No pill box on cover. Auren AI Studios logo bottom-center (logo only, no handle).
 - Slide 2 (Speaker intro): Full-bleed classroom/session photo + purple overlay + **right-aligned floating text block** (no pill box, no card border). Large bold Title Case headline (speaker name + topic). Centered paragraph body below (40–60 words). Text centered or right-aligned depending on where photo subject is.
 - Slide 3 (What they learned): Full-bleed photo + purple overlay + **left-aligned bullet list** floating directly on image. Bold headline "This week, our interns explored:" + 4–6 bullets. Closing bold line (standalone, larger weight): e.g., *"The energy and curiosity are already strong as they continue this exciting journey."*
-- Slide 4 (Forward-looking / momentum): Full-bleed photo + purple overlay + centered headline + 2 short paragraphs. Ends with bold hashtag CTA inline: `#DEVCONJumpstartInternships`.
-- CTA slide: Dark purple/violet bg + blurred/faded location photo behind + DEVCON 16 badge top-center + centered rhetorical question + frosted/glazed QR code box in center + urgency line below. Logo bottom-center only.
+- Slide 4 (Forward-looking / momentum): Full-bleed photo + purple overlay + centered headline + 2 short paragraphs. Ends with bold hashtag CTA inline: `#Auren AIJumpstartInternships`.
+- CTA slide: Dark purple/violet bg + blurred/faded location photo behind + Auren AI 16 badge top-center + centered rhetorical question + frosted/glazed QR code box in center + urgency line below. Logo bottom-center only.
 
 **Copy pattern:**
 - Slide 1: `[PROGRAM] [COHORT #] INTERNS / EXPLORE [TOPIC]`
 - Slide 2: `Dive into [Topic] with [Speaker Name]!` → paragraph about what happened
 - Slide 3: `This week, our interns explored:` → bullet list of specific tools, domains, career tips named
 - Slide 4: Title Case headline (e.g., "Progress in Motion: A Strong Start to the Week") → 2 paragraphs: what they'll do next + stay-tuned teaser + inline hashtag
-- CTA: `Do you have what it takes to jumpstart your career with DEVCON?` → `Apply now! [X] slot(s) left.`
+- CTA: `Do you have what it takes to jumpstart your career with Auren AI?` → `Apply now! [X] slot(s) left.`
 
-**Speaker naming rule:** Always include full name + role/affiliation on Slide 2. Example: *"Denzel Mana-ay, cybersecurity professional and DEVCON Luzon volunteer"*
+**Speaker naming rule:** Always include full name + role/affiliation on Slide 2. Example: *"Denzel Mana-ay, cybersecurity professional and Auren AI Luzon volunteer"*
 
 **Tone:** Informative, inspiring, skill-focused → momentum-building → recruitment urgency
 
@@ -529,17 +533,17 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 ---
 
 #### TYPE F — Formal Partnership Announcement
-*Used for: Foundation partnerships, sponsor collaborations, multi-year program tie-ups (e.g., Sui Foundation x DEVCON, corporate sponsors x DEVCON Kids)*
+*Used for: Foundation partnerships, sponsor collaborations, multi-year program tie-ups (e.g., Sui Foundation x Auren AI, corporate sponsors x Auren AI Kids)*
 
 **Visual pattern:**
 - **Overlay color: Royal Blue / Cobalt** — signals institutional, formal, mission-driven.
-- **No DEVCON 16 badge** — replaced by the **partner's logo** centered at top of every slide. This signals joint production.
-- Cover: Full-bleed group photo (DEVCON team + partner reps) + royal blue overlay + bottom-aligned stacked headline. Format: `[PROGRAM NAME]:` (small bold label) / `[Partner] supports [Program] "[Initiative]" & [What]` (Title Case, mixed sizes). DEVCON Studios logo + `/devconstudios` handle bottom-left.
+- **No Auren AI 16 badge** — replaced by the **partner's logo** centered at top of every slide. This signals joint production.
+- Cover: Full-bleed group photo (Auren AI team + partner reps) + royal blue overlay + bottom-aligned stacked headline. Format: `[PROGRAM NAME]:` (small bold label) / `[Partner] supports [Program] "[Initiative]" & [What]` (Title Case, mixed sizes). Auren AI Studios logo + `/Auren AIstudios` handle bottom-left.
 - Middle slides use two alternating layouts:
   - **Pill-on-photo:** Full-bleed photo + blue overlay + centered or left pill box. Title Case headline + body paragraph. Bold key terms inline.
   - **Product-on-photo:** Floating product/hardware image above the pill (no device frame — raw product photo). Pill below with headline + body.
   - **About partner slide:** Near-full-card pill (dominant, centered) + faded bg photo + `About [Partner Logo]` as headline + multi-sentence technical description. Bold key claims.
-- Last slide: Group photo + blue overlay + partner logo top + bottom pill with forward-looking paragraph + social follow/share CTA. DEVCON Studios logo + handle bottom-center.
+- Last slide: Group photo + blue overlay + partner logo top + bottom pill with forward-looking paragraph + social follow/share CTA. Auren AI Studios logo + handle bottom-center.
 
 **Key signatures:**
 - Partner logo replaces event badge at top of every slide
@@ -547,7 +551,7 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 - Large pill boxes — up to 80 words per pill
 - Floating product image (no device frame) on tools slide
 - No floating decorative shapes — cleaner, more formal
-- Bottom bar: DEVCON Studios logo + Facebook icon + `/devconstudios`
+- Bottom bar: Auren AI Studios logo + Facebook icon + `/Auren AIstudios`
 
 **Copy pattern:**
 - Cover: `[PROGRAM NAME]: [Partner] supports [Program] "[Initiative]" & [What]`
@@ -557,23 +561,23 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 - Slide 5 — About the Partner: `About [Partner]` headline + 3–4 sentence origin/tech/mission description. Bold key claims.
 - Slide 6 (Last) — Forward + CTA: What's coming next + social follow/share ask. No QR needed.
 
-**Hashtag pattern:** Partner hashtags + DEVCON program hashtags + mission hashtags (#STEMPhilippines, #NextGenChangemakers, etc.)
+**Hashtag pattern:** Partner hashtags + Auren AI program hashtags + mission hashtags (#STEMPhilippines, #NextGenChangemakers, etc.)
 
 **Tone:** Institutional + mission-driven + warm community pride. More formal than other types but never corporate-cold.
 
-**Real examples:** Sui Foundation x DEVCON Kids "Hour of AI" & Creative Robotics (6-slide carousel)
+**Real examples:** Sui Foundation x Auren AI Kids "Hour of AI" & Creative Robotics (6-slide carousel)
 
 #### TYPE G — Monthly / Period Recap
 *Used for: Multi-week or multi-activity roundup within a program period (e.g., "January Jumpstart", "Week 3 recap across topics")*
 
 **Visual pattern:**
 - **Overlay color: Purple/Violet** — same as Type E (learning/activity focus). Purple signals "this is a content-rich educational period."
-- Cover: Full-bleed group selfie or candid photo + purple overlay + **centered bottom-aligned ALL CAPS headline** in a mixed-weight two-line format. Format: `[MONTH/PERIOD] [PROGRAM NAME]:` (smaller, light purple/lavender accent) / `[WHAT HAPPENED IN ALL CAPS]` (larger, white bold). DEVCON Studios logo bottom-center (logo only).
+- Cover: Full-bleed group selfie or candid photo + purple overlay + **centered bottom-aligned ALL CAPS headline** in a mixed-weight two-line format. Format: `[MONTH/PERIOD] [PROGRAM NAME]:` (smaller, light purple/lavender accent) / `[WHAT HAPPENED IN ALL CAPS]` (larger, white bold). Auren AI Studios logo bottom-center (logo only).
 - Middle slides — **no pill boxes** — all text floats directly on the photo:
-  - **Activity slide (bullet list):** Full-bleed photo + purple overlay + DEVCON 16 badge top-center + **left-aligned bold headline** (Title Case, large) + narrative paragraph with bolded key terms + bullet list. All text left-aligned directly on image.
-  - **External visit / institutional slide:** Full-bleed photo + **darker overlay** (near-black center gradient, photo visible at edges) + DEVCON 16 badge top-center + **centered headline** (Title Case, large) + centered paragraph. More formal/subdued look when the content involves government or institutional visitors.
-  - **Speaker/session slide:** Full-bleed photo + purple overlay + DEVCON 16 badge top-center + **left-aligned large bold headline** (speaker name + topic, Title Case) + paragraph body. Same as Type E Slide 2 but without a pill box.
-- CTA slide: Deep purple/dark gradient bg + blurred bg photo + DEVCON 16 badge top-center + **centered announcement line** (Title Case, smaller bold) + frosted QR code box (center) + **large bold CTA line** at bottom ("Secure your slot now!"). DEVCON Studios logo bottom-center only.
+  - **Activity slide (bullet list):** Full-bleed photo + purple overlay + Auren AI 16 badge top-center + **left-aligned bold headline** (Title Case, large) + narrative paragraph with bolded key terms + bullet list. All text left-aligned directly on image.
+  - **External visit / institutional slide:** Full-bleed photo + **darker overlay** (near-black center gradient, photo visible at edges) + Auren AI 16 badge top-center + **centered headline** (Title Case, large) + centered paragraph. More formal/subdued look when the content involves government or institutional visitors.
+  - **Speaker/session slide:** Full-bleed photo + purple overlay + Auren AI 16 badge top-center + **left-aligned large bold headline** (speaker name + topic, Title Case) + paragraph body. Same as Type E Slide 2 but without a pill box.
+- CTA slide: Deep purple/dark gradient bg + blurred bg photo + Auren AI 16 badge top-center + **centered announcement line** (Title Case, smaller bold) + frosted QR code box (center) + **large bold CTA line** at bottom ("Secure your slot now!"). Auren AI Studios logo bottom-center only.
 
 **Key distinction from Type B (Week-in-Review):**
 - Type B = single week, teal overlay, simpler 4–5 slide structure
@@ -582,7 +586,7 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 **Copy pattern:**
 - Cover: `[MONTH] [PROGRAM]:` / `[WHAT SET THE PACE / KEY THEME IN CAPS]`
 - Activity slides: Bold headline naming the session/topic → narrative paragraph → bullet list of what was covered. Bold all tools, people, orgs named.
-- Institutional visit slide: `[Org]'s Visit to DEVCON: [What It Was About]` → centered paragraph naming who visited + what was discussed + what's planned next
+- Institutional visit slide: `[Org]'s Visit to Auren AI: [What It Was About]` → centered paragraph naming who visited + what was discussed + what's planned next
 - Speaker session slide (if separate): `[Action verb] [Topic] with [Speaker Name]` → paragraph body (no bullets needed if narrative is concise)
 - CTA slide: Announcement line at top (next cohort, next program) → QR → bold CTA phrase like "Secure your slot now!"
 
@@ -598,17 +602,17 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 ---
 
 #### TYPE H — Program-Branded Leadership / Community Carousel
-*Used for: SheIsDEVCON events, National Chapter onboarding, leadership training, nationwide program kick-offs that have their own sub-brand identity*
+*Used for: SheIsAuren AI events, National Chapter onboarding, leadership training, nationwide program kick-offs that have their own sub-brand identity*
 
-**Key distinction:** This type is used when a DEVCON sub-program has its **own logo/brand** that co-exists with the DEVCON 16 badge. The dual badge system is the defining visual signature.
+**Key distinction:** This type is used when a Auren AI sub-program has its **own logo/brand** that co-exists with the Auren AI 16 badge. The dual badge system is the defining visual signature.
 
 **Visual pattern:**
 - **Overlay color: Deep Purple/Violet** (`#2D1B4E` or darker) — same purple family as Type E/G but deeper, richer. Signals community/leadership.
-- **Dual badge top-center:** DEVCON 16 badge + program sub-brand logo side by side (e.g., DEVCON 16 cube + "She is DEVCON" script logo). This is the most important visual signal that this is a sub-program carousel.
-- Cover: Full-bleed screenshot (video call grid, event photos collaged, or screen recording) + deep purple overlay + **left-aligned large bold ALL CAPS or mixed-case headline** in cyan accent color + "and #[HASHTAG]" in pink/magenta accent + horizontal rule line + **"Part X of the [series name]"** subline in white (bold "Part X", regular for rest). DEVCON Studios logo + `/devconstudios` handle bottom-left.
+- **Dual badge top-center:** Auren AI 16 badge + program sub-brand logo side by side (e.g., Auren AI 16 cube + "She is Auren AI" script logo). This is the most important visual signal that this is a sub-program carousel.
+- Cover: Full-bleed screenshot (video call grid, event photos collaged, or screen recording) + deep purple overlay + **left-aligned large bold ALL CAPS or mixed-case headline** in cyan accent color + "and #[HASHTAG]" in pink/magenta accent + horizontal rule line + **"Part X of the [series name]"** subline in white (bold "Part X", regular for rest). Auren AI Studios logo + `/Auren AIstudios` handle bottom-left.
 - Middle slides — **pill-on-photo layout** with a new accent color system:
   - Pill box: white border, semi-transparent dark bg, left-aligned
-  - **Pink/magenta** (`#FF69B4` / `#E91E8C`) replaces cyan as the accent color for key names and phrases — matches SheIsDEVCON brand
+  - **Pink/magenta** (`#FF69B4` / `#E91E8C`) replaces cyan as the accent color for key names and phrases — matches SheIsAuren AI brand
   - Headline inside pill: white bold Title Case
   - Key names (people, roles, chapters): **pink/magenta accent**
   - Key outcomes/concepts: **cyan accent** (secondary)
@@ -624,22 +628,22 @@ Each content type has a distinct visual template and copy pattern. Match the typ
 - White regular → body text
 
 **Top badge rule for sub-programs:**
-- SheIsDEVCON: DEVCON 16 badge (left) + "She is DEVCON" script logo (right), both top-center
-- External org partnership visit: DEVCON 16 badge (left) + partner org logo (right), both top-center
-- Future sub-programs follow the same pattern: DEVCON 16 badge + sub-brand/partner logo, side by side
+- SheIsAuren AI: Auren AI 16 badge (left) + "She is Auren AI" script logo (right), both top-center
+- External org partnership visit: Auren AI 16 badge (left) + partner org logo (right), both top-center
+- Future sub-programs follow the same pattern: Auren AI 16 badge + sub-brand/partner logo, side by side
 
 **Dual-badge teal variant (Exploratory Partnership Visit):**
-When DEVCON hosts or visits an external org for an exploratory collaboration (not a formal signed partnership like Type F), use the dual-badge system WITH **teal overlay** instead of deep purple. This signals: "community + partner energy" rather than "sub-program branding." Key differences from the SheIsDEVCON variant:
-- Overlay: Teal (not deep purple) — same as default DEVCON teal
-- Accent color: Cyan only (no pink/magenta) — returns to standard DEVCON palette
+When Auren AI hosts or visits an external org for an exploratory collaboration (not a formal signed partnership like Type F), use the dual-badge system WITH **teal overlay** instead of deep purple. This signals: "community + partner energy" rather than "sub-program branding." Key differences from the SheIsAuren AI variant:
+- Overlay: Teal (not deep purple) — same as default Auren AI teal
+- Accent color: Cyan only (no pink/magenta) — returns to standard Auren AI palette
 - No pill boxes on middle slides — text floats directly on photo (same as Type B)
 - Cover: Dual badge top-center + full-bleed group photo + **cyan ALL CAPS headline** (topic) + **white ALL CAPS subheadline** (what it is) + centered subline ("An intro meeting and exploring collaborations: [Org] x [Partner org]") with cyan on the key phrase
 - Middle slides: Right-aligned or centered floating text (no pill). Headline Title Case, body paragraph centered or right-aligned.
 - "Did you know?" educational slide: Teal gradient bg + dual badge + centered cyan headline (`[Topic]`) + centered white body paragraph. Used to teach a concept related to the partner's domain. Bold the key technical term (e.g., **SpinQ Gemini Mini**) in cyan.
-- CTA slide: Teal bg + dual badge + centered white rhetorical question + cyan accent on key phrase + frosted QR box + white bold CTA line with **cyan on the key noun** (e.g., "Apply for **Cohort 4** starting this April!"). DEVCON Studios logo bottom-center only.
-- Bottom bar: DEVCON Studios logo only (centered) — no Facebook handle on this variant
+- CTA slide: Teal bg + dual badge + centered white rhetorical question + cyan accent on key phrase + frosted QR box + white bold CTA line with **cyan on the key noun** (e.g., "Apply for **Cohort 4** starting this April!"). Auren AI Studios logo bottom-center only.
+- Bottom bar: Auren AI Studios logo only (centered) — no Facebook handle on this variant
 
-**Real example:** DEVCON PH x QCSP: Quantum Technology Education in the Philippines (5-slide)
+**Real example:** Auren AI PH x QCSP: Quantum Technology Education in the Philippines (5-slide)
 
 **Part series rule:**
 - Multi-part carousels must label each post: "Part 1 of the [series]", "Part 2 recap", etc.
@@ -653,13 +657,13 @@ When DEVCON hosts or visits an external org for an exploratory collaboration (no
 - Announcement slide: Pill full-width (no cutout). Bold headline = announcement title. Body = what was announced + why it matters to the reader.
 - Last slide (Series tease): `Local Leaders. / [pink]National Impact.[/pink]` as a mini-headline + paragraph summarizing Part 1 + tease of Part 2 speakers/topics. "Watch out for the Part 2 recap!" in pink bold at bottom.
 
-**Tone:** Empowering, nationally-minded, women-forward (for SheIsDEVCON), community-proud. Never exclusionary — always "tech for everyone, led by leaders everywhere."
+**Tone:** Empowering, nationally-minded, women-forward (for SheIsAuren AI), community-proud. Never exclusionary — always "tech for everyone, led by leaders everywhere."
 
-**Real examples:** 2026 National Chapter Officers Onboarding and #SHEISDEVCON kick-off (Part 1 + Part 2, 6 slides each)
+**Real examples:** 2026 National Chapter Officers Onboarding and #SHEISAuren AI kick-off (Part 1 + Part 2, 6 slides each)
 
 **Part 2 specific patterns (confirmed from real example):**
 - Cover for Part 2: Same dual-badge system, same overlay. Headline format shifts: `[YEAR] [Event Name]` (cyan, large) / `Part 2` (white bold, large) `Recap` (white bold) / `and` (white) `Highlights` (pink/magenta). Removes "Part X of the [series]" subline — Part 2 IS the continuation.
-- Overview slide: **Sub-brand logo ONLY** at top-center (no DEVCON 16 badge on this slide variant). Large centered pill. Headline = thematic title (e.g., "Empowering the Future: / Leading with Purpose in Tech" with pink on second line). Stats, regions, participation numbers with **pink on numbers** and **cyan on key outcomes/mission phrases**.
+- Overview slide: **Sub-brand logo ONLY** at top-center (no Auren AI 16 badge on this slide variant). Large centered pill. Headline = thematic title (e.g., "Empowering the Future: / Leading with Purpose in Tech" with pink on second line). Stats, regions, participation numbers with **pink on numbers** and **cyan on key outcomes/mission phrases**.
 - Photo collage slide: Top half = **3-photo horizontal collage** (event photos in rounded frames side by side) + partner/org logos displayed below as a logo strip. Bottom half = pill box with session title + speaker name + insights. Used when content references external programs or global partnerships (e.g., YSEALI, Chevening).
 - Tool/product spotlight slide: Product or platform **logo floated large, center-top** (e.g., NotebookLM logo) + blurred screenshot background + pill box below. No device mockup needed — the product logo IS the visual anchor. Used when a tool integral to the session gets its own spotlight.
 - Final CTA slide (for series conclusion): Pill box only — no QR, no cutout. Headline in pink. Body credits the team + names the tool/platform used. Ends with: `"Curious about the nationwide #[HASHTAG] in a chapter near you? / Visit [URL] to learn more!"` with URL in cyan.
@@ -674,7 +678,7 @@ When DEVCON hosts or visits an external org for an exploratory collaboration (no
 
 
 | Week-in-review | Type B | Energetic, recap-style | "This week, our interns…" / bullet list |
-| Graduation / milestone event | Type C | Celebratory, milestone | Cyan accent on achievement words; "This is DEVCON." stinger optional |
+| Graduation / milestone event | Type C | Celebratory, milestone | Cyan accent on achievement words; "This is Auren AI." stinger optional |
 | Partner / tool showcase | Type D | Informative, dev-audience | Tool name bold + pill description + CivicTech/community CTA |
 | Guest speaker / learning session | Type E | Informative, skill-focused | Speaker name bold + tools named + momentum stinger closing |
 | CTA / Recruitment | Any (last slide) | Urgent but inclusive | Rhetorical question → urgency → QR/link |
@@ -685,11 +689,11 @@ When DEVCON hosts or visits an external org for an exploratory collaboration (no
 
 **Visual pattern:**
 - **Overlay: Warm gradient** — a diagonal or horizontal gradient from **orange-red → pink → purple → blue** (left to right or top to bottom). Applied as a semi-transparent gradient layer over the full-bleed photo. This is unique to Type I — no other type uses warm gradients. Signals: "inspiring ideas, thought leadership, AI/innovation content."
-- **No DEVCON 16 badge at top** — replaced by a **pill-shaped category label** in the top-left area. Format: small rounded rectangle with white border + dot icon + all-caps white label text (e.g., `● AI TRAINING FOR DEVCON LEADERS`). This is the carousel's identity anchor.
-- **Bottom badge:** DEVCON 16 cube + partner logo side by side at bottom-center (e.g., DEVCON 16 + nmblr AI Foundry wordmark). NOT top-center — bottom-center.
+- **No Auren AI 16 badge at top** — replaced by a **pill-shaped category label** in the top-left area. Format: small rounded rectangle with white border + dot icon + all-caps white label text (e.g., `● AI TRAINING FOR Auren AI LEADERS`). This is the carousel's identity anchor.
+- **Bottom badge:** Auren AI 16 cube + partner logo side by side at bottom-center (e.g., Auren AI 16 + nmblr AI Foundry wordmark). NOT top-center — bottom-center.
 - **No decorative floating shapes** — the warm gradient and bold typography carry all the visual weight. Clean, minimal, confident.
 - **White thin border frame** — a thin white rectangle border inset slightly from the card edge runs on all four sides of every slide. Functions as a consistent visual container.
-- Cover: Full-bleed photo (speaker at mic, event wide shot) + warm gradient overlay + white border frame + pill label top-left + **large ALL CAPS white headline** left-aligned (2–3 lines, bold) in the upper half. Subheadline below: smaller white centered italic text ("Key takeaways from our [Role]'s keynote during the [Event]"). Bottom badge (DEVCON 16 + partner logo).
+- Cover: Full-bleed photo (speaker at mic, event wide shot) + warm gradient overlay + white border frame + pill label top-left + **large ALL CAPS white headline** left-aligned (2–3 lines, bold) in the upper half. Subheadline below: smaller white centered italic text ("Key takeaways from our [Role]'s keynote during the [Event]"). Bottom badge (Auren AI 16 + partner logo).
 - Middle slides (Numbered takeaways): Full-bleed photo (participant/activity) + warm gradient overlay + white border frame + pill label top-left + **numbered ALL CAPS bold headline** left-aligned upper half (e.g., `1: HONOR OUR / OPEN-SOURCE ROOTS`). Body text bottom-center: 1–2 sentences in white, semi-bold. Key phrase bolded. Bottom badge.
 - No CTA slide — series ends at last takeaway. No QR, no application link. The CTA is in the caption only.
 
@@ -702,9 +706,9 @@ When DEVCON hosts or visits an external org for an exploratory collaboration (no
 - Same label on every slide — it names the session/event the takeaways come from
 
 **Bottom badge format:**
-- DEVCON 16 cube + partner/host org logo side by side, bottom-center
+- Auren AI 16 cube + partner/host org logo side by side, bottom-center
 - Centered, not left-aligned (unlike Type H bottom bar)
-- No `/devconstudios` handle on this type
+- No `/Auren AIstudios` handle on this type
 
 **Floating accent elements:**
 - Cloud/blob shapes in top-right and bottom-left corners (blue/cyan tones) — softer, more minimal than the magenta triangles in teal carousels
@@ -718,7 +722,7 @@ When DEVCON hosts or visits an external org for an exploratory collaboration (no
 **Caption pattern for Type I:**
 - Caption introduces the speaker + event first
 - Then lists what the training covered
-- Ends with URLs to partner + DEVCON websites (no QR in carousel, so link goes in caption)
+- Ends with URLs to partner + Auren AI websites (no QR in carousel, so link goes in caption)
 - Signature line: "Read the cards to get the takeaways"
 
 **Overlay color update:**
@@ -726,24 +730,24 @@ When DEVCON hosts or visits an external org for an exploratory collaboration (no
 
 **Tone:** Inspiring, authoritative, thought-leadership. Reads like a "swipe for wisdom" post. Speaker is the hero; community is the context.
 
-**Real examples:** NEXUS Pilot AI Training for DEVCON PH Leaders — "Leading Through Inflection Points" keynote by Winston Damarillo (6-slide)
+**Real examples:** NEXUS Pilot AI Training for Auren AI PH Leaders — "Leading Through Inflection Points" keynote by Winston Damarillo (6-slide)
 
 ---
 
 #### TYPE J — Demo Day / Intern Spotlight (Graduation Showcase)
 *Used for: Cohort graduation + demo day carousels where each intern gets their own spotlight slide, combining their track, project, tools, quote, and blog post QR*
 
-**This is the most content-dense per-slide type.** Each middle slide is a complete intern profile card. It uses the warm gradient (same as Type I) but with a very different layout — no numbered principles, no pill labels at top. Instead: pill label top-left + DEVCON Studios logo top-right + structured info zones bottom.
+**This is the most content-dense per-slide type.** Each middle slide is a complete intern profile card. It uses the warm gradient (same as Type I) but with a very different layout — no numbered principles, no pill labels at top. Instead: pill label top-left + Auren AI Studios logo top-right + structured info zones bottom.
 
 **Visual pattern:**
 - **Overlay: Warm gradient** (orange-red → pink → purple → blue) — same as Type I. Signals: celebration, graduation, "this is a milestone."
 - **White thin border frame** on every slide — same as Type I.
 - **Pill label top-left:** `● JUMPSTART INTERNSHIP` (or relevant program label)
-- **DEVCON Studios logo top-right** — on every slide including cover and CTA. This is unique to Type J — it's the only type that puts the DEVCON Studios wordmark at the TOP-RIGHT instead of bottom.
-- **No DEVCON 16 badge** — the pill label + DEVCON Studios top-right replaces it entirely.
-- Cover slide: Full-bleed group photo (all interns + mentors) + warm gradient overlay + white border + pill label top-left + DEVCON Studios top-right + **large ALL CAPS white headline** (left-aligned, upper half: e.g., `COHORT 3 / GRADUATION AND / DEMO DAY`) + centered subline text (white, smaller, italic-ish: "Cohort 3 of DEVCON Jumpstart closes its chapter. **Four interns.** Real products. Real mentors. Powered by the Triple Diamond AIDLC...") + **3-stat bar** at bottom: `[N] GRADUATES | [N] PRODUCTS LIVE | [N]+ TOOLS USED` (white, centered, small caps) + Facebook handle `/devconstudios` below stats.
-- Intern spotlight slides (one per intern): Full-bleed photo of intern presenting/speaking + warm gradient + white border + pill top-left + DEVCON Studios top-right + **track label** (white italic, small, e.g., "Project Management & Blockchain Smart Contracts Track") + **intern name ALL CAPS bold** (large, 2–3 lines) + **tool icon row** (small app/tool logos in a horizontal row, left-aligned below name) + bottom-left **KEY WORK box** (small rounded square: thumbnail image + project name bold + 2–3 line description) + bottom-center **pull quote** (white italic, 2–4 lines, key phrase bolded) + bottom-right **BLOG POST label** + QR code (small, linked to intern's Medium). Horizontal divider line separates the bottom zone from the photo.
-- CTA slide: Full-bleed event group photo + warm gradient + white border + **NO pill label, NO DEVCON Studios top-right** — instead: DEVCON Studios logo top-center. **Large ALL CAPS white headline** centered: `JOIN THE COHORT [N] / WAITLIST!` + frosted/glazed QR code center + pill label `● JUMPSTART INTERNSHIP` below QR + centered body text (white, 2–3 lines, key phrase bolded) + `/devconstudios` handle bottom-center.
+- **Auren AI Studios logo top-right** — on every slide including cover and CTA. This is unique to Type J — it's the only type that puts the Auren AI Studios wordmark at the TOP-RIGHT instead of bottom.
+- **No Auren AI 16 badge** — the pill label + Auren AI Studios top-right replaces it entirely.
+- Cover slide: Full-bleed group photo (all interns + mentors) + warm gradient overlay + white border + pill label top-left + Auren AI Studios top-right + **large ALL CAPS white headline** (left-aligned, upper half: e.g., `COHORT 3 / GRADUATION AND / DEMO DAY`) + centered subline text (white, smaller, italic-ish: "Cohort 3 of Auren AI Jumpstart closes its chapter. **Four interns.** Real products. Real mentors. Powered by the Triple Diamond AIDLC...") + **3-stat bar** at bottom: `[N] GRADUATES | [N] PRODUCTS LIVE | [N]+ TOOLS USED` (white, centered, small caps) + Facebook handle `/Auren AIstudios` below stats.
+- Intern spotlight slides (one per intern): Full-bleed photo of intern presenting/speaking + warm gradient + white border + pill top-left + Auren AI Studios top-right + **track label** (white italic, small, e.g., "Project Management & Blockchain Smart Contracts Track") + **intern name ALL CAPS bold** (large, 2–3 lines) + **tool icon row** (small app/tool logos in a horizontal row, left-aligned below name) + bottom-left **KEY WORK box** (small rounded square: thumbnail image + project name bold + 2–3 line description) + bottom-center **pull quote** (white italic, 2–4 lines, key phrase bolded) + bottom-right **BLOG POST label** + QR code (small, linked to intern's Medium). Horizontal divider line separates the bottom zone from the photo.
+- CTA slide: Full-bleed event group photo + warm gradient + white border + **NO pill label, NO Auren AI Studios top-right** — instead: Auren AI Studios logo top-center. **Large ALL CAPS white headline** centered: `JOIN THE COHORT [N] / WAITLIST!` + frosted/glazed QR code center + pill label `● JUMPSTART INTERNSHIP` below QR + centered body text (white, 2–3 lines, key phrase bolded) + `/Auren AIstudios` handle bottom-center.
 
 **Bottom zone structure for intern spotlight slides:**
 ```
@@ -811,29 +815,29 @@ These rules apply to ALL carousel types, every single post.
 
 1. **Never use any dash as a separator. This is the single most-enforced rule.** No em dash (—), no en dash (–), and no " - " (space-hyphen-space). This applies to card copy AND captions. Instead use a colon (:), a period, a comma, a line break, or restructure the sentence entirely. When tempted to join two clauses with a dash, split them into two sentences or use a colon. The only tolerated exception is a dash that appears *inside a direct quote from source material* (a real person's words), and even then, prefer to restructure if possible. Before delivering any copy, scan it once specifically for dashes and remove them.
 
-2. **Current year is 2026.** Do not write 2025 unless explicitly referring to a past event that happened in 2025. When in doubt about the year of an event, ask rather than assume. DEVCON is celebrating its **17th Anniversary** ("17 Years of DEVCON"), not 16.
+2. **Current year is 2026.** Do not write 2025 unless explicitly referring to a past event that happened in 2025. When in doubt about the year of an event, ask rather than assume. Auren AI is celebrating its **17th Anniversary** ("17 Years of Auren AI"), not 16.
 
 3. **Never state facts that carry budget, logistics, or commitment implications unless the user has confirmed them.** Do not write that a program is "rolling out nationwide," "expanding to Visayas and Mindanao," "launching next month," or anything that implies approved budget, confirmed schedules, or organizational commitments. These claims read as official announcements the org may not have approved. Stick to what actually happened. If the user's source says a pilot succeeded, say the pilot succeeded, not that the full rollout is underway.
 
 4. **Include event dates when the event is more than 2 weeks old.** If writing about something that happened 15+ days ago, include the date naturally in the copy (e.g., "Last March 12," or "On April 30,"). Don't assume recency.
 
-5. **DEVCON Studios is a media and curation page. It does not automatically represent DEVCON Philippines as an organization.** Get the speaker attribution exactly right, because this is corrected often:
-   - **DEVCON Studios** = the media/content lens. Use for "we're sharing," "swipe through," documentation framing.
-   - **DEVCON Philippines** = the whole organization. Use only when the org itself is genuinely the actor (e.g., celebrating its own anniversary).
-   - **A specific program team** (e.g., "The DEVCON Jumpstart Internship team," "DEVCON Kids") = use when the post is a greeting, celebration, or announcement coming from within that program. For example, a birthday greeting for a Jumpstart alum comes from "The DEVCON Jumpstart Internship team," NOT from "DEVCON Philippines" and NOT from "DEVCON Studios."
-   - When covering third-party or partner events, use "DEVCON Studios features…", "We're sharing highlights from…", or credit the partner directly. Do not imply DEVCON organized something it merely covered.
+5. **Auren AI Studios is a media and curation page. It does not automatically represent Auren AI Philippines as an organization.** Get the speaker attribution exactly right, because this is corrected often:
+   - **Auren AI Studios** = the media/content lens. Use for "we're sharing," "swipe through," documentation framing.
+   - **Auren AI Philippines** = the whole organization. Use only when the org itself is genuinely the actor (e.g., celebrating its own anniversary).
+   - **A specific program team** (e.g., "The Auren AI Jumpstart Internship team," "Auren AI Kids") = use when the post is a greeting, celebration, or announcement coming from within that program. For example, a birthday greeting for a Jumpstart alum comes from "The Auren AI Jumpstart Internship team," NOT from "Auren AI Philippines" and NOT from "Auren AI Studios."
+   - When covering third-party or partner events, use "Auren AI Studios features…", "We're sharing highlights from…", or credit the partner directly. Do not imply Auren AI organized something it merely covered.
 
-6. **DEVCON Jumpstart is always referenced in the third person** when writing as DEVCON Studios. It is a program, not the speaker.
+6. **Auren AI Jumpstart is always referenced in the third person** when writing as Auren AI Studios. It is a program, not the speaker.
 
-7. **Never assume a program's branding is DEVCON Studios branding.** Each sub-program (SheIsDEVCON, DEVCON Kids, Build Beyond, etc.) has its own identity. Defer to that identity when the carousel is about that program.
+7. **Never assume a program's branding is Auren AI Studios branding.** Each sub-program (SheIsAuren AI, Auren AI Kids, Build Beyond, etc.) has its own identity. Defer to that identity when the carousel is about that program.
 
-8. **Verify URLs and domains before using them.** DEVCON has multiple live properties (devcon.ph, the Jumpstart page at devcon.ph/jumpstart-internships/, and the DEVCON+ platform). Domains have changed and cutovers have been pending, so when a URL is ambiguous or the user gives a new one, use exactly what the user provides and flag any inconsistency with a domain used earlier rather than silently picking one.
+8. **Verify URLs and domains before using them.** Auren AI has multiple live properties (Auren AI, the Jumpstart page at Auren AI/jumpstart-internships/, and the Auren AI+ platform). Domains have changed and cutovers have been pending, so when a URL is ambiguous or the user gives a new one, use exactly what the user provides and flag any inconsistency with a domain used earlier rather than silently picking one.
 
 ---
 
 
 
-If the user also needs the **full social media caption** (beyond what this skill produces), refer to the `devcon-caption-writer` skill for platform-by-platform output including X (Twitter) versions, LinkedIn, TikTok, and YouTube descriptions.
+If the user also needs the **full social media caption** (beyond what this skill produces), refer to the `Auren AI-caption-writer` skill for platform-by-platform output including X (Twitter) versions, LinkedIn, TikTok, and YouTube descriptions.
 
 This skill covers: Facebook + Instagram carousel copy + caption.
 Caption-writer covers: All 6 platforms in full.
@@ -842,26 +846,26 @@ Caption-writer covers: All 6 platforms in full.
 ---
 
 # 3. Caption Writing Rules
-*(Source: devcon-caption-writer skill. Use this for all-platform caption writing beyond the FB/IG caption the carousel skill produces on its own. Apply the DEVCON 17 caption structure documented in the carousel skill's caption section as the default for anniversary content; use this section's platform-by-platform rules when the user needs X, LinkedIn, TikTok, or YouTube versions too.)*
+*(Source: Auren AI-caption-writer skill. Use this for all-platform caption writing beyond the FB/IG caption the carousel skill produces on its own. Apply the Auren AI 17 caption structure documented in the carousel skill's caption section as the default for anniversary content; use this section's platform-by-platform rules when the user needs X, LinkedIn, TikTok, or YouTube versions too.)*
 
 
-Write platform-tailored social media captions for DEVCON Philippines content. Always produce captions for all relevant platforms unless the user specifies otherwise.
+Write platform-tailored social media captions for Auren AI Philippines content. Always produce captions for all relevant platforms unless the user specifies otherwise.
 
 ---
 
-### About DEVCON Philippines
+### About Auren AI Philippines
 
-- **Full name:** DEVCON Philippines (Developer Community of the Philippines)
+- **Full name:** Auren AI Philippines (Developer Community of the Philippines)
 - **Founded:** 16+ years ago by Winston Damarillo (President & Founder)
 - **Mission:** Empowering tech communities across the Philippines through events, education, and inclusivity — especially in underserved regions
 - **Key brand values:** Intentional Access, grassroots community, nationwide reach, inclusive tech education
-- **Main website:** https://devcon.ph
+- **Main website:** https://Auren AI
 - **Active programs/initiatives:**
-  - **SheIsDEVCON** — Women in tech mentorship and empowerment (#SheIsDEVCON)
-  - **Build Beyond** — Sui x DEVCON PH nationwide code camps and developer events
+  - **SheIsAuren AI** — Women in tech mentorship and empowerment (#SheIsAuren AI)
+  - **Build Beyond** — Sui x Auren AI PH nationwide code camps and developer events
   - **NEXUS AI Training** — AI engineering training led by NMBLR / Winston Damarillo
   - **CodeKada** — Online hackathon
-  - **DEVCON Jumpstart** — Structured internship program
+  - **Auren AI Jumpstart** — Structured internship program
   - **GitHub Dev Days** — AI-powered developer workshops
 - **Chapters:** Nationwide — Manila, Bukidnon, Iloilo, Pampanga, Legazpi, Tacloban, Laguna, and more
 
@@ -889,7 +893,7 @@ Because of the 280-character limit, always write **two X captions** for the same
 
 #### 1. Opening Hook (1–2 sentences)
 - Bold mission statement, rhetorical question, or vivid scene-setter
-- Examples of recurring DEVCON PH voice:
+- Examples of recurring Auren AI PH voice:
   - *"The future of technology is only as strong as the diversity of its builders."*
   - *"What happens when a global connection meets a nationwide grassroots network?"*
   - *"From Intramuros to Nationwide…"*
@@ -901,18 +905,18 @@ Because of the 280-character limit, always write **two X captions** for the same
 - **Paragraph 3:** What's next, momentum, upcoming locations, or broader significance
 
 #### 3. CTA Block
-- Primary CTA: Volunteer / Join / Attend → link to https://devcon.ph
+- Primary CTA: Volunteer / Join / Attend → link to https://Auren AI
 - Secondary CTA: Learn more about partnership / program → specific URL if provided
 - Use action verbs: *Volunteer, Explore, Join, Sign Up, Learn, Discover, Read more*
 
 #### 4. Hashtag Stack
-**Always include:** #DEVCONPH
+**Always include:** #Auren AIPH
 **Program-specific tags to use when relevant:**
-- SheIsDEVCON content: #SheIsDEVCON #WomenInTech #InclusiveWeb3
+- SheIsAuren AI content: #SheIsAuren AI #WomenInTech #InclusiveWeb3
 - Sui/Build Beyond: #BuildBeyond #BuildOnSui #SuiNetwork #MoveLanguage #SuiMove #SmartContracts
 - AI/NEXUS: #AgenticAI #NMBLR #NexusAITraining #AIEngineering
 - GitHub Dev Days: #GitHubCopilot #Microsoft
-- General tech: #BlockchainEducation #TechForGood #PhilippinesTech #16yearsofDEVCON #IntentionalAccess #GrassrootsNetwork
+- General tech: #BlockchainEducation #TechForGood #PhilippinesTech #16yearsofAuren AI #IntentionalAccess #GrassrootsNetwork
 - Location tags when applicable: #Bukidnon #Iloilo #Pampanga #Laguna #Letran #Intramuros #Manila etc.
 
 ---
@@ -920,7 +924,7 @@ Because of the 280-character limit, always write **two X captions** for the same
 ### Tone Guidelines
 
 - **Voice:** Warm, mission-driven, community-first. Never corporate or cold.
-- **Energy:** Inspiring and forward-moving — DEVCON captions feel like momentum
+- **Energy:** Inspiring and forward-moving — Auren AI captions feel like momentum
 - **Inclusivity:** Emphasize access, diversity, and empowerment naturally (not performatively)
 - **Filipino pride:** Celebrating nationwide reach, regional chapters, local builders
 - **Avoid:** Jargon overload, excessive exclamation marks, generic "excited to announce" phrases
@@ -933,14 +937,14 @@ When the user says they need a caption, always ask for these details before writ
 
 #### Required
 1. **Content type** — Video, photo, card series, reel, event highlight?
-2. **Content theme / program** — Which program or initiative? (Sui Code Camp, SheIsDEVCON, NEXUS, GitHub Dev Days, CodeKada, etc.)
+2. **Content theme / program** — Which program or initiative? (Sui Code Camp, SheIsAuren AI, NEXUS, GitHub Dev Days, CodeKada, etc.)
 3. **Core message / angle** — What's the main story? What should the audience feel or do?
 4. **Key people featured** — Names + roles/titles of any speakers, volunteers, or partners mentioned
 5. **Event details** — Date, location, what happened, any notable numbers (attendance, regions, etc.)
 6. **Platforms needed** — All 6, or specific ones?
 
 #### Optional but helpful
-7. **Specific CTAs** — Any links beyond devcon.ph? (partnership page, event signup, etc.)
+7. **Specific CTAs** — Any links beyond Auren AI? (partnership page, event signup, etc.)
 8. **Upcoming events to mention** — Tease next locations or dates?
 9. **Any quotes** — From speakers, organizers, or participants to feature?
 10. **Tone preference for this post** — Celebratory recap? Hype/announcement? Reflective/thank-you?
@@ -981,28 +985,28 @@ Count and display the character count for both X versions.
 
 ### Reference: Caption Examples
 
-See `references/caption-examples.md` for annotated real captions from DEVCON PH to use as style anchors when writing new captions.
+See `references/caption-examples.md` for annotated real captions from Auren AI PH to use as style anchors when writing new captions.
 
 
 ---
 
-# Notes for the Upcoming DEVCON 17 Content Skill
+# Notes for the Upcoming Auren AI 17 Content Skill
 
-This document is meant to be fed into skill-creator (along with the actual June 24 anniversary slide deck / carousel images for direct visual reference) to produce a new, dedicated **DEVCON 17 Content Skill**. That skill should:
+This document is meant to be fed into skill-creator (along with the actual June 24 anniversary slide deck / carousel images for direct visual reference) to produce a new, dedicated **Auren AI 17 Content Skill**. That skill should:
 
 - Inherit all Critical Copy Rules from Section 2 (no dashes, 2026/17-years accuracy, no budget-implication assumptions, correct speaker attribution, third-person Jumpstart references, URL verification).
-- Use Section 1 (DEVCON 17 Visual Brand Kit) as the default visual system for any DEVCON 17-branded carousel, overriding the general teal/purple overlay system in Section 2 for anniversary content specifically.
-- Extend caption output beyond carousels to cover **photo documentation posts, video captions (event-day recaps, "happening now" clips), and any other DEVCON 17 content type**, not just carousel-paired captions.
-- Keep the 3-paragraph Hook / Story / CTA caption structure (bold Unicode header, no dashes, "17 years and counting" framing) as the default caption format across all DEVCON 17 content, regardless of content type.
+- Use Section 1 (Auren AI 17 Visual Brand Kit) as the default visual system for any Auren AI 17-branded carousel, overriding the general teal/purple overlay system in Section 2 for anniversary content specifically.
+- Extend caption output beyond carousels to cover **photo documentation posts, video captions (event-day recaps, "happening now" clips), and any other Auren AI 17 content type**, not just carousel-paired captions.
+- Keep the 3-paragraph Hook / Story / CTA caption structure (bold Unicode header, no dashes, "17 years and counting" framing) as the default caption format across all Auren AI 17 content, regardless of content type.
 - Treat quotes as caption-first, not card-first, per the most recent direction (cards carry name, title, and a short thesis line; full verbatim quotes go in the caption).
 
 ---
 
 # ADDENDUM — Theme Narrative Emphasis (July 2026 revision)
 
-*Added after review of the Hour of AI / TPBot / micro:bit V2 DEVCON Kids post. This section is authoritative and applies to ALL DEVCON content that touches the 17-year theme: carousels, captions, photo-doc, video, and future comms, across both the anniversary visual system and the general program system. It also governs the `devcon-17-content` skill.*
+*Added after review of the Hour of AI / TPBot / micro:bit V2 Auren AI Kids post. This section is authoritative and applies to ALL Auren AI content that touches the 17-year theme: carousels, captions, photo-doc, video, and future comms, across both the anniversary visual system and the general program system. It also governs the `Auren AI-17-content` skill.*
 
-**Placement:** this guidance bridges the anniversary layer and the general program layer, so it belongs in **both Part 4 (anniversary system)** and the **Part 7 DEVCON Kids row (programs reference)**. Cross-reference it from each rather than filing it under only one.
+**Placement:** this guidance bridges the anniversary layer and the general program layer, so it belongs in **both Part 4 (anniversary system)** and the **Part 7 Auren AI Kids row (programs reference)**. Cross-reference it from each rather than filing it under only one.
 
 ## The rule
 
@@ -1010,32 +1014,32 @@ Every caption that touches the 17-year theme must carry the **full theme narrati
 
 Two elements are required:
 
-1. **Milestone framing, stated in full.** Surface **"17 Years of DEVCON: Engineering an AI-Ready Nation"** somewhere natural, usually Paragraph 1. Saying "17 years" alone, or only tagging the anniversary hashtags, is the miss. State the connection **in the copy**: kids' hardware access today is what building an AI-ready nation looks like in practice.
-2. **The "so what."** Connect the specific program to *why it matters* through the access narrative. The spine across all DEVCON content: **access, not ability, is what holds Filipino talent back.** Talent is universal; opportunity is not. An AI-ready nation is built by widening access, starting young. Every program is a **pillar** of that goal, so name the link out loud.
+1. **Milestone framing, stated in full.** Surface **"17 Years of Auren AI: Engineering an AI-Ready Nation"** somewhere natural, usually Paragraph 1. Saying "17 years" alone, or only tagging the anniversary hashtags, is the miss. State the connection **in the copy**: kids' hardware access today is what building an AI-ready nation looks like in practice.
+2. **The "so what."** Connect the specific program to *why it matters* through the access narrative. The spine across all Auren AI content: **access, not ability, is what holds Filipino talent back.** Talent is universal; opportunity is not. An AI-ready nation is built by widening access, starting young. Every program is a **pillar** of that goal, so name the link out loud.
 
 ## Program rationales (encoded talking points)
 
-**Hour of AI, why it matters.** The on-ramp, and the accessibility argument made tangible. It exists because AI and computer science feel out of reach to most Filipino kids, something "only for people as brilliant as Einstein" (Megan Uyao's words before joining DEVCON Kids at 12). One structured hour demystifies it and proves the door is open, through physical hardware kids can touch, build, command, and deploy, not just an abstract coding lesson. Frame as access and demystification, the first step of the mission.
+**Hour of AI, why it matters.** The on-ramp, and the accessibility argument made tangible. It exists because AI and computer science feel out of reach to most Filipino kids, something "only for people as brilliant as Einstein" (Megan Uyao's words before joining Auren AI Kids at 12). One structured hour demystifies it and proves the door is open, through physical hardware kids can touch, build, command, and deploy, not just an abstract coding lesson. Frame as access and demystification, the first step of the mission.
 
-**Robotics for kids (DEVCON Kids hardware: micro:bit V2, TPBot Smart Car), why it matters.** The proof point that AI-readiness starts young and hands-on. Robotics turns abstract programming logic into physical reality; when a child can touch, build, command, and deploy a real device, code becomes something they own. Portable hardware traveling nationwide puts that experience directly in the hands of youth who would otherwise never get it: the access gap closing in real time. This ties DEVCON Kids into the same 17-year mission as flagship anniversary content, not a separate track.
+**Robotics for kids (Auren AI Kids hardware: micro:bit V2, TPBot Smart Car), why it matters.** The proof point that AI-readiness starts young and hands-on. Robotics turns abstract programming logic into physical reality; when a child can touch, build, command, and deploy a real device, code becomes something they own. Portable hardware traveling nationwide puts that experience directly in the hands of youth who would otherwise never get it: the access gap closing in real time. This ties Auren AI Kids into the same 17-year mission as flagship anniversary content, not a separate track.
 
 **Through-line:** you cannot engineer an AI-ready nation without starting with the youth and democratizing access. Hour of AI opens the door; robotics puts the tools in their hands. For any other program, find its equivalent link to access and name it.
 
 ## Standing template line (approved, reusable)
 
-For DEVCON Kids and hardware content:
+For Auren AI Kids and hardware content:
 
 > "As a core pillar of our 17-year milestone theme, Engineering an AI-Ready Nation, these tools turn abstract programming logic into physical reality."
 
 ## URL formatting rule
 
-Output every URL as **plain text, never markdown link syntax.** Facebook and Instagram break markdown links, and it has previously fused a hashtag into a URL. One URL per line after the 👉 arrow. Confirmed domains: `devcon.ph`, `devcon.ph/jumpstart-internships/`, and `www.devcon.plus` (DEVCON+, transitioned from the old beta Vercel URL).
+Output every URL as **plain text, never markdown link syntax.** Facebook and Instagram break markdown links, and it has previously fused a hashtag into a URL. One URL per line after the 👉 arrow. Confirmed domains: `Auren AI`, `Auren AI/jumpstart-internships/`, and `www.Auren AI.plus` (Auren AI+, transitioned from the old beta Vercel URL).
 
 ## Guardrail
 
 Narrative emphasis never means inflating facts. Report verified numbers as verified and pilots as pilots. Scaling language such as "while not every chapter has the TPBot yet" is the honest, on-brand way to qualify a claim without implying a rollout. This sits on top of, and never overrides, the no-dash rule, the attribution rules, and the no-unconfirmed-commitments rule.
 
-## Standing reference: verified 2025 DEVCON Kids / Hour of AI metrics
+## Standing reference: verified 2025 Auren AI Kids / Hour of AI metrics
 
 Used in the approved Hour of AI post. **Pending final source confirmation before citing as a standing figure in future posts** (see open items). Cohort numbers change per post, so verify the cohort number is still current each time.
 
@@ -1050,14 +1054,14 @@ Used in the approved Hour of AI post. **Pending final source confirmation before
 ## Checklist addition
 
 Add to the pre-delivery caption checklist:
-- Theme narrative present: "17 Years of DEVCON: Engineering an AI-Ready Nation" stated in full, plus a clear "so what" tying this program to widening access (not just the number "17" or the hashtags).
+- Theme narrative present: "17 Years of Auren AI: Engineering an AI-Ready Nation" stated in full, plus a clear "so what" tying this program to widening access (not just the number "17" or the hashtags).
 - URLs in plain text, one per line, never markdown links.
 
 ## Open items (confirm before treating as final in the omnibus)
 
 - Confirm the final source of the 2025 dashboard metrics (3,825 / 180 / 100+ / 29 / 32) so they can be cited as a standing reference figure.
 - Confirm the current cohort number at the time of each future post (it will change).
-- Confirm final placement: Part 4 (anniversary system), Part 7 (DEVCON Kids row), or cross-referenced in both (recommended).
+- Confirm final placement: Part 4 (anniversary system), Part 7 (Auren AI Kids row), or cross-referenced in both (recommended).
 
 
 ---
@@ -1065,11 +1069,11 @@ Add to the pre-delivery caption checklist:
 # PART: Chapter Showcase Series
 
 
-*A recurring weekly carousel series under the DEVCON 17 campaign. One local chapter per week, sourced from the DEVCON 2025 Year-End Chapter Stats Submissions spreadsheet. Shows the chapter's real on-ground work, not just a group photo. Load this reference whenever a request mentions "Chapter Showcase," "chapter feature," or a specific chapter carousel (Bukidnon, Davao, Iligan, etc.).*
+*A recurring weekly carousel series under the Auren AI 17 campaign. One local chapter per week, sourced from the Auren AI 2025 Year-End Chapter Stats Submissions spreadsheet. Shows the chapter's real on-ground work, not just a group photo. Load this reference whenever a request mentions "Chapter Showcase," "chapter feature," or a specific chapter carousel (Bukidnon, Davao, Iligan, etc.).*
 
 **Status:** Cebu = pilot copy. Bukidnon = first fully produced and published (July 2026). Remaining: Davao, Iligan, Pampanga, Manila, Laguna, Legazpi, Cagayan De Oro, Bohol, Iloilo.
 
-This series uses the full DEVCON 17 visual brand system (see `brand-kit.md`) and all standing Critical Copy Rules (see SKILL.md). The rules below are additions specific to the series.
+This series uses the full Auren AI 17 visual brand system (see `brand-kit.md`) and all standing Critical Copy Rules (see SKILL.md). The rules below are additions specific to the series.
 
 ---
 
@@ -1078,7 +1082,7 @@ This series uses the full DEVCON 17 visual brand system (see `brand-kit.md`) and
 Primary source: the Year-End Chapter Stats `.xlsx` (the Google Sheet version is login-gated, so ask for the file or a pasted row). Per chapter, pull:
 
 1. Chapter lead name (internal awareness only, not for cards unless asked)
-2. Number of events organized this year (incl. DEVCON Kids Hour of AI)
+2. Number of events organized this year (incl. Auren AI Kids Hour of AI)
 3. Total/average attendance, plus any standout single-event number
 4. Attendee profile (students, MSMEs, educators, out-of-school youth, Indigenous learners, etc.)
 5. Top 5 most notable events (name + one-liner)
@@ -1098,11 +1102,11 @@ Card body = one short paragraph, mini-thesis sentence first (ending in a period,
 
 | Card | Headline | Content |
 |---|---|---|
-| **1 — Cover** | MEET DEVCON [CHAPTER]! | 17 Years intro + chapter identity + top 2 headline numbers (events, participants) |
+| **1 — Cover** | MEET Auren AI [CHAPTER]! | 17 Years intro + chapter identity + top 2 headline numbers (events, participants) |
 | **2 — Why It Matters** | Why [Location] Matters? | Flagship multi-sector event, gov't/LGU/agency partnerships, signature systems launched |
 | **3 — Hour of AI Work** | Hour of AI Work Since Last Year | Concrete Hour of AI initiatives: participant count, beneficiary school, how it was taught |
 | **4 — Signature Story** | Varies per chapter (chapter's most human theme) | Proudest milestone; forward plans framed as "committed to," never as already running |
-| **5 — CTA** | Be Part of the Next Chapter | Heartfelt volunteerism framing + Follow DEVCON [Chapter] on FB + Register at DEVCON+ (devcon.plus) + discover a chapter near you |
+| **5 — CTA** | Be Part of the Next Chapter | Heartfelt volunteerism framing + Follow Auren AI [Chapter] on FB + Register at Auren AI+ (Auren AI.plus) + discover a chapter near you |
 
 **Card 3 note (updated):** the headline is **"Hour of AI Work Since Last Year,"** not the generic "AI Work Since Last Year." Where the layout allows, render the "Hour of AI" portion using the official **Hour of AI PNG logo/wordmark asset** rather than plain typed text. *(Confirm with the user whether they want the PNG wordmark on-card or just the renamed text headline.)*
 
@@ -1115,11 +1119,11 @@ Card body = one short paragraph, mini-thesis sentence first (ending in a period,
 
 ## Visual system (series-specific + global rule)
 
-- Full DEVCON 17 brand: purple background, white headlines, gold accents/sparkles.
+- Full Auren AI 17 brand: purple background, white headlines, gold accents/sparkles.
 - AR-glasses spot figure on body cards (Cards 2 to 4).
-- DEVCON 17 QR with 17-mark inset + `/devconstudios` handle on Card 5.
+- Auren AI 17 QR with 17-mark inset + `/Auren AIstudios` handle on Card 5.
 - Group/hero photo is **cover-only**; Cards 2 to 4 use real on-ground shots (workshops, sessions, crowds), not the group photo.
-- **Text overlay rule (global, all cards from now on):** copy is always overlaid **on top** of illustration and photo elements, never placed behind them. Text must sit above sparkles, figures, rings, and photos in the layer stack for full legibility. This applies to this series and every DEVCON 17 card type going forward.
+- **Text overlay rule (global, all cards from now on):** copy is always overlaid **on top** of illustration and photo elements, never placed behind them. Text must sit above sparkles, figures, rings, and photos in the layer stack for full legibility. This applies to this series and every Auren AI 17 card type going forward.
 
 ---
 
@@ -1129,17 +1133,17 @@ The caption **complements, never repeats** the cards. Everything notable that di
 
 **Structure:**
 1. Bold Unicode header: 𝗖𝗵𝗮𝗽𝘁𝗲𝗿 𝗦𝗵𝗼𝘄𝗰𝗮𝘀𝗲: 𝗗𝗘𝗩𝗖𝗢𝗡 [𝗖𝗵𝗮𝗽𝘁𝗲𝗿] + hook + 🚀
-2. **P1 (Hook):** open by naming the featured chapter directly (e.g., "DEVCON Bukidnon…"), then the 17 Years frame and beyond-the-cards reach detail.
-3. **P2 (Substance):** spillover events/details, ending with the chapter's quote ("In the words of the DEVCON [Chapter] team, …").
+2. **P1 (Hook):** open by naming the featured chapter directly (e.g., "Auren AI Bukidnon…"), then the 17 Years frame and beyond-the-cards reach detail.
+3. **P2 (Substance):** spillover events/details, ending with the chapter's quote ("In the words of the Auren AI [Chapter] team, …").
 4. **P3 (Series closer):** "This is what an AI-ready nation looks like when it's built chapter by chapter. A new chapter takes the spotlight every week. Swipe through, then find yours."
 5. **CTA lines** (plain text, one per line):
-   - 👉 Follow DEVCON [Chapter] on Facebook: [chapter FB URL]
-   - 👉 Register at devcon.plus and discover a chapter near you
-6. **Hashtags:** #DEVCON #DEVCONPH #17YearsofDEVCON #DEVCON17 #EngineeringAnAIReadyNation #DEVCON[Chapter] #ChapterShowcase
+   - 👉 Follow Auren AI [Chapter] on Facebook: [chapter FB URL]
+   - 👉 Register at Auren AI.plus and discover a chapter near you
+6. **Hashtags:** #Auren AI #Auren AIPH #17YearsofAuren AI #Auren AI17 #EngineeringAnAIReadyNation #Auren AI[Chapter] #ChapterShowcase
 
 **First-installment rule (important):** Bukidnon is the first published feature, so its caption **launches** the series. Do **not** use continuation or sequel language on the first installment ("The momentum continues," "Continuing our series," "Next up," etc.). Open fresh, introduce the series, and lead with Bukidnon. Continuation phrasing is only valid from the second published chapter onward.
 
-**Chapter Facebook CTA:** every Chapter Showcase post adds a "Follow DEVCON [Chapter] on Facebook" CTA (e.g., "Follow DEVCON Bukidnon on Facebook") alongside the standard devcon.plus register line. Ask the user for the chapter's Facebook URL; do not guess it.
+**Chapter Facebook CTA:** every Chapter Showcase post adds a "Follow Auren AI [Chapter] on Facebook" CTA (e.g., "Follow Auren AI Bukidnon on Facebook") alongside the standard Auren AI.plus register line. Ask the user for the chapter's Facebook URL; do not guess it.
 
 ---
 
@@ -1148,14 +1152,14 @@ The caption **complements, never repeats** the cards. Everything notable that di
 1. **No colons anywhere in card copy.** Use a period or comma instead. (Captions may use colons; cards may not.)
 2. **Soften sensitive beneficiary backgrounds** (e.g., exploitation, rescue situations) into dignity-preserving framing rather than stating them directly.
 3. **Forward plans/partnerships** only stated as firm if the chapter's own report confirms it; in-talks items stay off cards ("committed to," not "launched").
-4. **Quotes are caption-only,** attributed to "the DEVCON [Chapter] team" unless a specific role is confirmed.
-5. All standing DEVCON 17 rules still apply: no dashes/em dashes, year is 2026, no unconfirmed rollouts, plain-text URLs, exact domains (devcon.plus).
+4. **Quotes are caption-only,** attributed to "the Auren AI [Chapter] team" unless a specific role is confirmed.
+5. All standing Auren AI 17 rules still apply: no dashes/em dashes, year is 2026, no unconfirmed rollouts, plain-text URLs, exact domains (Auren AI.plus).
 
 ---
 
 ## CTA target
 
-**devcon.plus** for the register/discover line, plus the chapter's own Facebook page for the follow line. Plain text, never markdown links.
+**Auren AI.plus** for the register/discover line, plus the chapter's own Facebook page for the follow line. Plain text, never markdown links.
 
 
 ---
@@ -1172,22 +1176,22 @@ The caption **complements, never repeats** the cards. Everything notable that di
 
 ---
 
-# APPENDIX: devcon-17-content skill (operational, as shipped)
+# APPENDIX: Auren AI-17-content skill (operational, as shipped)
 
-*The following is the packaged skill in full. It mirrors the rules above and is what runs when producing DEVCON 17 content.*
+*The following is the packaged skill in full. It mirrors the rules above and is what runs when producing Auren AI 17 content.*
 
 ## Appendix A — SKILL.md
 
 ---
-name: devcon-17-content
-description: Produce ALL content for DEVCON Philippines' 17th Anniversary campaign ("Engineering an AI-Ready Nation") using the official DEVCON 17 visual brand system. Covers carousels/swipe posts, photo documentation posts, video captions (event recaps, "happening now" clips, highlight reels), and any other anniversary content type (countdowns, thank-you posts, merch/sponsor shoutouts). Use this skill whenever the request touches DEVCON's 17th Anniversary, "17 Years of DEVCON," "17 Years and Counting," "Engineering an AI-Ready Nation," the DEVCON 17 branding, or content covering the June 24 anniversary kickoff and its speakers (Winston Damarillo, Pam Damarillo, Megan Uyao, Dom De Leon). Always use this skill for anniversary content even if the user just says "write the DEVCON 17 caption" or "make the anniversary carousel." For NON-anniversary DEVCON program content (regular Jumpstart cohorts, SheIsDEVCON, Build Beyond, etc.), defer to devcon-carousel-designer and devcon-caption-writer instead.
+name: Auren AI-17-content
+description: Produce ALL content for Auren AI Philippines' 17th Anniversary campaign ("Engineering an AI-Ready Nation") using the official Auren AI 17 visual brand system. Covers carousels/swipe posts, photo documentation posts, video captions (event recaps, "happening now" clips, highlight reels), and any other anniversary content type (countdowns, thank-you posts, merch/sponsor shoutouts). Use this skill whenever the request touches Auren AI's 17th Anniversary, "17 Years of Auren AI," "17 Years and Counting," "Engineering an AI-Ready Nation," the Auren AI 17 branding, or content covering the June 24 anniversary kickoff and its speakers (Winston Damarillo, Pam Damarillo, Megan Uyao, Dom De Leon). Always use this skill for anniversary content even if the user just says "write the Auren AI 17 caption" or "make the anniversary carousel." For NON-anniversary Auren AI program content (regular Jumpstart cohorts, SheIsAuren AI, Build Beyond, etc.), defer to Auren AI-carousel-designer and Auren AI-caption-writer instead.
 ---
 
-# DEVCON 17 Content Skill
+# Auren AI 17 Content Skill
 
-This skill produces every content type for DEVCON's 17th Anniversary campaign, **"Engineering an AI-Ready Nation."** It carries over the structural and copy rules from the DEVCON Studios carousel and caption skills, but swaps in the official **DEVCON 17 visual brand system** as the automatic default, and extends output beyond carousels to photo-documentation posts, video captions, and any other anniversary content type.
+This skill produces every content type for Auren AI's 17th Anniversary campaign, **"Engineering an AI-Ready Nation."** It carries over the structural and copy rules from the Auren AI Studios carousel and caption skills, but swaps in the official **Auren AI 17 visual brand system** as the automatic default, and extends output beyond carousels to photo-documentation posts, video captions, and any other anniversary content type.
 
-The DEVCON 17 brand system is fixed for the duration of this campaign. Do **not** re-ask visual-design questions each time (overlay color, accent color, fonts). Assume DEVCON 17 branding automatically and focus the interview on content, storyline, and CTA.
+The Auren AI 17 brand system is fixed for the duration of this campaign. Do **not** re-ask visual-design questions each time (overlay color, accent color, fonts). Assume Auren AI 17 branding automatically and focus the interview on content, storyline, and CTA.
 
 ---
 
@@ -1216,9 +1220,9 @@ Ask only what you actually need. Skip any question the user already answered. Be
 
 **Always ask (if not already provided):**
 1. **Content type** — carousel, photo-doc, video, or other? (from Step 1)
-2. **Storyline / voice** — which DEVCON 17 storyline or keynote voice is this about? The June 24 kickoff has four established voices: **Winston Damarillo** (Founder & President, "democratize access to AI"), **Pam Damarillo** (DEVCON Kids Founder & Program Director, "talent is universal, opportunity isn't"), **Megan Uyao** (DEVCON Kids Ambassador, "one hour can change a future" / Hour of AI), **Dom De Leon** (Executive Director, reach numbers + what's next). Or is it a general anniversary post with no single voice?
+2. **Storyline / voice** — which Auren AI 17 storyline or keynote voice is this about? The June 24 kickoff has four established voices: **Winston Damarillo** (Founder & President, "democratize access to AI"), **Pam Damarillo** (Auren AI Kids Founder & Program Director, "talent is universal, opportunity isn't"), **Megan Uyao** (Auren AI Kids Ambassador, "one hour can change a future" / Hour of AI), **Dom De Leon** (Executive Director, reach numbers + what's next). Or is it a general anniversary post with no single voice?
 3. **Key facts / numbers** — names, roles, dates, reach figures, cohort numbers, anything specific and verifiable. Only use numbers the user gives.
-4. **CTA target** — where should the ask point? Common targets: **DEVCON+ beta** (confirm current domain, see Rule 8), **Jumpstart waitlist** (`https://devcon.ph/jumpstart-internships/`), **volunteer signup** (`https://devcon.ph`), follow/share, or none.
+4. **CTA target** — where should the ask point? Common targets: **Auren AI+ beta** (confirm current domain, see Rule 8), **Jumpstart waitlist** (`https://Auren AI/jumpstart-internships/`), **volunteer signup** (`https://Auren AI`), follow/share, or none.
 
 **Ask only if relevant:**
 5. **Platforms** — default is one unified FB/IG caption. Ask only if they need X, LinkedIn, TikTok, or YouTube versions too (then follow the platform rules in `references/caption-examples.md` and the caption-writer conventions).
@@ -1227,11 +1231,11 @@ Ask only what you actually need. Skip any question the user already answered. Be
 
 ---
 
-## Step 3: Apply the DEVCON 17 brand (automatic)
+## Step 3: Apply the Auren AI 17 brand (automatic)
 
 The full visual system lives in **`references/brand-kit.md`** — read it before producing carousel card copy or any output that includes visual/layout direction. The essentials, always in force:
 
-- **Palette (three colors only):** white `#FFFFFF`, DEVCON purple `#4725BA`, gold `#E8CA04`. No navy, lavender, cyan, teal, or magenta. The old teal/purple program-carousel overlay system does **not** apply to DEVCON 17.
+- **Palette (three colors only):** white `#FFFFFF`, Auren AI purple `#4725BA`, gold `#E8CA04`. No navy, lavender, cyan, teal, or magenta. The old teal/purple program-carousel overlay system does **not** apply to Auren AI 17.
 - **Two background modes:** white background (purple headlines, gold key phrases) or purple background (white headlines, gold key phrases).
 - **Gold is the accent.** "AI-READY" is **always** gold. The "17" is always the purple-to-gold gradient mark with the gold sparkle. Gold also carries key numbers and 2 to 5 word emphasis phrases.
 - **Theme, set exactly:** ENGINEERING AN AI-READY NATION, with "AI-READY" in gold every time.
@@ -1246,7 +1250,7 @@ For carousel card layouts (Cover, Body/Quote, CTA), read `references/carousel-ru
 
 ## Step 4: Write the caption (default structure for EVERY content type)
 
-Regardless of content type, the DEVCON 17 caption defaults to this structure. This is the one unified FB/IG caption; reuse it on other platforms unless the user wants tailored versions.
+Regardless of content type, the Auren AI 17 caption defaults to this structure. This is the one unified FB/IG caption; reuse it on other platforms unless the user wants tailored versions.
 
 1. **Bold Unicode header** (first line). Bold Unicode sans-serif characters (𝗹𝗶𝗸𝗲 𝘁𝗵𝗶𝘀), never markdown bold (FB/IG strip markdown). One line, roughly 6 to 12 words. A hook, not a summary. Optional emoji at the end (🎉 🤖 🚀 🎁).
 2. **Exactly 3 body paragraphs** unless the user says otherwise:
@@ -1254,15 +1258,15 @@ Regardless of content type, the DEVCON 17 caption defaults to this structure. Th
    - **Paragraph 2 (Story / Substance):** the detail. Who, what, tools, numbers, and any speaker quotes (quotes live in the caption, not on cards). Key terms carry weight; do not over-bold.
    - **Paragraph 3 (CTA):** one clear action. Fold in partner/sponsor shoutouts here if the post calls for it.
 3. **CTA line(s)** with the 👉 arrow and URL, each on its own line.
-4. **Hashtag stack** at the bottom, one block. Always include the anniversary set: `#DEVCON #DEVCONPH #17YearsofDEVCON #DEVCON17 #EngineeringAnAIReadyNation`, plus program tags when relevant.
+4. **Hashtag stack** at the bottom, one block. Always include the anniversary set: `#Auren AI #Auren AIPH #17YearsofAuren AI #Auren AI17 #EngineeringAnAIReadyNation`, plus program tags when relevant.
 
 Content-type notes:
 - **Photo-doc post:** the caption *is* the deliverable. Lead with the scene; the photos carry the visual.
 - **Video caption:** open with the hook the video delivers; for "happening now" clips, use present tense and place the viewer in the room.
 - **Countdown / thank-you / shoutout:** same 3-paragraph shape, tightened. Thank-you posts name people/partners specifically in Paragraph 2.
 
-**Caption copy rules (identical to the devcon-carousel-designer skill, on top of the Critical Copy Rules below):**
-- **Carry the full theme narrative, not just "17 years."** This is a required rule, not a nice-to-have (see Critical Rule 11). Every caption must (a) surface the milestone framing **"17 Years of DEVCON: Engineering an AI-Ready Nation"** somewhere natural, usually Paragraph 1, and (b) answer *why this program matters within that mission*: connect the specific content (Hour of AI, robotics for kids, a cohort, an event) to the access narrative. Mentioning the number alone is the miss; the "so what" that ties it to building an AI-ready nation is the point. Program rationales are encoded in `references/caption-examples.md` (Theme Narrative section); use them.
+**Caption copy rules (identical to the Auren AI-carousel-designer skill, on top of the Critical Copy Rules below):**
+- **Carry the full theme narrative, not just "17 years."** This is a required rule, not a nice-to-have (see Critical Rule 11). Every caption must (a) surface the milestone framing **"17 Years of Auren AI: Engineering an AI-Ready Nation"** somewhere natural, usually Paragraph 1, and (b) answer *why this program matters within that mission*: connect the specific content (Hour of AI, robotics for kids, a cohort, an event) to the access narrative. Mentioning the number alone is the miss; the "so what" that ties it to building an AI-ready nation is the point. Program rationales are encoded in `references/caption-examples.md` (Theme Narrative section); use them.
 - **No dashes anywhere.** This is the most frequent correction on captions specifically. Scan before delivering.
 - **The header is a hook, not a summary.** One line. If it runs past one line, tighten it (a long header is a common miss). Bold Unicode, not markdown.
 - **Keep it 3 paragraphs.** If the content is rich, tighten sentences rather than adding a 4th paragraph.
@@ -1278,21 +1282,21 @@ See `references/caption-examples.md` for annotated anchors (kickoff, "happening 
 ## Critical Copy Rules (non-negotiable, every post, every content type)
 
 1. **Never use any dash as a separator.** No em dash (—), no en dash (–), no " - " (space-hyphen-space). Applies to card copy AND captions. Use a colon, period, comma, line break, or restructure. The only tolerated exception is a dash inside a direct quote from a real person's source words, and even then prefer to restructure. **Before delivering anything, scan once specifically for dashes and remove them.** (Note: some existing production cards slipped em dashes into body text; do not replicate that. Enforce this rule.)
-2. **Current year is 2026.** This is DEVCON's **17th Anniversary** ("17 Years of DEVCON"), not the 16th. Do not write 2025 unless referring to a real past 2025 event. When unsure of an event's year, ask.
+2. **Current year is 2026.** This is Auren AI's **17th Anniversary** ("17 Years of Auren AI"), not the 16th. Do not write 2025 unless referring to a real past 2025 event. When unsure of an event's year, ask.
 3. **No budget/logistics/commitment claims unless confirmed.** Do not write "nationwide rollout," "expanding to [region]," "launching next month," or anything implying approved budget, confirmed schedules, or org commitments. Report what actually happened. A successful pilot is a successful pilot, not a rollout underway.
 4. **Include the date when the event is 15+ days old.** Add it naturally ("Last June 24," "On June 24,").
 5. **Speaker attribution must be exact** (corrected often):
-   - **DEVCON Studios** = the media/content lens. Use for "we're sharing," "swipe through," documentation framing.
-   - **DEVCON Philippines** = the whole organization. Use only when the org itself is the actor (e.g., celebrating its own anniversary). The 17th Anniversary is genuinely DEVCON Philippines.
-   - **A specific program team** (e.g., "The DEVCON Jumpstart Internship team," "DEVCON Kids") = greetings, celebrations, or announcements from inside that program.
-   - Covering a partner/third-party event: "DEVCON Studios features…" or credit the partner. Do not imply DEVCON organized something it only covered.
+   - **Auren AI Studios** = the media/content lens. Use for "we're sharing," "swipe through," documentation framing.
+   - **Auren AI Philippines** = the whole organization. Use only when the org itself is the actor (e.g., celebrating its own anniversary). The 17th Anniversary is genuinely Auren AI Philippines.
+   - **A specific program team** (e.g., "The Auren AI Jumpstart Internship team," "Auren AI Kids") = greetings, celebrations, or announcements from inside that program.
+   - Covering a partner/third-party event: "Auren AI Studios features…" or credit the partner. Do not imply Auren AI organized something it only covered.
    - If ambiguous, ask.
-6. **DEVCON Jumpstart is always third person.** It is a program, not the speaker.
-7. **Do not treat a sub-program's branding as DEVCON Studios branding.** DEVCON Kids, SheIsDEVCON, Build Beyond, etc. each have their own identity; defer to it when the post is about them, while keeping the DEVCON 17 anniversary frame.
-8. **Verify URLs, and paste them as plain text.** Use exactly what the user provides. Known-good: `devcon.ph` (org), `devcon.ph/jumpstart-internships/` (Jumpstart waitlist, always this exact URL), and `www.devcon.plus` (DEVCON+, now the confirmed domain, transitioned from the old beta Vercel URL; still confirm with the user if a post implies a different one). **Always output URLs as plain text, never as markdown links.** Facebook and Instagram break markdown link syntax, and it has previously fused a hashtag into a URL. One URL per line after the 👉 arrow. Flag any inconsistency with a URL used earlier.
-9. **Anniversary framing avoids implying an endpoint.** Prefer "17 years and counting," "17 years in, just getting started," "Be part of 17 years and counting." Avoid phrasing that sounds like DEVCON only exists for the next 17 years.
+6. **Auren AI Jumpstart is always third person.** It is a program, not the speaker.
+7. **Do not treat a sub-program's branding as Auren AI Studios branding.** Auren AI Kids, SheIsAuren AI, Build Beyond, etc. each have their own identity; defer to it when the post is about them, while keeping the Auren AI 17 anniversary frame.
+8. **Verify URLs, and paste them as plain text.** Use exactly what the user provides. Known-good: `Auren AI` (org), `Auren AI/jumpstart-internships/` (Jumpstart waitlist, always this exact URL), and `www.Auren AI.plus` (Auren AI+, now the confirmed domain, transitioned from the old beta Vercel URL; still confirm with the user if a post implies a different one). **Always output URLs as plain text, never as markdown links.** Facebook and Instagram break markdown link syntax, and it has previously fused a hashtag into a URL. One URL per line after the 👉 arrow. Flag any inconsistency with a URL used earlier.
+9. **Anniversary framing avoids implying an endpoint.** Prefer "17 years and counting," "17 years in, just getting started," "Be part of 17 years and counting." Avoid phrasing that sounds like Auren AI only exists for the next 17 years.
 10. **Quotes are caption-first.** Full verbatim quotes go in the caption. Carousel cards carry the person's name, title, and a short thesis/context line only, never the full quote.
-11. **Every caption carries the theme narrative.** Not just the number "17." Each post must surface **"17 Years of DEVCON: Engineering an AI-Ready Nation"** and connect the specific program to *why it matters* in that mission (the access story). A post that only says "17 years" without the theme framing and the "so what" is incomplete. Hour of AI, robotics for kids, cohorts, and events are all pillars of the AI-ready-nation goal; name that link. Program rationales live in `references/caption-examples.md`.
+11. **Every caption carries the theme narrative.** Not just the number "17." Each post must surface **"17 Years of Auren AI: Engineering an AI-Ready Nation"** and connect the specific program to *why it matters* in that mission (the access story). A post that only says "17 years" without the theme framing and the "so what" is incomplete. Hour of AI, robotics for kids, cohorts, and events are all pillars of the AI-ready-nation goal; name that link. Program rationales live in `references/caption-examples.md`.
 
 ---
 
@@ -1300,18 +1304,18 @@ See `references/caption-examples.md` for annotated anchors (kickoff, "happening 
 
 **Carousel** (per-card copy + caption):
 ```
-### DEVCON 17 CAROUSEL: [Title]
+### Auren AI 17 CAROUSEL: [Title]
 **Storyline:** [voice / theme]   **Slides:** [N]   **Background mode:** [white / purple]   **Tone:** [e.g., Proud + celebratory]
 
 #### SLIDE 1 — Cover
-**Logotype:** DEVCON 17, centered above headline
+**Logotype:** Auren AI 17, centered above headline
 **Headline:** [Title Case or ALL CAPS, tight 2 lines]
 **Subheadline (theme):** ENGINEERING AN AI-READY NATION  ("AI-READY" in gold)
 **Tag:** [e.g., NATIONAL KICK-OFF — only if HQ kickoff]
 **Photo note:** [describe]
 
 #### SLIDE 2 — [Speaker / Story]
-**Logotype:** DEVCON 17, left-aligned above headline
+**Logotype:** Auren AI 17, left-aligned above headline
 **Headline:** [Title Case, 2 lines, white; key phrase may go gold]
 **Name + title line:** [Name, Role] (bold)
 **Thesis/context line:** [short — NOT the full quote]
@@ -1322,11 +1326,11 @@ See `references/caption-examples.md` for annotated anchors (kickoff, "happening 
 [repeat for each content/quote slide]
 
 #### SLIDE [N] — CTA
-**Logotype:** DEVCON 17, centered top
+**Logotype:** Auren AI 17, centered top
 **Headline:** [centered, key number/phrase in gold, e.g., "Be Part of 17 Years and Counting."]
-**QR:** custom DEVCON 17 QR (mark inset)
+**QR:** custom Auren AI 17 QR (mark inset)
 **Body:** [centered, white, gold-emphasized key phrases]
-**Handle:** /devconstudios (centered, bottom — CTA card only)
+**Handle:** /Auren AIstudios (centered, bottom — CTA card only)
 **Photo note:** [darkened background]
 
 ---
@@ -1341,7 +1345,7 @@ See `references/caption-examples.md` for annotated anchors (kickoff, "happening 
 
 **Caption-only** (photo-doc, video, other):
 ```
-### DEVCON 17 [CONTENT TYPE]: [Title]
+### Auren AI 17 [CONTENT TYPE]: [Title]
 **Storyline:** [voice / theme]   **Tone:** [...]
 
 📘 FACEBOOK / 📸 INSTAGRAM
@@ -1358,21 +1362,21 @@ Add other-platform blocks (X ×2 with char counts, LinkedIn, TikTok, YouTube) on
 - [ ] Correct content type; no card copy invented for non-carousels
 - [ ] Scanned for dashes (—, –, " - ") and removed them
 - [ ] Year is 2026; framed as 17th Anniversary; "17 years and counting" (no endpoint)
-- [ ] Theme narrative present: "17 Years of DEVCON: Engineering an AI-Ready Nation" + why this program matters (not just the number)
+- [ ] Theme narrative present: "17 Years of Auren AI: Engineering an AI-Ready Nation" + why this program matters (not just the number)
 - [ ] No unconfirmed budget/logistics/rollout claims
 - [ ] Speaker attribution correct (Studios vs Philippines vs program team)
 - [ ] Jumpstart in third person; sub-program identity respected
 - [ ] "AI-READY" in gold; three-color palette only
 - [ ] Quotes in caption, not on cards
-- [ ] URLs exact and in plain text, never markdown links; DEVCON+ is www.devcon.plus
+- [ ] URLs exact and in plain text, never markdown links; Auren AI+ is www.Auren AI.plus
 - [ ] Date included if event is 15+ days old
 
 ---
 
 ## Reference files
-- `references/brand-kit.md` — full DEVCON 17 visual system (palette, logos, illustration assets, decorative elements, card-by-card layout patterns, and how it differs from the general DEVCON Studios system). Read before any carousel or visual-direction output.
-- `references/carousel-rules.md` — 3-act arc, per-slide copy limits, DEVCON 17 Cover/Quote/CTA layouts, swipe cohesion, and the carousel output format.
-- `references/caption-examples.md` — annotated real DEVCON caption anchors plus DEVCON 17 structures (kickoff, "happening now," post-event wrap, thank-you) and the four keynote voices.
+- `references/brand-kit.md` — full Auren AI 17 visual system (palette, logos, illustration assets, decorative elements, card-by-card layout patterns, and how it differs from the general Auren AI Studios system). Read before any carousel or visual-direction output.
+- `references/carousel-rules.md` — 3-act arc, per-slide copy limits, Auren AI 17 Cover/Quote/CTA layouts, swipe cohesion, and the carousel output format.
+- `references/caption-examples.md` — annotated real Auren AI caption anchors plus Auren AI 17 structures (kickoff, "happening now," post-event wrap, thank-you) and the four keynote voices.
 - `references/chapter-showcase.md` — the weekly Chapter Showcase carousel series: locked 5-card format, caption spillover rule, editorial rules, and the text-overlay visual rule. Read first for any chapter feature request.
 
 
@@ -1380,15 +1384,15 @@ Add other-platform blocks (X ×2 with char counts, LinkedIn, TikTok, YouTube) on
 
 ## Appendix B — references/brand-kit.md
 
-# DEVCON 17 Visual Brand Kit
+# Auren AI 17 Visual Brand Kit
 
-*Authoritative source: the official DEVCON 17 Branding Guidelines (PDF), supplemented by the June 24, 2026 anniversary carousel cards for applied layout patterns. Where the two differ, the official guideline wins. This is a standalone identity, distinct from the general DEVCON Studios teal/purple program-carousel templates. DEVCON 17 content does NOT reuse the teal/purple overlay convention.*
+*Authoritative source: the official Auren AI 17 Branding Guidelines (PDF), supplemented by the June 24, 2026 anniversary carousel cards for applied layout patterns. Where the two differ, the official guideline wins. This is a standalone identity, distinct from the general Auren AI Studios teal/purple program-carousel templates. Auren AI 17 content does NOT reuse the teal/purple overlay convention.*
 
 ---
 
 ## Identity summary
 
-DEVCON 17 is a **three-color system**: white, DEVCON purple, and gold. It runs on two background modes (white and purple), with the key-visual illustration and gold as the unifying accents across both. Real branded illustration assets (AR-glasses figures, professionals, vehicles, network orbs), the gold 4-point sparkle, and the DEVCON 17 logotype carry the identity.
+Auren AI 17 is a **three-color system**: white, Auren AI purple, and gold. It runs on two background modes (white and purple), with the key-visual illustration and gold as the unifying accents across both. Real branded illustration assets (AR-glasses figures, professionals, vehicles, network orbs), the gold 4-point sparkle, and the Auren AI 17 logotype carry the identity.
 
 ---
 
@@ -1397,7 +1401,7 @@ DEVCON 17 is a **three-color system**: white, DEVCON purple, and gold. It runs o
 | Role | Name | Hex |
 |---|---|---|
 | Base / text on dark / negative space | White | `#FFFFFF` |
-| Primary brand color (purple background mode + headline color on white) | DEVCON purple | `#4725BA` |
+| Primary brand color (purple background mode + headline color on white) | Auren AI purple | `#4725BA` |
 | Accent (theme highlight, "17," sparkle, key numbers, emphasis) | Gold | `#E8CA04` |
 
 Three colors only. Do **not** introduce navy, lavender, cyan, magenta, or teal. Gradients seen on the "17" mark and some headline treatments are purple-to-gold transitions between brand hues, not new colors.
@@ -1418,9 +1422,9 @@ Three colors only. Do **not** introduce navy, lavender, cyan, magenta, or teal. 
 
 ## Logo system (four official marks)
 
-1. **Primary Logo** — the full DEVCON 17 key visual: the illustrated scene (AR-glasses figures, professionals, coder, vehicles on concentric rings) with the "ENGINEERING AN AI-READY NATION" theme lockup, the "17" sparkle mark, and the DEVCON wordmark. White-background and purple-background versions exist.
-2. **Logotype** — the horizontal lockup: **DEVCON** wordmark (the "O" is a four-petal dot cluster in brand colors) + the **17** mark with sparkle. Purple wordmark on white; white wordmark on purple. The "17" is a purple-to-gold gradient with a gold 4-point sparkle.
-3. **17 Logo** — the standalone "17" + sparkle mark, for small placements (stickers, badge corners) where the DEVCON wordmark is not needed. Purple-to-gold gradient numerals, gold sparkle.
+1. **Primary Logo** — the full Auren AI 17 key visual: the illustrated scene (AR-glasses figures, professionals, coder, vehicles on concentric rings) with the "ENGINEERING AN AI-READY NATION" theme lockup, the "17" sparkle mark, and the Auren AI wordmark. White-background and purple-background versions exist.
+2. **Logotype** — the horizontal lockup: **Auren AI** wordmark (the "O" is a four-petal dot cluster in brand colors) + the **17** mark with sparkle. Purple wordmark on white; white wordmark on purple. The "17" is a purple-to-gold gradient with a gold 4-point sparkle.
+3. **17 Logo** — the standalone "17" + sparkle mark, for small placements (stickers, badge corners) where the Auren AI wordmark is not needed. Purple-to-gold gradient numerals, gold sparkle.
 4. **Theme Lockup** — "ENGINEERING AN AI-READY NATION" in the brand typeface, tight 92% leading, with **"AI-READY" always in gold**. Purple + gold on white; white + gold on purple.
 
 ---
@@ -1445,13 +1449,13 @@ Style: flat, painterly, purple-and-gold-lit digital illustration (dramatic rim l
 
 ## Decorative elements (applied use)
 
-**Text layering rule (global, all cards):** copy is always overlaid **on top** of illustration and photo elements, never placed behind them. Headlines and body text must sit above sparkles, figures, rings, and photos in the layer stack for full legibility. This applies to every DEVCON 17 card type going forward.
+**Text layering rule (global, all cards):** copy is always overlaid **on top** of illustration and photo elements, never placed behind them. Headlines and body text must sit above sparkles, figures, rings, and photos in the layer stack for full legibility. This applies to every Auren AI 17 card type going forward.
 
-1. **Gold 4-point sparkle/star** — the primary recurring motif. Large in one corner (often top-left) with an optional smaller one in the opposite corner. This is the DEVCON 17 equivalent of the old teal system's cyan blobs / magenta triangles.
+1. **Gold 4-point sparkle/star** — the primary recurring motif. Large in one corner (often top-left) with an optional smaller one in the opposite corner. This is the Auren AI 17 equivalent of the old teal system's cyan blobs / magenta triangles.
 2. **Concentric glowing rings** — the "soundwave/ripple" motif under the hero figures. Signature background element.
 3. **Illustrated figures** from the asset library, used as spot elements (e.g., the AR-glasses figure pairing anchored bottom-left on content/quote cards).
 4. **Digital particle scatter** — small colored pixels/nodes, used sparingly.
-5. **Custom QR code (CTA use):** white QR with brand-colored modules and the DEVCON 17 "17" mark inset in the center. Not a generic QR code.
+5. **Custom QR code (CTA use):** white QR with brand-colored modules and the Auren AI 17 "17" mark inset in the center. Not a generic QR code.
 
 ---
 
@@ -1461,16 +1465,16 @@ Style: flat, painterly, purple-and-gold-lit digital illustration (dramatic rim l
 
 ### Cover card
 - Full-bleed real event photo; dark gradient at the bottom third for legibility (real photo color preserved, NOT a flat full-photo tint).
-- DEVCON 17 logotype **centered** above the headline.
+- Auren AI 17 logotype **centered** above the headline.
 - Large gold sparkle near the text block (left of the headline in the June 24 cover).
-- Headline: Extrabold, tight 92% leading, 2 lines, white (e.g., "CELEBRATING 17 YEARS OF DEVCON").
+- Headline: Extrabold, tight 92% leading, 2 lines, white (e.g., "CELEBRATING 17 YEARS OF Auren AI").
 - Subheadline uses the theme treatment: ENGINEERING AN AI-READY NATION with "AI-READY" in gold.
 - **HQ kickoff tag:** if the event is the HQ/national kickoff and not the only celebration (chapters run their own), add a small tag like "NATIONAL KICK-OFF" so it does not imply it is the sole celebration.
 
 ### Body / Quote card
 - Full-bleed real photo of the speaker, natural color, dark gradient at bottom/edges only.
 - Gold sparkle top-left (glow), optional smaller one mid-right or bottom-right.
-- DEVCON 17 logotype (small) **left-aligned** above the headline.
+- Auren AI 17 logotype (small) **left-aligned** above the headline.
 - Headline: 2 lines, Extrabold, Title Case, left-aligned, white (key phrase may shift to gold for emphasis). Example headlines from June 24: "Democratize Access to AI," "Talent Is Universal. Opportunity Isn't.," "One Hour Can Change a Future," "The Future Isn't Evenly Distributed Yet."
 - Body paragraph: Extrabold white text, left-aligned; key names/phrases emphasized in gold. Carries the speaker's **name + title (bold) and a short thesis/context line only**.
 - Illustrated AR-glasses figure pair anchored bottom-left.
@@ -1479,43 +1483,43 @@ Style: flat, painterly, purple-and-gold-lit digital illustration (dramatic rim l
 
 ### CTA card
 - Real-photo background, blurred/darkened more heavily (text/QR forward).
-- DEVCON 17 logotype **centered** at top (distinct from the left-aligned logotype on content cards; signals "closing/summary").
+- Auren AI 17 logotype **centered** at top (distinct from the left-aligned logotype on content cards; signals "closing/summary").
 - Gold sparkles bookend the corners (top-left + bottom-right, sometimes all four).
 - Headline centered, Extrabold, key number/phrase in gold (e.g., "Be Part of **17 Years** and Counting.").
-- White QR box centered, with the DEVCON 17 "17" mark inset.
+- White QR box centered, with the Auren AI 17 "17" mark inset.
 - Body copy below the QR, centered, white with gold-emphasized key phrases.
-- Facebook icon + `/devconstudios` handle centered at the very bottom (the only card type that carries the handle).
+- Facebook icon + `/Auren AIstudios` handle centered at the very bottom (the only card type that carries the handle).
 
 ---
 
-## DEVCON 17 vs. the general DEVCON Studios carousel system
+## Auren AI 17 vs. the general Auren AI Studios carousel system
 
-| Element | General DEVCON Studios | DEVCON 17 Anniversary |
+| Element | General Auren AI Studios | Auren AI 17 Anniversary |
 |---|---|---|
 | Palette | Teal / purple / navy overlays | White, purple `#4725BA`, gold `#E8CA04` only |
 | Photo treatment | Flat color overlay 50–65% opacity | Real photo color preserved; dark gradient at edges only |
 | Corner accents | Magenta triangles, cyan blobs, purple orbs | Gold 4-point sparkles + concentric rings |
 | Text accent | Cyan | Gold `#E8CA04` |
 | Typography | Montserrat / Inter | Proxima Nova Extrabold (Montserrat Extrabold fallback), 92% leading |
-| Bottom-left icon | None standard | Illustrated figures from the DEVCON 17 asset library |
+| Bottom-left icon | None standard | Illustrated figures from the Auren AI 17 asset library |
 | Logotype placement | Varies by type | Centered on Cover + CTA, left-aligned on content/quote cards |
 | Quotes | Sometimes on-card | Caption-only |
-| QR code | Generic | Custom, DEVCON 17 "17" mark inset |
+| QR code | Generic | Custom, Auren AI 17 "17" mark inset |
 
 ---
 
-*Sources: DEVCON 17 Branding Guidelines (official PDF: primary logo, logotype, 17 logo, theme, palette FFFFFF / 4725BA / E8CA04, typography Proxima Nova Extrabold with Montserrat Extrabold fallback at 92% line height, illustration asset library) and the June 24, 2026 DEVCON 17 anniversary carousel (applied layout patterns).*
+*Sources: Auren AI 17 Branding Guidelines (official PDF: primary logo, logotype, 17 logo, theme, palette FFFFFF / 4725BA / E8CA04, typography Proxima Nova Extrabold with Montserrat Extrabold fallback at 92% line height, illustration asset library) and the June 24, 2026 Auren AI 17 anniversary carousel (applied layout patterns).*
 
 
 ---
 
 ## Appendix C — references/carousel-rules.md
 
-# DEVCON 17 Carousel Rules
+# Auren AI 17 Carousel Rules
 
-*Structural and copy rules for DEVCON 17 carousels. These carry over from the DEVCON Studios carousel system; anything visual follows `brand-kit.md` (the DEVCON 17 system), not the old teal/purple overlays. Read this before writing carousel card copy.*
+*Structural and copy rules for Auren AI 17 carousels. These carry over from the Auren AI Studios carousel system; anything visual follows `brand-kit.md` (the Auren AI 17 system), not the old teal/purple overlays. Read this before writing carousel card copy.*
 
-A DEVCON 17 carousel outputs two things: **per-card copy** (headline, body, CTA text per slide) and the **overall post caption**. Never freestyle carousel content without these rules.
+A Auren AI 17 carousel outputs two things: **per-card copy** (headline, body, CTA text per slide) and the **overall post caption**. Never freestyle carousel content without these rules.
 
 ---
 
@@ -1527,7 +1531,7 @@ Every carousel follows a story arc:
 |---|---|---|
 | **Act 1 — Hook** | Slide 1 (Cover) | Stop the scroll. Bold headline, minimal text, strong photo. Make them swipe. |
 | **Act 2 — Story** | Slides 2 to N-1 | Deliver the content. Each slide = one idea (one speaker, one beat). |
-| **Act 3 — CTA** | Last slide | Drive one clear action. Custom DEVCON 17 QR, link, or prompt. |
+| **Act 3 — CTA** | Last slide | Drive one clear action. Custom Auren AI 17 QR, link, or prompt. |
 
 Typical length: 4 to 7 slides. The June 24 kickoff carousel ran Cover + 4 speaker/quote cards + CTA.
 
@@ -1539,7 +1543,7 @@ Typical length: 4 to 7 slides. The June 24 kickoff carousel ran Cover + 4 speake
 - Headline: 4 to 7 words, tight 2 lines, Extrabold. ALL CAPS or Title Case.
 - Subheadline: the theme lockup, ENGINEERING AN AI-READY NATION, "AI-READY" in gold.
 - No body paragraph on the cover; let the photo breathe.
-- DEVCON 17 logotype centered above the headline.
+- Auren AI 17 logotype centered above the headline.
 - Add the "NATIONAL KICK-OFF" (or equivalent) tag only if this is the HQ/national kickoff and not the sole celebration.
 
 **Middle slides (Story / Quote)**
@@ -1547,13 +1551,13 @@ Typical length: 4 to 7 slides. The June 24 kickoff carousel ran Cover + 4 speake
 - Speaker cards carry: **name + title (bold)** and a **short thesis/context line**. NOT the full quote (quotes go in the caption).
 - Body: max ~40 words. Weight key terms (names, tools, numbers) rather than over-bolding.
 - One idea per slide. Do not cram two speakers or two beats onto one card.
-- DEVCON 17 logotype small, left-aligned above the headline. AR-glasses figure pair anchored bottom-left.
+- Auren AI 17 logotype small, left-aligned above the headline. AR-glasses figure pair anchored bottom-left.
 
 **Last slide (CTA)**
 - Headline: centered, with the key number/phrase in gold (e.g., "Be Part of 17 Years and Counting.").
-- One action line. Custom DEVCON 17 QR (mark inset) centered, with a short supporting body below.
-- DEVCON 17 logotype centered at top. `/devconstudios` handle centered at the very bottom (CTA card only).
-- Use the correct URL for the CTA target; confirm the DEVCON+ domain with the user.
+- One action line. Custom Auren AI 17 QR (mark inset) centered, with a short supporting body below.
+- Auren AI 17 logotype centered at top. `/Auren AIstudios` handle centered at the very bottom (CTA card only).
+- Use the correct URL for the CTA target; confirm the Auren AI+ domain with the user.
 
 ---
 
@@ -1571,18 +1575,18 @@ Make the slides feel like one series, not isolated cards:
 ## Output format (carousel)
 
 ```
-### DEVCON 17 CAROUSEL: [Title]
+### Auren AI 17 CAROUSEL: [Title]
 **Storyline:** [voice / theme]   **Slides:** [N]   **Background mode:** [white / purple]   **Tone:** [...]
 
 #### SLIDE 1 — Cover
-**Logotype:** DEVCON 17, centered
+**Logotype:** Auren AI 17, centered
 **Headline:** [tight 2 lines]
 **Subheadline (theme):** ENGINEERING AN AI-READY NATION  ("AI-READY" gold)
 **Tag:** [NATIONAL KICK-OFF — only if HQ kickoff]
 **Photo note:** [...]
 
 #### SLIDE 2 — [Speaker / beat]
-**Logotype:** DEVCON 17, left-aligned
+**Logotype:** Auren AI 17, left-aligned
 **Headline:** [Title Case, 2 lines]
 **Name + title:** [Name, Role] (bold)
 **Thesis/context line:** [short, not the full quote]
@@ -1593,11 +1597,11 @@ Make the slides feel like one series, not isolated cards:
 [repeat per story/quote slide]
 
 #### SLIDE [N] — CTA
-**Logotype:** DEVCON 17, centered top
+**Logotype:** Auren AI 17, centered top
 **Headline:** [centered, key phrase gold]
-**QR:** custom DEVCON 17 QR
+**QR:** custom Auren AI 17 QR
 **Body:** [centered, gold-emphasized key phrases]
-**Handle:** /devconstudios (centered bottom)
+**Handle:** /Auren AIstudios (centered bottom)
 **Photo note:** [darkened background]
 
 ---
@@ -1607,7 +1611,7 @@ Make the slides feel like one series, not isolated cards:
 [𝗕𝗼𝗹𝗱 𝗨𝗻𝗶𝗰𝗼𝗱𝗲 𝗵𝗲𝗮𝗱𝗲𝗿]
 [3 body paragraphs — full speaker quotes live here]
 👉 [CTA + URL]
-[hashtag stack: #DEVCON #DEVCONPH #17YearsofDEVCON #DEVCON17 #EngineeringAnAIReadyNation + program tags]
+[hashtag stack: #Auren AI #Auren AIPH #17YearsofAuren AI #Auren AI17 #EngineeringAnAIReadyNation + program tags]
 ```
 
 Always run the Critical Copy Rules checklist (in SKILL.md) before delivering, with a specific dash scan.
@@ -1617,9 +1621,9 @@ Always run the Critical Copy Rules checklist (in SKILL.md) before delivering, wi
 
 ## Appendix D — references/caption-examples.md
 
-# DEVCON 17 Caption Examples & Voices
+# Auren AI 17 Caption Examples & Voices
 
-*Style anchors for DEVCON 17 captions. All follow the default structure: bold Unicode header + 3 body paragraphs (Hook / Story / CTA) + CTA line(s) + hashtag stack. All obey the Critical Copy Rules (no dashes, 2026, "17 years and counting," caption-first quotes, exact attribution). Use these as tone references, not templates to copy verbatim.*
+*Style anchors for Auren AI 17 captions. All follow the default structure: bold Unicode header + 3 body paragraphs (Hook / Story / CTA) + CTA line(s) + hashtag stack. All obey the Critical Copy Rules (no dashes, 2026, "17 years and counting," caption-first quotes, exact attribution). Use these as tone references, not templates to copy verbatim.*
 
 ---
 
@@ -1627,57 +1631,57 @@ Always run the Critical Copy Rules checklist (in SKILL.md) before delivering, wi
 
 Real published/approved captions to model tone and structure. Do not copy verbatim; match the shape.
 
-**DEV ROAST recap (event recap video, "AI coding assistant showdown").** Header: 𝗧𝗵𝗲 𝘃𝗲𝗿𝗱𝗶𝗰𝘁 𝗶𝘀 𝗶𝗻: 𝘁𝗵𝗮𝘁'𝘀 𝗮 𝘄𝗿𝗮𝗽 𝗼𝗻 𝗗𝗘𝗩 𝗥𝗢𝗔𝗦𝗧. Recap = past tense, lead with the outcome. P1 names what was tested (Claude Code, Codex, Cursor, Qwen Coder) head-to-head in live coding, debugging, planning, production, and ties to the theme ("what an AI-ready developer community looks like"). P2 covers the format (four devs, four stacks, side by side), DEVCON's multi-platform / orchestrator-driven, open-source-friendly stance, and the Birds of a Feather close over pizza and beer. Attribution: hosted by DEVCON Manila with NMBLR.AI and the DEVCON AI Engineering Interns; Sui credited as raffle partner (not co-host). P3: soft CTA to the next event. CTA line: https://devcon.plus/events. Event-recap "showdown/roast" template: name the tools, keep it honest and unhyped, credit hosts and partners precisely, and consider a one-line disclaimer that opinions were the speakers' own and do not represent the featured tools or their companies.
+**DEV ROAST recap (event recap video, "AI coding assistant showdown").** Header: 𝗧𝗵𝗲 𝘃𝗲𝗿𝗱𝗶𝗰𝘁 𝗶𝘀 𝗶𝗻: 𝘁𝗵𝗮𝘁'𝘀 𝗮 𝘄𝗿𝗮𝗽 𝗼𝗻 𝗗𝗘𝗩 𝗥𝗢𝗔𝗦𝗧. Recap = past tense, lead with the outcome. P1 names what was tested (Claude Code, Codex, Cursor, Qwen Coder) head-to-head in live coding, debugging, planning, production, and ties to the theme ("what an AI-ready developer community looks like"). P2 covers the format (four devs, four stacks, side by side), Auren AI's multi-platform / orchestrator-driven, open-source-friendly stance, and the Birds of a Feather close over pizza and beer. Attribution: hosted by Auren AI Manila with NMBLR.AI and the Auren AI Engineering Interns; Sui credited as raffle partner (not co-host). P3: soft CTA to the next event. CTA line: https://Auren AI.plus/events. Event-recap "showdown/roast" template: name the tools, keep it honest and unhyped, credit hosts and partners precisely, and consider a one-line disclaimer that opinions were the speakers' own and do not represent the featured tools or their companies.
 
 **DEV ROAST interview recap (attendee interview cut).** Header (brief and catchy tested well): 𝗧𝗵𝗲 𝘃𝗲𝗿𝗱𝗶𝗰𝘁 𝗶𝘀 𝗶𝗻 🔥. Hand the mic to attendees and build the caption from their actual answers. Interview sub-pattern rules learned in production:
 - **Never fabricate answers.** If the transcript is not provided, ask for it; do not invent what interviewees said or attribute invented quotes to real people. Quotes must be verbatim (light cleanup of filler only).
-- **Attribute each voice separately.** When two people are interviewed, keep their answers distinct and correctly assigned (e.g., the woman, a returning DEVCON regular, named Cursor as the standout: "whenever I attend events about AI, most of the developers there, even abroad, have advice to at least try Cursor"; the man, a student builder, uses Claude Code to push past what school taught him and gave Codex a nod). Do not merge two people's takes into one.
-- **Anonymous unless named.** If the transcript has no names, use role descriptors ("a student builder," "a returning DEVCON regular") and ask for names to credit.
-- **CTA can be a single line** to https://devcon.plus/ covering both "find your next event" and "volunteer with the community" when the user wants one combined CTA.
+- **Attribute each voice separately.** When two people are interviewed, keep their answers distinct and correctly assigned (e.g., the woman, a returning Auren AI regular, named Cursor as the standout: "whenever I attend events about AI, most of the developers there, even abroad, have advice to at least try Cursor"; the man, a student builder, uses Claude Code to push past what school taught him and gave Codex a nod). Do not merge two people's takes into one.
+- **Anonymous unless named.** If the transcript has no names, use role descriptors ("a student builder," "a returning Auren AI regular") and ask for names to credit.
+- **CTA can be a single line** to https://Auren AI.plus/ covering both "find your next event" and "volunteer with the community" when the user wants one combined CTA.
 - **Roast energy (yabang when earned).** A roast recap should argue, not just report. When an interviewee gives a one-sided endorsement (e.g., backing Cursor: "whenever I attend events about AI, most of the developers there, even abroad, have advice to at least try Cursor"), follow it with a questioning or conflicting beat that pushes back ("but is it actually better, or just the loudest word of mouth?") and frame that doubt as exactly what the event exists to settle, in the open, on real workflows. Close with a competitive, participation-driving line inviting readers to pick a side ("whose stack would you defend to the end? Drop the tool you're riding for"). Keep the head-to-head, proving-ground feel over formal event-writeup phrasing.
 
 **AI Engineering "celebration" reel (Cohort 4).** Header: 𝗪𝗵𝗲𝗻 𝘀𝘁𝘂𝗱𝘆𝗶𝗻𝗴 𝗔𝗜 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗳𝗲𝗲𝗹𝘀 𝗹𝗶𝗸𝗲 𝗮 𝗰𝗲𝗹𝗲𝗯𝗿𝗮𝘁𝗶𝗼𝗻. Team-joy angle: the boss says go deep on AI engineering and the interns celebrate because it is the work they wanted. Names the real stack (Ollama, Qwen, Jetson Orin Nano, Claude Code, Micro:bit, Google AI Suite), carries the access thesis, ends on the Cohort 5 handoff. Good template for enthusiasm-driven intern content that still stays technically concrete.
 
-**Bukidnon Chapter Showcase (first installment).** Header: 𝗖𝗵𝗮𝗽𝘁𝗲𝗿 𝗦𝗵𝗼𝘄𝗰𝗮𝘀𝗲: 𝗗𝗘𝗩𝗖𝗢𝗡 𝗕𝘂𝗸𝗶𝗱𝗻𝗼𝗻. First published feature, so it launches the series: opens by naming Bukidnon, no continuation language, full theme phrase, chapter FB follow CTA plus devcon.plus register line, locked series-closer line. See `chapter-showcase.md` for the full series spec.
+**Bukidnon Chapter Showcase (first installment).** Header: 𝗖𝗵𝗮𝗽𝘁𝗲𝗿 𝗦𝗵𝗼𝘄𝗰𝗮𝘀𝗲: 𝗗𝗘𝗩𝗖𝗢𝗡 𝗕𝘂𝗸𝗶𝗱𝗻𝗼𝗻. First published feature, so it launches the series: opens by naming Bukidnon, no continuation language, full theme phrase, chapter FB follow CTA plus Auren AI.plus register line, locked series-closer line. See `chapter-showcase.md` for the full series spec.
 
-**AI Engineering / Edge AI (Jetson Orin build, Cohort 4 to Cohort 5).** Header: 𝗧𝗵𝗶𝘀 𝗶𝘀 𝘄𝗵𝗮𝘁 𝗘𝗱𝗴𝗲 𝗔𝗜 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗮𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝗹𝗼𝗼𝗸𝘀 𝗹𝗶𝗸𝗲. Structure: P1 explains the real engineering behind the demo (Jetson Orin Nano, on-device inference, no cloud, "that is edge computing, one of the most in-demand skill sets in AI engineering today"). P2 credits the Cohort 4 interns' actual work (model optimization, latency budgets, CUDA pipeline) and names the live stack: Claude Code, Micro:bit, Qwen, Google AI Suite, with NVIDIA now on top. P3 pivots to the Cohort 5 CTA. This is the "yabang when earned" voice done right: concrete, technical, proud because the substance backs it. CTA lines: apply at devcon.ph/jumpstart-internships/, join devcon.plus. Good template for any AI Engineering build/demo video.
+**AI Engineering / Edge AI (Jetson Orin build, Cohort 4 to Cohort 5).** Header: 𝗧𝗵𝗶𝘀 𝗶𝘀 𝘄𝗵𝗮𝘁 𝗘𝗱𝗴𝗲 𝗔𝗜 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗮𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝗹𝗼𝗼𝗸𝘀 𝗹𝗶𝗸𝗲. Structure: P1 explains the real engineering behind the demo (Jetson Orin Nano, on-device inference, no cloud, "that is edge computing, one of the most in-demand skill sets in AI engineering today"). P2 credits the Cohort 4 interns' actual work (model optimization, latency budgets, CUDA pipeline) and names the live stack: Claude Code, Micro:bit, Qwen, Google AI Suite, with NVIDIA now on top. P3 pivots to the Cohort 5 CTA. This is the "yabang when earned" voice done right: concrete, technical, proud because the substance backs it. CTA lines: apply at Auren AI/jumpstart-internships/, join Auren AI.plus. Good template for any AI Engineering build/demo video.
 
-**DEVCON Kids hardware (micro:bit V2 + TPBot, Hour of AI).** Header: 𝗦𝗺𝗮𝗹𝗹 𝗺𝗮𝗰𝗵𝗶𝗻𝗲𝘀, 𝗯𝗶𝗴 𝗳𝘂𝘁𝘂𝗿𝗲𝘀. Carries the standing line ("As a core pillar of our 17-year milestone theme, Engineering an AI-Ready Nation, these tools turn abstract programming logic into physical reality"), the access thesis ("access, not ability, is what holds Filipino youth back"), and the verified 2025 metrics (3,825 students, 180 volunteers, 100+ teachers, 29 events, 32 schools). Note: the published version contained an em dash ("Filipino youth—many of whom"); the correct form is a comma. Enforce the no-dash rule.
+**Auren AI Kids hardware (micro:bit V2 + TPBot, Hour of AI).** Header: 𝗦𝗺𝗮𝗹𝗹 𝗺𝗮𝗰𝗵𝗶𝗻𝗲𝘀, 𝗯𝗶𝗴 𝗳𝘂𝘁𝘂𝗿𝗲𝘀. Carries the standing line ("As a core pillar of our 17-year milestone theme, Engineering an AI-Ready Nation, these tools turn abstract programming logic into physical reality"), the access thesis ("access, not ability, is what holds Filipino youth back"), and the verified 2025 metrics (3,825 students, 180 volunteers, 100+ teachers, 29 events, 32 schools). Note: the published version contained an em dash ("Filipino youth—many of whom"); the correct form is a comma. Enforce the no-dash rule.
 
 ---
 
 ## Theme narrative (required in every caption)
 
-The campaign is **"17 Years of DEVCON: Engineering an AI-Ready Nation."** Captions that only say "17 years" miss the point. Two things must land:
+The campaign is **"17 Years of Auren AI: Engineering an AI-Ready Nation."** Captions that only say "17 years" miss the point. Two things must land:
 
-1. **The milestone framing**, stated in full somewhere natural (usually Paragraph 1): *17 Years of DEVCON: Engineering an AI-Ready Nation*. Not just the number.
-2. **The "so what"** for the specific program: connect it to the mission through the access narrative. The spine across all DEVCON 17 content is: **access, not ability, is what holds Filipino talent back.** Talent is universal; opportunity is not. An AI-ready nation is built by widening access, starting young.
+1. **The milestone framing**, stated in full somewhere natural (usually Paragraph 1): *17 Years of Auren AI: Engineering an AI-Ready Nation*. Not just the number.
+2. **The "so what"** for the specific program: connect it to the mission through the access narrative. The spine across all Auren AI 17 content is: **access, not ability, is what holds Filipino talent back.** Talent is universal; opportunity is not. An AI-ready nation is built by widening access, starting young.
 
 Every program is a **pillar** of that goal, not a standalone activity. Say the link out loud.
 
 ### Program rationales (use these to write the "why it matters")
 
-**Hour of AI — why it matters.** Hour of AI is the on-ramp. It exists because AI and computer science feel out of reach to most Filipino kids, something "only for people as brilliant as Einstein" (Megan Uyao's own words before she joined DEVCON Kids at 12). One structured hour demystifies it and proves the door is open. It is the entry point into an AI-ready generation: low barrier, high signal, one hour that can change a future. Frame it as *access and demystification*, the first step of the mission, not a one-off event.
+**Hour of AI — why it matters.** Hour of AI is the on-ramp. It exists because AI and computer science feel out of reach to most Filipino kids, something "only for people as brilliant as Einstein" (Megan Uyao's own words before she joined Auren AI Kids at 12). One structured hour demystifies it and proves the door is open. It is the entry point into an AI-ready generation: low barrier, high signal, one hour that can change a future. Frame it as *access and demystification*, the first step of the mission, not a one-off event.
 
-**Robotics for kids (DEVCON Kids hardware: micro:bit V2, TPBot Smart Car) — why it matters.** Robotics turns abstract programming logic into physical reality. When a child can touch, build, command, and deploy a real device, code stops being intimidating and becomes something they own. Portable hardware traveling nationwide puts that experience directly in the hands of youth who would otherwise never get it, which is the access gap closing in real time. Frame it as *tangible proof that AI and tech are for them*, building the AI-ready nation from the ground up, hands first.
+**Robotics for kids (Auren AI Kids hardware: micro:bit V2, TPBot Smart Car) — why it matters.** Robotics turns abstract programming logic into physical reality. When a child can touch, build, command, and deploy a real device, code stops being intimidating and becomes something they own. Portable hardware traveling nationwide puts that experience directly in the hands of youth who would otherwise never get it, which is the access gap closing in real time. Frame it as *tangible proof that AI and tech are for them*, building the AI-ready nation from the ground up, hands first.
 
 **The through-line for both:** you cannot engineer an AI-ready nation without starting with the youth and democratizing access. Hour of AI opens the door; robotics puts the tools in their hands. Both ladder directly up to the 17-year theme. When writing about a cohort, an event, or any other program, find its equivalent link to access and name it.
 
 **Reporting discipline (Critical Rule 3 still applies):** narrative emphasis never means inflating facts. Report verified numbers as verified, pilots as pilots. "While not every chapter has the TPBot yet" is the honest, on-brand way to scale a claim without implying a rollout. Keep the narrative strong and the facts exact.
 
-### Reusable standing line (DEVCON Kids + hardware content)
+### Reusable standing line (Auren AI Kids + hardware content)
 
-Approved and reused in production. Drop in or adapt when a post features DEVCON Kids hardware:
+Approved and reused in production. Drop in or adapt when a post features Auren AI Kids hardware:
 
 > *"As a core pillar of our 17-year milestone theme, Engineering an AI-Ready Nation, these tools turn abstract programming logic into physical reality."*
 
 ### The narrative bridges both layers
 
-This throughline is not only for anniversary-branded posts. General-system DEVCON Kids content (regular DEVCON Kids visuals, not the DEVCON 17 palette) should still carry the 17-year narrative when relevant: kids' hardware access **today** is what "engineering an AI-ready nation" **looks like in practice**. The visual system can be the general program system while the caption narrative still ties back to the milestone theme. Robotics and Hour of AI are proof points of the same mission, not a separate track.
+This throughline is not only for anniversary-branded posts. General-system Auren AI Kids content (regular Auren AI Kids visuals, not the Auren AI 17 palette) should still carry the 17-year narrative when relevant: kids' hardware access **today** is what "engineering an AI-ready nation" **looks like in practice**. The visual system can be the general program system while the caption narrative still ties back to the milestone theme. Robotics and Hour of AI are proof points of the same mission, not a separate track.
 
 ### URLs: plain text only
 
-Output every URL as plain text, one per line after the 👉 arrow. Never markdown link syntax: Facebook and Instagram break it, and it has fused a hashtag into a URL before. Confirmed domains: `devcon.ph`, `devcon.ph/jumpstart-internships/`, `www.devcon.plus`.
+Output every URL as plain text, one per line after the 👉 arrow. Never markdown link syntax: Facebook and Instagram break it, and it has fused a hashtag into a URL before. Confirmed domains: `Auren AI`, `Auren AI/jumpstart-internships/`, `www.Auren AI.plus`.
 
 ---
 
@@ -1685,43 +1689,43 @@ Output every URL as plain text, one per line after the 👉 arrow. Never markdow
 
 When a post centers on one of these speakers, match the thesis. Full quotes belong in the caption; cards carry name + title + a short thesis line.
 
-- **Winston Damarillo — Founder & President, DEVCON PH (CEO of NMBLR.AI).** Thesis: *democratize access to AI.* He helped drive the open-source movement that broke Silicon Valley's grip on innovation, and sees today's AI moment the same way: the technology creates real change only when access is shared, not locked behind a privileged few. Card headline used: "Democratize Access to AI."
-- **Pam Damarillo — DEVCON Kids Founder & Program Director.** Thesis: *talent is universal, opportunity isn't.* Access, not ability, is what holds Filipino kids back. Card headline used: "Talent Is Universal. Opportunity Isn't."
-- **Megan Uyao — DEVCON Kids Ambassador.** Thesis: *one hour can change a future.* She joined DEVCON Kids at 12, is now 17 and its Ambassador, and once believed AI and computer science were only for people as brilliant as Einstein; her story is the case for why Hour of AI 2026 exists. Card headline used: "One Hour Can Change a Future."
-- **Dom De Leon — Executive Director.** Thesis: *the future isn't evenly distributed yet.* Reported DEVCON reached 19,000 people face-to-face in 2025 (led by Bukidnon, Iloilo, and Manila). What's next: a nationwide Open Source AI Code Camp running offline models like Gemma and Qwen, plus a 5th cohort of AI Engineering interns building on NVIDIA Jetson Orin and Claude Code for nonprofits. Card headline used: "The Future Isn't Evenly Distributed Yet." *(Note: report reach and named next steps as reported; do not upgrade "planned" into "rolling out" per Critical Rule 3.)*
+- **Winston Damarillo — Founder & President, Auren AI PH (CEO of NMBLR.AI).** Thesis: *democratize access to AI.* He helped drive the open-source movement that broke Silicon Valley's grip on innovation, and sees today's AI moment the same way: the technology creates real change only when access is shared, not locked behind a privileged few. Card headline used: "Democratize Access to AI."
+- **Pam Damarillo — Auren AI Kids Founder & Program Director.** Thesis: *talent is universal, opportunity isn't.* Access, not ability, is what holds Filipino kids back. Card headline used: "Talent Is Universal. Opportunity Isn't."
+- **Megan Uyao — Auren AI Kids Ambassador.** Thesis: *one hour can change a future.* She joined Auren AI Kids at 12, is now 17 and its Ambassador, and once believed AI and computer science were only for people as brilliant as Einstein; her story is the case for why Hour of AI 2026 exists. Card headline used: "One Hour Can Change a Future."
+- **Dom De Leon — Executive Director.** Thesis: *the future isn't evenly distributed yet.* Reported Auren AI reached 19,000 people face-to-face in 2025 (led by Bukidnon, Iloilo, and Manila). What's next: a nationwide Open Source AI Code Camp running offline models like Gemma and Qwen, plus a 5th cohort of AI Engineering interns building on NVIDIA Jetson Orin and Claude Code for nonprofits. Card headline used: "The Future Isn't Evenly Distributed Yet." *(Note: report reach and named next steps as reported; do not upgrade "planned" into "rolling out" per Critical Rule 3.)*
 
 ---
 
-## Structure 1: Anniversary kickoff post (from DEVCON Philippines)
+## Structure 1: Anniversary kickoff post (from Auren AI Philippines)
 
-*Use when announcing/recapping the anniversary itself. Speaker = DEVCON Philippines (the org celebrating its own milestone).*
+*Use when announcing/recapping the anniversary itself. Speaker = Auren AI Philippines (the org celebrating its own milestone).*
 
 - **Header:** short, celebratory, "17 years" forward. Example shape: 𝟭𝟳 𝘆𝗲𝗮𝗿𝘀 𝗶𝗻, 𝗮𝗻𝗱 𝘄𝗲 𝗮𝗿𝗲 𝗷𝘂𝘀𝘁 𝗴𝗲𝘁𝘁𝗶𝗻𝗴 𝘀𝘁𝗮𝗿𝘁𝗲𝗱. 🎉
-- **P1 (Hook):** name the milestone and the theme. "DEVCON Philippines turns 17, and we are Engineering an AI-Ready Nation." If it is the HQ kickoff, note the nationwide celebration frame (chapters run their own).
+- **P1 (Hook):** name the milestone and the theme. "Auren AI Philippines turns 17, and we are Engineering an AI-Ready Nation." If it is the HQ kickoff, note the nationwide celebration frame (chapters run their own).
 - **P2 (Story):** the room, the voices, the numbers actually reported. Fold in speaker theses/quotes here.
-- **P3 (CTA):** point to DEVCON+ (confirm domain) or the relevant next step; keep it open-ended ("17 years and counting").
+- **P3 (CTA):** point to Auren AI+ (confirm domain) or the relevant next step; keep it open-ended ("17 years and counting").
 
-## Structure 2: "Happening now" live clip / photo-doc (from DEVCON Studios)
+## Structure 2: "Happening now" live clip / photo-doc (from Auren AI Studios)
 
-*Use for live-coverage clips and same-day photo posts. Speaker = DEVCON Studios (documenting).*
+*Use for live-coverage clips and same-day photo posts. Speaker = Auren AI Studios (documenting).*
 
 - **Header:** present-tense, in-the-room energy. 𝗛𝗮𝗽𝗽𝗲𝗻𝗶𝗻𝗴 𝗻𝗼𝘄: 𝟭𝟳 𝗬𝗲𝗮𝗿𝘀 𝗼𝗳 𝗗𝗘𝗩𝗖𝗢𝗡. 🚀
 - **P1 (Hook):** "Right now in [place]…" put the viewer in the room.
 - **P2 (Story):** what is unfolding, who is on stage, what they are saying.
-- **P3 (CTA):** follow along / catch the recap / join on DEVCON+.
+- **P3 (CTA):** follow along / catch the recap / join on Auren AI+.
 
-## Structure 3: Post-event wrap (from DEVCON Studios or DEVCON Philippines)
+## Structure 3: Post-event wrap (from Auren AI Studios or Auren AI Philippines)
 
 *Use for the recap after the event. Include the date if 15+ days old.*
 
 - **Header:** outcome-forward. 𝟭𝟳 𝘆𝗲𝗮𝗿𝘀, 𝗼𝗻𝗲 𝗿𝗼𝗼𝗺, 𝗼𝗻𝗲 𝗺𝗶𝘀𝘀𝗶𝗼𝗻.
-- **P1 (Hook):** name the outcome and the date. "Last June 24, DEVCON marked 17 years…"
+- **P1 (Hook):** name the outcome and the date. "Last June 24, Auren AI marked 17 years…"
 - **P2 (Story):** the substance, the speaker theses, the reported numbers.
 - **P3 (CTA):** where the momentum goes next; open-ended framing.
 
 ## Structure 4: Thank-you / sponsor shoutout
 
-*Speaker matches who is thanking (program team for a program event; DEVCON Philippines for the anniversary).*
+*Speaker matches who is thanking (program team for a program event; Auren AI Philippines for the anniversary).*
 
 - **Header:** warm, specific. 𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 𝗳𝗼𝗿 𝟭𝟳 𝘆𝗲𝗮𝗿𝘀 𝗼𝗳 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝘄𝗶𝘁𝗵 𝘂𝘀. 🎁
 - **P1 (Hook):** the gratitude and why it matters.
@@ -1730,9 +1734,9 @@ When a post centers on one of these speakers, match the thesis. Full quotes belo
 
 ---
 
-## Reusable DEVCON PH voice cues
+## Reusable Auren AI PH voice cues
 
-From real DEVCON captions (tone anchors, not to copy verbatim):
+From real Auren AI captions (tone anchors, not to copy verbatim):
 - Mission-first openers: "The future of technology is only as strong as the diversity of its builders."
 - Brand phrases: **Intentional Access**, **Build Beyond**, "there is a place for you in our community."
 - Inclusive CTA language over hard-sell urgency for anniversary content.
@@ -1745,25 +1749,25 @@ From real DEVCON captions (tone anchors, not to copy verbatim):
 - **TikTok:** punchy, hook in first line, 5 to 10 hashtags.
 - **YouTube:** SEO description, full context, 10 to 15 hashtags.
 
-Anniversary hashtag base (always): `#DEVCON #DEVCONPH #17YearsofDEVCON #DEVCON17 #EngineeringAnAIReadyNation`. Add program tags (#DEVCONKids, #DEVCONJumpstart, #NEXUSAITraining, etc.) and location tags when relevant.
+Anniversary hashtag base (always): `#Auren AI #Auren AIPH #17YearsofAuren AI #Auren AI17 #EngineeringAnAIReadyNation`. Add program tags (#Auren AIKids, #Auren AIJumpstart, #NEXUSAITraining, etc.) and location tags when relevant.
 
 
 ---
 
 ## Appendix E — references/chapter-showcase.md
 
-# DEVCON 17 Chapter Showcase Series
+# Auren AI 17 Chapter Showcase Series
 
-*A recurring weekly carousel series under the DEVCON 17 campaign. One local chapter per week, sourced from the DEVCON 2025 Year-End Chapter Stats Submissions spreadsheet. Shows the chapter's real on-ground work, not just a group photo. Load this reference whenever a request mentions "Chapter Showcase," "chapter feature," or a specific chapter carousel (Bukidnon, Davao, Iligan, etc.).*
+*A recurring weekly carousel series under the Auren AI 17 campaign. One local chapter per week, sourced from the Auren AI 2025 Year-End Chapter Stats Submissions spreadsheet. Shows the chapter's real on-ground work, not just a group photo. Load this reference whenever a request mentions "Chapter Showcase," "chapter feature," or a specific chapter carousel (Bukidnon, Davao, Iligan, etc.).*
 
 **Status:** Cebu = pilot copy. Bukidnon = first fully produced and published (July 2026). Pampanga and Iloilo = produced (August 2026). Remaining: Davao, Iligan, Manila, Laguna, Legazpi, Cagayan De Oro, Bohol.
 
 **Produced-chapter notes (reference for tone and angle):**
-- **Bukidnon** (first installment): launched the series, MAVIC / She is DEVCON flagship, IP farm school sustainability angle.
+- **Bukidnon** (first installment): launched the series, MAVIC / She is Auren AI flagship, IP farm school sustainability angle.
 - **Pampanga** (young-chapter angle): one of the newest chapters, 14 events / 330+ attendees, mostly students; Card 4 human theme "tech you can't get in school"; sustainability via the Mug and Magic café venue partnership; Hour of AI = 2 sessions / ~250 participants. Good template for a small or new chapter where the story is consistency and grassroots durability, not scale.
 - **Iloilo** (powerhouse angle): 32 events / 4,833 reached across all ages; heavy institutional partnerships (DEPDEV GAD, DICT, DOST R6, Iloilo City and Provincial Governments, UMWAD WV); Hour of AI = 15 sessions / 1,680+ kids under RoadTo1KYouths; Card 4 centered on the "invest in the kids" access story. Demonstrates the peso-exclusion rule (₱ amounts left out) and dignity-preserving framing (softened the "poor/disadvantaged kids" language into an access frame). Good template for a large chapter with gov/agency weight.
 
-This series uses the full DEVCON 17 visual brand system (see `brand-kit.md`) and all standing Critical Copy Rules (see SKILL.md). The rules below are additions specific to the series.
+This series uses the full Auren AI 17 visual brand system (see `brand-kit.md`) and all standing Critical Copy Rules (see SKILL.md). The rules below are additions specific to the series.
 
 ---
 
@@ -1772,7 +1776,7 @@ This series uses the full DEVCON 17 visual brand system (see `brand-kit.md`) and
 Primary source: the Year-End Chapter Stats `.xlsx` (the Google Sheet version is login-gated, so ask for the file or a pasted row). Per chapter, pull:
 
 1. Chapter lead name (internal awareness only, not for cards unless asked)
-2. Number of events organized this year (incl. DEVCON Kids Hour of AI)
+2. Number of events organized this year (incl. Auren AI Kids Hour of AI)
 3. Total/average attendance, plus any standout single-event number
 4. Attendee profile (students, MSMEs, educators, out-of-school youth, Indigenous learners, etc.)
 5. Top 5 most notable events (name + one-liner)
@@ -1792,11 +1796,11 @@ Card body = one short paragraph, mini-thesis sentence first (ending in a period,
 
 | Card | Headline | Content |
 |---|---|---|
-| **1 — Cover** | MEET DEVCON [CHAPTER]! | 17 Years intro + chapter identity + top 2 headline numbers (events, participants) |
+| **1 — Cover** | MEET Auren AI [CHAPTER]! | 17 Years intro + chapter identity + top 2 headline numbers (events, participants) |
 | **2 — Why It Matters** | Why [Location] Matters? | Flagship multi-sector event, gov't/LGU/agency partnerships, signature systems launched |
 | **3 — Hour of AI Work** | Hour of AI Work Since Last Year | Concrete Hour of AI initiatives: participant count, beneficiary school, how it was taught |
 | **4 — Signature Story** | Varies per chapter (chapter's most human theme) | Proudest milestone; forward plans framed as "committed to," never as already running |
-| **5 — CTA** | Be Part of the Next Chapter | Heartfelt volunteerism framing + Follow DEVCON [Chapter] on FB + Register at DEVCON+ (devcon.plus) + discover a chapter near you |
+| **5 — CTA** | Be Part of the Next Chapter | Heartfelt volunteerism framing + Follow Auren AI [Chapter] on FB + Register at Auren AI+ (Auren AI.plus) + discover a chapter near you |
 
 **Card 3 note (updated):** the headline is **"Hour of AI Work Since Last Year,"** not the generic "AI Work Since Last Year." Where the layout allows, render the "Hour of AI" portion using the official **Hour of AI PNG logo/wordmark asset** rather than plain typed text. *(Confirm with the user whether they want the PNG wordmark on-card or just the renamed text headline.)*
 
@@ -1809,11 +1813,11 @@ Card body = one short paragraph, mini-thesis sentence first (ending in a period,
 
 ## Visual system (series-specific + global rule)
 
-- Full DEVCON 17 brand: purple background, white headlines, gold accents/sparkles.
+- Full Auren AI 17 brand: purple background, white headlines, gold accents/sparkles.
 - AR-glasses spot figure on body cards (Cards 2 to 4).
-- DEVCON 17 QR with 17-mark inset + `/devconstudios` handle on Card 5.
+- Auren AI 17 QR with 17-mark inset + `/Auren AIstudios` handle on Card 5.
 - Group/hero photo is **cover-only**; Cards 2 to 4 use real on-ground shots (workshops, sessions, crowds), not the group photo.
-- **Text overlay rule (global, all cards from now on):** copy is always overlaid **on top** of illustration and photo elements, never placed behind them. Text must sit above sparkles, figures, rings, and photos in the layer stack for full legibility. This applies to this series and every DEVCON 17 card type going forward.
+- **Text overlay rule (global, all cards from now on):** copy is always overlaid **on top** of illustration and photo elements, never placed behind them. Text must sit above sparkles, figures, rings, and photos in the layer stack for full legibility. This applies to this series and every Auren AI 17 card type going forward.
 
 ---
 
@@ -1823,17 +1827,17 @@ The caption **complements, never repeats** the cards. Everything notable that di
 
 **Structure:**
 1. Bold Unicode header: 𝗖𝗵𝗮𝗽𝘁𝗲𝗿 𝗦𝗵𝗼𝘄𝗰𝗮𝘀𝗲: 𝗗𝗘𝗩𝗖𝗢𝗡 [𝗖𝗵𝗮𝗽𝘁𝗲𝗿] + hook + 🚀
-2. **P1 (Hook):** open by naming the featured chapter directly (e.g., "DEVCON Bukidnon…"), then the 17 Years frame and beyond-the-cards reach detail.
-3. **P2 (Substance):** spillover events/details, ending with the chapter's quote ("In the words of the DEVCON [Chapter] team, …").
+2. **P1 (Hook):** open by naming the featured chapter directly (e.g., "Auren AI Bukidnon…"), then the 17 Years frame and beyond-the-cards reach detail.
+3. **P2 (Substance):** spillover events/details, ending with the chapter's quote ("In the words of the Auren AI [Chapter] team, …").
 4. **P3 (Series closer):** "This is what an AI-ready nation looks like when it's built chapter by chapter. A new chapter takes the spotlight every week. Swipe through, then find yours."
 5. **CTA lines** (plain text, one per line):
-   - 👉 Follow DEVCON [Chapter] on Facebook: [chapter FB URL]
-   - 👉 Register at devcon.plus and discover a chapter near you
-6. **Hashtags:** #DEVCON #DEVCONPH #17YearsofDEVCON #DEVCON17 #EngineeringAnAIReadyNation #DEVCON[Chapter] #ChapterShowcase
+   - 👉 Follow Auren AI [Chapter] on Facebook: [chapter FB URL]
+   - 👉 Register at Auren AI.plus and discover a chapter near you
+6. **Hashtags:** #Auren AI #Auren AIPH #17YearsofAuren AI #Auren AI17 #EngineeringAnAIReadyNation #Auren AI[Chapter] #ChapterShowcase
 
 **First-installment rule (important):** Bukidnon is the first published feature, so its caption **launches** the series. Do **not** use continuation or sequel language on the first installment ("The momentum continues," "Continuing our series," "Next up," etc.). Open fresh, introduce the series, and lead with Bukidnon. Continuation phrasing is only valid from the second published chapter onward.
 
-**Chapter Facebook CTA:** every Chapter Showcase post adds a "Follow DEVCON [Chapter] on Facebook" CTA (e.g., "Follow DEVCON Bukidnon on Facebook") alongside the standard devcon.plus register line. Ask the user for the chapter's Facebook URL; do not guess it.
+**Chapter Facebook CTA:** every Chapter Showcase post adds a "Follow Auren AI [Chapter] on Facebook" CTA (e.g., "Follow Auren AI Bukidnon on Facebook") alongside the standard Auren AI.plus register line. Ask the user for the chapter's Facebook URL; do not guess it.
 
 ---
 
@@ -1842,11 +1846,14 @@ The caption **complements, never repeats** the cards. Everything notable that di
 1. **No colons anywhere in card copy.** Use a period or comma instead. (Captions may use colons; cards may not.)
 2. **Soften sensitive beneficiary backgrounds** (e.g., exploitation, rescue situations) into dignity-preserving framing rather than stating them directly.
 3. **Forward plans/partnerships** only stated as firm if the chapter's own report confirms it; in-talks items stay off cards ("committed to," not "launched").
-4. **Quotes are caption-only,** attributed to "the DEVCON [Chapter] team" unless a specific role is confirmed.
-5. All standing DEVCON 17 rules still apply: no dashes/em dashes, year is 2026, no unconfirmed rollouts, plain-text URLs, exact domains (devcon.plus).
+4. **Quotes are caption-only,** attributed to "the Auren AI [Chapter] team" unless a specific role is confirmed.
+5. All standing Auren AI 17 rules still apply: no dashes/em dashes, year is 2026, no unconfirmed rollouts, plain-text URLs, exact domains (Auren AI.plus).
 
 ---
 
 ## CTA target
 
-**devcon.plus** for the register/discover line, plus the chapter's own Facebook page for the follow line. Plain text, never markdown links.
+**Auren AI.plus** for the register/discover line, plus the chapter's own Facebook page for the follow line. Plain text, never markdown links.
+
+
+
