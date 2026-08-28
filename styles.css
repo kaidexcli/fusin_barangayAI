@@ -1,5 +1,5 @@
   :root {
-    --dc-blue: #4F46E5;
+    --dc-blue: #10B981;
     /* Shades/tints below are all derived from --dc-blue via color-mix (read
        live at paint time), tuned to match the original fixed hex values
        exactly when --dc-blue is the default. A brand-color swatch pick
@@ -21,16 +21,16 @@
        dark mode lifts it off the violet ground (~5.2:1 on --bg-panel). */
     --dc-accent: color-mix(in srgb, var(--dc-blue) 92%, black);
     --dc-accent-light: color-mix(in srgb, var(--dc-blue) 10%, white);
-    /* Rounding out the brand palette to match the DEVCON 17 mark's four-dot
+    /* Rounding out the brand palette to match the Auren AI 17 mark's four-dot
        lockup (gold/orange/violet/green) so gradients can echo the logo
        instead of staying blue-only. Gold/orange/green are fixed — they are the
        logo's own dots and never read blue. Violet was the one dot that did
        (#7C5CFF is blue-dominant), so it now tracks the brand as a lighter
        companion; at the default brand it lands within a hair of the old hex. */
     --dc-violet: color-mix(in srgb, var(--dc-blue) 72%, white);
-    --dc-gold: #FFC93C;
-    --dc-orange: #FF8A3D;
-    --dc-green: #5FBF6B;
+    --dc-gold: #34D399;
+    --dc-orange: #059669;
+    --dc-green: #047857;
     /* Light mode sits a few steps below paper-white so the white panels/
        bubbles laid on top of it read as raised surfaces instead of melting
        into the page — the old #F7F9FC was bright enough to glare and left
@@ -40,12 +40,12 @@
        and page edge read faintly blue — the "cold cast" half of the problem.
        These are the violet-neutral counterparts, the same family the dark
        theme already uses, and each one is equal or better on contrast. */
-    --bg-primary: #EDEBF7;
-    --bg-panel: #FFFFFF;
+    --bg-primary: #f0fdf4;
+    --bg-panel: #ffffff;
     /* Was referenced in 5+ places (guidebook tab pills, settings fields) but
        never actually defined in either theme, so those surfaces silently
        resolved to transparent. */
-    --bg-secondary: #F3F1FA;
+    --bg-secondary: #dcfce7;
     /* The sidebar/rail is a dark brand slab in both themes; a vertical
        blue→violet gradient (rather than a flat fill) ties it to the poster
        art and to the body glow behind it. */
@@ -54,13 +54,13 @@
         color-mix(in srgb, var(--dc-blue) 60%, black) 0%,
         color-mix(in srgb, var(--dc-blue) 42%, black) 52%,
         color-mix(in srgb, var(--dc-violet) 34%, black) 100%);
-    --text-primary: #171232;
-    --text-secondary: #5B5480;
-    --text-muted: #948EB4;
-    --border: #D7D2E8;
-    --border-light: #EAE7F4;
+    --text-primary: #064e3b;
+    --text-secondary: #065f46;
+    --text-muted: #10b981;
+    --border: #86efac;
+    --border-light: #bbf7d0;
     --user-bubble: var(--dc-blue);
-    --ai-bubble: #FFFFFF;
+    --ai-bubble: #ffffff;
     /* Failure states used to be red end to end — surface, border, headings,
        step numbers and buttons — which reads as alarm rather than as the
        explanation it actually is. Red is now reserved for the one glyph that
@@ -84,7 +84,7 @@
        far enough (section labels at 0.22, items at 0.55) that the nav read
        as permanently disabled; these are the legible floor. */
     --sb-text: rgba(255,255,255,0.78);
-    --sb-text-strong: #FFFFFF;
+    --sb-text-strong: #ffffff;
     --sb-text-dim: rgba(255,255,255,0.55);
     --sb-text-faint: rgba(255,255,255,0.42);
     --sb-border: rgba(255,255,255,0.10);
@@ -101,26 +101,26 @@
     --scene-gold: var(--dc-orange);
   }
 
-  /* DEVCON 17 dark theme — deep indigo/violet void (poster background) with
+  /* Auren AI 17 dark theme — deep indigo/violet void (poster background) with
      the brand blue kept for interactive elements; gold is a sparing accent
      for special highlights, echoing the poster's "17" star. */
   [data-theme="dark"] {
-    --bg-primary: #17132E;
-    --bg-panel: #221C46;
-    --bg-sidebar: linear-gradient(168deg, #1A1438 0%, #120E26 55%, #0D0A1F 100%);
-    --scene-dust: #FFFFFF;
+    --bg-primary: #061a15;
+    --bg-panel: #0f3d32;
+    --bg-sidebar: linear-gradient(168deg, #0c352a 0%, #06201a 55%, #041712 100%);
+    --scene-dust: #ffffff;
     --scene-gold: var(--dc-gold);
-    --text-primary: #ECE9FA;
-    --text-secondary: #9A93C2;
-    --text-muted: #5C5484;
-    --border: #362E63;
-    --border-light: #261F4A;
+    --text-primary: #e6f7f2;
+    --text-secondary: #8bc7b5;
+    --text-muted: #5a9986;
+    --border: #1b4f42;
+    --border-light: #12392f;
     --user-bubble: var(--dc-blue);
-    --ai-bubble: #221C46;
+    --ai-bubble: #0f3d32;
     --dc-blue-light: color-mix(in srgb, var(--dc-blue) 25%, var(--bg-panel));
     --dc-accent: color-mix(in srgb, var(--dc-blue) 62%, white);
     --dc-accent-light: color-mix(in srgb, var(--dc-blue) 10%, var(--bg-panel));
-    --bg-secondary: #1B1539;
+    --bg-secondary: #0d382c;
     /* Lifted well off the deep violet ground — the light-mode red goes muddy
        against it, and the tints need more weight to stay visible. */
     /* Lifted off the deep violet ground, but not washed out: the previous
@@ -134,7 +134,7 @@
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* Soft violet/blue/gold glow over the void — same atmosphere as the DEVCON
+  /* Soft violet/blue/gold glow over the void — same atmosphere as the Auren AI
      17 poster, kept subtle so text and cards stay the primary focus. */
   [data-theme="dark"] body {
     background:
@@ -173,7 +173,7 @@
 
   /* Ambient scene layer — a scattered field of gently-fading particles/
      sparkles and a small constellation node-graph, echoing the smart-
-     barangay hero art. Fixed behind every panel via negative z-index so
+     Auren AI hero art. Fixed behind every panel via negative z-index so
      it never competes with real content. Movement is intentionally
      minimal — a slow opacity drift only, no scale/translate. */
   .bg-scene {
@@ -266,7 +266,7 @@
     border-bottom: 1px solid var(--sb-border);
   }
 
-  /* Every DEVCON avatar/CTA that uses the brand gradient — kept in one
+  /* Every Auren AI avatar/CTA that uses the brand gradient — kept in one
      place so light mode's 2-stop blue→accent and dark mode's 3-stop
      blue→violet→gold both apply everywhere consistently, not just here. */
   .avatar.ai, .modal-logo, .dc-brand-gradient {
@@ -3815,7 +3815,7 @@
     background: none; border: none; color: #948DBA; cursor: pointer; padding: 3px;
     display: flex; align-items: center; justify-content: center; border-radius: 4px; flex-shrink: 0;
   }
-  .pull-terminal-close:hover { background: #332B57; color: #ECE9FA; }
+  .pull-terminal-close:hover { background: #332B57; color: #e6f7f2; }
   .pull-terminal-log {
     margin: 0; padding: 14px 16px;
     height: 260px; overflow-y: auto;
@@ -5219,3 +5219,6 @@ body.visitor-mode .kb-item { cursor: default; }
 }
 .publish-link:hover { text-decoration-thickness: 2px; }
 .publish-warn { color: var(--danger); font-weight: 600; }
+
+
+
