@@ -1,6 +1,6 @@
 @echo off
 REM ─────────────────────────────────────────────────────────────────────
-REM  Barangay AI — start Ollama so the browser can reach it.
+REM  Auren AI — start Ollama so the browser can reach it.
 REM
 REM  Double-click this file, or run it from a terminal. It does the two
 REM  things the app needs, in the right order:
@@ -16,7 +16,7 @@ REM  Tired of running this? Make it permanent instead — see README
 REM  "Skip this step forever".
 REM ─────────────────────────────────────────────────────────────────────
 
-title Barangay AI - Ollama
+title Auren AI - Ollama
 
 where ollama >nul 2>&1
 if errorlevel 1 (
@@ -37,7 +37,7 @@ REM header back proves the server is already configured the way this
 REM script would configure it. No curl (pre-1803 Windows) means no probe,
 REM so we fall through to the restart path.
 set "OLLAMA_READY="
-set "OLLAMA_HDRS=%TEMP%\barangay-ai-ollama-probe.txt"
+set "OLLAMA_HDRS=%TEMP%\Auren AI-ai-ollama-probe.txt"
 
 where curl >nul 2>&1
 if not errorlevel 1 (
@@ -79,3 +79,5 @@ REM read the error instead of watching it flash closed.
 echo.
 echo   Ollama stopped. Read any message above, then close this window.
 pause
+
+
