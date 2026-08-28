@@ -4,7 +4,7 @@ function resetWelcomeScreen() {
   const main = document.querySelector('.main');
   if (main) main.classList.add('welcome-mode');
   // Back at the welcome screen (new chat, or the last conversation was
-  // deleted) � reopen the sidebar on desktop; it auto-collapses again once
+  // deleted) - reopen the sidebar on desktop; it auto-collapses again once
   // a message actually gets sent (see hideWelcome()).
   const sb = document.getElementById('sidebar');
   if (sb && window.innerWidth > 640) sb.classList.remove('collapsed');
@@ -100,7 +100,7 @@ function applyOllamaCmdHints() {
 // -- OFFLINE SHELL -----------------------------------------------------
 // Registers sw.js, which precaches every file the app needs to boot. Without
 // it the page is only as offline-capable as the browser's HTTP cache felt like
-// being that day � which is how a camp laptop with no signal ends up staring at
+// being that day - which is how a camp laptop with no signal ends up staring at
 // a blank screen. Registration is deliberately non-blocking and never fatal:
 // service workers need a secure context, so file:// and plain http on a LAN IP
 // simply don't get one, and the app must still work there.
@@ -144,13 +144,13 @@ window.addEventListener('load', async () => {
   if (welcomeTitleEl) welcomeTitleEl.textContent = AI_NAME;
 
   if (window.IS_VISITOR) {
-    // The owner's published file IS the configuration � their sources are
+    // The owner's published file IS the configuration - their sources are
     // the only ones, so the brand-kit seed is skipped (a visitor should
     // never see a document the owner didn't choose to ship).
     applySettings(hydratePublishedSettings(published));
   } else {
     let saved = loadSettings();
-    // Carry the seeded list forward explicitly instead of re-reading settings �
+    // Carry the seeded list forward explicitly instead of re-reading settings -
     // applySettings() rebuilds _TRAINING_FILES_MASTER from whatever it is handed,
     // so a re-read that didn't persist would erase the seed before it renders.
     const seeded = await seedDefaultSourcesIfNeeded(saved);
@@ -188,7 +188,7 @@ window.addEventListener('load', async () => {
     createSession();
   }
 
-  // The welcome/onboarding flow is camp material � a visitor came to use
+  // The welcome/onboarding flow is camp material - a visitor came to use
   // somebody's AI, not to be walked through building one.
   
   document.getElementById('message-input').focus();
