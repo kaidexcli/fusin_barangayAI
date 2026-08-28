@@ -1,12 +1,12 @@
-// ── PERSONALIZATION ───────────────────────────────────────────────────
+﻿// ── PERSONALIZATION ───────────────────────────────────────────────────
 
 function loadSettings() {
-  if (window.BarangayDB) return window.BarangayDB.dbLoadSettings();
+  if (window.AurenAIDB) return window.AurenAIDB.dbLoadSettings();
   return {};
 }
 
 function saveSettings(s) {
-  if (window.BarangayDB) window.BarangayDB.dbSaveSettings(s);
+  if (window.AurenAIDB) window.AurenAIDB.dbSaveSettings(s);
 }
 
 function applySettings(s) {
@@ -926,4 +926,6 @@ ${banned}`;
   // default: english
   return `\n\n## Language Rule (strict)\nRespond ONLY in English, regardless of what language the user writes in. Use clear, plain English — avoid jargon unless the user uses it first.${banned}`;
 }
+
+
 

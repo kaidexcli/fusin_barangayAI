@@ -1,4 +1,4 @@
-// ── MODAL ─────────────────────────────────────────────────────────────
+﻿// ── MODAL ─────────────────────────────────────────────────────────────
 function openModal() {
   document.getElementById('modal-backdrop').style.display = 'flex';
   onboardGoStep(1);   // always start on the intro step
@@ -527,4 +527,5 @@ if (document.readyState === 'loading') {
 } else {
   _gpWireDrag();
 }
+
 

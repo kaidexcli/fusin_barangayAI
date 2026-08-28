@@ -1,11 +1,11 @@
-// ── PUBLISH / VISITOR MODE ────────────────────────────────────────────
+// -- PUBLISH / VISITOR MODE --------------------------------------------
 // The camp's real deliverable is the private AI running on the student's
 // own machine. This file adds the epilogue: a way to hand that same AI to
 // other people as a link.
 //
 // The problem it solves: everything Settings saves lives in the browser's
 // own SQLite/IndexedDB (see db.js), so `git push` would deploy the stock
-// app — none of the student's work travels. Publishing exports that state
+// app � none of the student's work travels. Publishing exports that state
 // to `my-ai.json`, which IS committed. When the app boots and finds that
 // file on a non-localhost host, it runs in VISITOR MODE: the owner's AI,
 // usable by anyone, changeable by no one.
@@ -14,7 +14,7 @@
 // committed to a public fork, and committed keys get scraped. The hosted
 // model's key lives in a Vercel environment variable and is only ever seen
 // by api/proxy.js on the server.
-// ─────────────────────────────────────────────────────────────────────
+// ---------------------------------------------------------------------
 
 const PUBLISH_FILE = 'my-ai.json';
 
@@ -37,7 +37,7 @@ function wantsVisitorPreview() {
 
 // Missing file = not published; that's the normal case for every fresh
 // clone, so a 404 here is expected and must stay silent. A server that
-// answers 404s with index.html would hand us HTML instead of JSON — the
+// answers 404s with index.html would hand us HTML instead of JSON � the
 // parse fails, and an unpublished copy is still the right answer.
 async function loadPublishedConfig() {
   try {
@@ -51,7 +51,7 @@ async function loadPublishedConfig() {
   }
 }
 
-// Published + not on the student's own machine → locked. The host check is
+// Published + not on the student's own machine ? locked. The host check is
 // what keeps the owner's local copy fully editable after they publish:
 // they keep customizing on localhost and republish, which is exactly the
 // git loop the camp is teaching.
@@ -69,11 +69,11 @@ function hydratePublishedSettings(cfg) {
     name: f.name,
     size: f.size || (f.content || '').length,
     content: f.content || '',
-    chunks: window.BarangayRAG ? window.BarangayRAG.chunkText(f.content || '') : [],
+    chunks: window.AurenAIRAG ? window.AurenAIRAG.chunkText(f.content || '') : [],
     addedAt: f.addedAt || Date.now(),
   }));
   // maxlength="40" guards the Settings field, but nothing guards a hand-edited
-  // my-ai.json — and a 500-char name would run clean off the chat label. CSS
+  // my-ai.json � and a 500-char name would run clean off the chat label. CSS
   // truncates it visually; this stops it being carried around at full length.
   if (typeof s.ai_name === 'string') s.ai_name = s.ai_name.slice(0, 60);
   // A visitor must never inherit the owner's keys or spend their quota.
@@ -82,7 +82,7 @@ function hydratePublishedSettings(cfg) {
   return s;
 }
 
-// ── VISITOR LOCKDOWN ──────────────────────────────────────────────────
+// -- VISITOR LOCKDOWN --------------------------------------------------
 // Owner-only chrome is REMOVED from the DOM, not just hidden. Hiding with
 // CSS leaves the buttons one devtools toggle away from working, which is
 // not what "visitors can't personalize it" should mean. The body class
@@ -97,7 +97,7 @@ function lockVisitorUI() {
   // are still removed by this same sweep.
   document.querySelectorAll('[data-owner-only]:not([data-visitor-ok])').forEach(el => el.remove());
 
-  // Conversation titles stay renameable in spirit — but an editable H1 on
+  // Conversation titles stay renameable in spirit � but an editable H1 on
   // someone else's AI reads as "you can change this thing", so it goes.
   const title = document.getElementById('chat-title');
   if (title) {
@@ -106,7 +106,7 @@ function lockVisitorUI() {
   }
 
   // The markup ships "100% local, no cloud" hardcoded. On a published site
-  // that is a false claim — fix the copy that's already on screen; the
+  // that is a false claim � fix the copy that's already on screen; the
   // re-rendered welcome screen gets it from welcomeBriefHTML() directly.
   const brief = document.getElementById('welcome-brief');
   if (brief) brief.innerHTML = welcomeBriefHTML();
@@ -116,7 +116,7 @@ function lockVisitorUI() {
 
 // The partner-pitch strip under the composer ("To be pitched to target
 // partners" + the AWS/Alibaba/Sui badges) is camp-internal material. It is
-// already owner-only, so visitor mode removes it — but a deployed fork that
+// already owner-only, so visitor mode removes it � but a deployed fork that
 // hasn't published my-ai.json yet isn't in visitor mode, and would still show
 // it to the whole internet. Anything hosted, published or not, drops it.
 function hideOwnerPitchFooter() {
@@ -125,7 +125,7 @@ function hideOwnerPitchFooter() {
   if (tip) tip.remove();
 }
 
-// The camp's whole claim is "free, private, no subscription" — and on a published
+// The camp's whole claim is "free, private, no subscription" � and on a published
 // site that is FALSE: replies come from a hosted model through /api. Saying
 // so plainly is the difference between the demo proving the lesson and
 // quietly contradicting it.
@@ -134,14 +134,14 @@ function hideOwnerPitchFooter() {
 // Local and unpublished copies keep the plain one-line caption.
 function welcomeBriefHTML() {
   const cfg = window.PUBLISHED_CONFIG;
-  if (!window.IS_VISITOR || !cfg) return 'Built by Filipino developers · 100% local, no cloud';
+  if (!window.IS_VISITOR || !cfg) return 'Built by Benedict Fusin';
   const who = (cfg.creator_name || '').trim();
   return `
     <span class="welcome-credit">
       <span class="welcome-credit-label">Built by</span>
       <span class="welcome-credit-name">${escHtml(who || 'a student')}</span>
     </span>
-    <span class="welcome-credit-note">at a DEVCON Barangay AI Code Camp · public demo, hosted model</span>`;
+    <span class="welcome-credit-note">at a Auren AI Code Camp � public demo, hosted model</span>`;
 }
 
 function renderPublishedCredit() {
@@ -155,12 +155,12 @@ function renderPublishedCredit() {
   el.className = 'published-credit';
   el.id = 'published-credit';
   el.innerHTML = `
-    <div class="published-credit-main">${escHtml(name)} — built by ${escHtml(who || 'a student')} at a DEVCON Barangay AI Code Camp</div>
-    <div class="published-credit-note">This public demo answers using a hosted model. The real one runs offline on ${escHtml(who || 'their')}${who ? "'s" : ''} own computer — free, private, no subscription. <a href="https://github.com/Spod101/barangayAI" target="_blank" rel="noopener">Build your own →</a></div>`;
+    <div class="published-credit-main">${escHtml(name)} � built by ${escHtml(who || 'a student')} at a Auren AI Code Camp</div>
+    <div class="published-credit-note">This public demo answers using a hosted model. The real one runs offline on ${escHtml(who || 'their')}${who ? "'s" : ''} own computer � free, private, no subscription. <a href="https://github.com/Spod101/auren_ai" target="_blank" rel="noopener">Build your own ?</a></div>`;
   host.appendChild(el);
 }
 
-// ── EXPORT (the Publish button) ───────────────────────────────────────
+// -- EXPORT (the Publish button) ---------------------------------------
 // Everything the student tuned, minus every secret. Disabled sources are
 // left out on purpose: the Sources panel checkbox is the student saying
 // "my AI shouldn't use this", and publishing should honour that.
@@ -201,7 +201,7 @@ function buildPublishConfig() {
     },
     sources,
     // The live model is decided by the MODEL_NAME env var on Vercel and
-    // reported back through /api/models — this is only the label shown
+    // reported back through /api/models � this is only the label shown
     // before that request lands.
     model: { base: '/api', label: 'cloud model' },
   };
@@ -211,9 +211,9 @@ function exportPublishConfig() {
   const cfg = buildPublishConfig();
   // The published site credits its builder by name. Shipping one credited to
   // "a student" defeats the point, and the file is the last place to catch it
-  // — once it's committed, the byline is what the world sees.
+  // � once it's committed, the byline is what the world sees.
   if (!cfg.creator_name) {
-    showToast('Add your name in Settings → Personalize first — it gets credited on your published AI.');
+    showToast('Add your name in Settings ? Personalize first � it gets credited on your published AI.');
     const input = document.getElementById('settings-creator-name');
     if (input) { input.focus(); input.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
     return;
@@ -230,7 +230,7 @@ function exportPublishConfig() {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 
   const kb = Math.max(1, Math.round(json.length / 1024));
-  showToast(`${PUBLISH_FILE} downloaded · ${cfg.sources.length} source${cfg.sources.length === 1 ? '' : 's'} · ${kb} KB`);
+  showToast(`${PUBLISH_FILE} downloaded � ${cfg.sources.length} source${cfg.sources.length === 1 ? '' : 's'} � ${kb} KB`);
   updatePublishSummary();
 }
 
@@ -241,7 +241,7 @@ function exportPublishConfig() {
 function gotoSettingsField(tab, targetId) {
   switchSettingsTab(tab);
   const pane = document.querySelector(`[data-settings-pane="${tab}"]`);
-  // No specific field means "just take me there" — and the pane keeps whatever
+  // No specific field means "just take me there" � and the pane keeps whatever
   // scroll position it had, which on a long pane can land you mid-form.
   if (pane) pane.scrollTop = 0;
   const t = targetId && document.getElementById(targetId);
@@ -268,23 +268,23 @@ function updatePublishSummary() {
   const rows = [
     ['Name', escHtml(cfg.settings.ai_name)],
     ['Picture', cfg.settings.ai_avatar
-      ? 'included — visible to everyone'
-      : `none set — initials shown · ${settingsLink('add one', 'personalize', 'settings-avatar-preview')}`],
+      ? 'included � visible to everyone'
+      : `none set � initials shown � ${settingsLink('add one', 'personalize', 'settings-avatar-preview')}`],
     ['Language', escHtml(cfg.settings.reply_language)],
     ['Personality', cfg.settings.ai_tone ? 'custom prompt' : 'default'],
     ['Sources', cfg.sources.length
       ? `${cfg.sources.length} file${cfg.sources.length === 1 ? '' : 's'}`
-      : `none · ${settingsLink('add files', 'training', 'training-dropzone')}`],
+      : `none � ${settingsLink('add files', 'training', 'training-dropzone')}`],
     ['Guardrails', guards.length
       ? `${guards.length} blocked topic${guards.length === 1 ? '' : 's'}`
-      : `none · ${settingsLink('add some', 'training', 'settings-guardrail-keywords')}`],
+      : `none � ${settingsLink('add some', 'training', 'settings-guardrail-keywords')}`],
     ['Your name', cfg.creator_name
       ? escHtml(cfg.creator_name)
-      : `<span class="publish-warn">⚠ required</span> — set it in ${settingsLink('Personalize', 'personalize', 'settings-creator-name')}`],
+      : `<span class="publish-warn">? required</span> � set it in ${settingsLink('Personalize', 'personalize', 'settings-creator-name')}`],
   ];
   el.innerHTML = rows.map(([k, v]) =>
     `<div class="publish-row"><b>${escHtml(k)}</b><span>${v}</span></div>`).join('')
-    + `<div class="publish-row"><b>Your API keys</b><span>never included — they stay on Vercel</span></div>`;
+    + `<div class="publish-row"><b>Your API keys</b><span>never included � they stay on Vercel</span></div>`;
 }
 
 function previewAsVisitor() {
@@ -306,3 +306,6 @@ window.exportPublishConfig    = exportPublishConfig;
 window.updatePublishSummary   = updatePublishSummary;
 window.gotoSettingsField      = gotoSettingsField;
 window.previewAsVisitor       = previewAsVisitor;
+
+
+

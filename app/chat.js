@@ -23,7 +23,7 @@ document.getElementById('overlay').addEventListener('click', () => {
 function toggleTheme() {
   isDark = !isDark;
   document.documentElement.setAttribute('data-theme', isDark ? 'dark' : '');
-  try { localStorage.setItem('barangayai_theme', isDark ? 'dark' : 'light'); } catch (e) {}
+  try { localStorage.setItem('auren_ai_theme', isDark ? 'dark' : 'light'); } catch (e) {}
   syncThemeIcon();
 }
 
@@ -745,7 +745,7 @@ function rebuildApiMessages(displayMessages) {
 }
 
 // Two kinds of chip, told apart by the prompt itself. A self-contained prompt
-// ("About Barangay AI") is already a whole question, so clicking it sends. A
+// ("About Auren AI") is already a whole question, so clicking it sends. A
 // prompt carrying a `[...]` slot needs the user's own text first, so clicking
 // it stages the prompt in the composer with the slot selected — the next
 // keystroke or paste replaces it. Reading the intent off the prompt rather
@@ -1276,8 +1276,8 @@ function appendTypingIndicator() {
               <div class="thinking-edu-links">
                 <a href="https://ollama.com" target="_blank" rel="noopener">Ollama docs</a>
                 <a href="https://ollama.com/library/qwen2.5" target="_blank" rel="noopener">Qwen 2.5</a>
-                <a href="https://github.com/Spod101/barangayAI" target="_blank" rel="noopener">GitHub repo</a>
-                <a href="https://devcon.ph" target="_blank" rel="noopener">DEVCON</a>
+                <a href="https://github.com/Spod101/auren_ai" target="_blank" rel="noopener">GitHub repo</a>
+                <a href="https://Auren AI" target="_blank" rel="noopener">Auren AI</a>
               </div>
             </div>
           </div>
@@ -1706,7 +1706,7 @@ function renderErrorBubble(errorData) {
     </div>
     <div class="error-bubble-actions">
       ${errorData.cta ? `
-      <button class="error-bubble-cta" onclick="document.getElementById('${errId}').remove(); openGuide(${Number.isInteger(errorData.guidePage) ? errorData.guidePage : 0});">
+      <button class="error-bubble-cta" onclick="document.getElementById('${errId}').remove();  ? errorData.guidePage : 0});">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
         ${escHtml(errorData.ctaLabel || 'Set up the AI')}
       </button>` : ''}
@@ -1852,9 +1852,7 @@ function toggleWebSearchQuick() {
   const next = !window._WEB_SEARCH_ENABLED;
   if (next && !(window._TAVILY_KEY || '').trim()) {
     showToast('Add your Tavily API key in Settings → Model to use web search.');
-    openSettings();
-    switchSettingsTab('model');
-    return;
+return;
   }
   window._WEB_SEARCH_ENABLED = next;
   const s = loadSettings();
@@ -1875,4 +1873,6 @@ function toggleWebSearchSetting(el) {
 function toggleFollowUpsSetting(el) {
   el.classList.toggle('on');
 }
+
+
 

@@ -1,10 +1,10 @@
-// ── WELCOME SCREEN ────────────────────────────────────────────────────
+﻿// -- WELCOME SCREEN ----------------------------------------------------
 function resetWelcomeScreen() {
   cancelPromptEdit();   // an editor for a thread that just went away
   const main = document.querySelector('.main');
   if (main) main.classList.add('welcome-mode');
   // Back at the welcome screen (new chat, or the last conversation was
-  // deleted) — reopen the sidebar on desktop; it auto-collapses again once
+  // deleted) � reopen the sidebar on desktop; it auto-collapses again once
   // a message actually gets sent (see hideWelcome()).
   const sb = document.getElementById('sidebar');
   if (sb && window.innerWidth > 640) sb.classList.remove('collapsed');
@@ -24,8 +24,8 @@ function resetWelcomeScreen() {
     </div>
     <div class="welcome-brief" id="welcome-brief">${welcomeBriefHTML()}</div>
     <div class="suggestion-chips" id="suggestion-grid-welcome">
-      <button class="suggestion-chip" onclick="suggest('What is DEVCON Barangay AI Code Camps? What will I learn and build today?')">
-        <span class="suggestion-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span> About Barangay AI
+      <button class="suggestion-chip" onclick="suggest('What is Auren AI Auren AI Code Camps? What will I learn and build today?')">
+        <span class="suggestion-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span> About Auren AI
       </button>
       <button class="suggestion-chip" onclick="suggest('I am a beginner at a local-AI code camp. Give me a simple first coding exercise in [the language you want to learn] that calls a local Ollama API endpoint and prints the response.')">
         <span class="suggestion-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span> Start Coding
@@ -58,7 +58,7 @@ function resetWelcomeScreen() {
   }
 }
 
-// ── CHAT ACTIONS ──────────────────────────────────────────────────────
+// -- CHAT ACTIONS ------------------------------------------------------
 function clearChat() {
   messages = [];
   const session = getCurrentSession();
@@ -97,10 +97,10 @@ function applyOllamaCmdHints() {
   });
 }
 
-// ── OFFLINE SHELL ─────────────────────────────────────────────────────
+// -- OFFLINE SHELL -----------------------------------------------------
 // Registers sw.js, which precaches every file the app needs to boot. Without
 // it the page is only as offline-capable as the browser's HTTP cache felt like
-// being that day — which is how a camp laptop with no signal ends up staring at
+// being that day � which is how a camp laptop with no signal ends up staring at
 // a blank screen. Registration is deliberately non-blocking and never fatal:
 // service workers need a secure context, so file:// and plain http on a LAN IP
 // simply don't get one, and the app must still work there.
@@ -111,7 +111,7 @@ function registerServiceWorker() {
     .catch(err => console.warn('[SW] not registered:', err.message));
 }
 
-// ── INIT ──────────────────────────────────────────────────────────────
+// -- INIT --------------------------------------------------------------
 window.addEventListener('load', async () => {
   registerServiceWorker();
   // The inline head script already resolved data-theme before first paint;
@@ -120,7 +120,7 @@ window.addEventListener('load', async () => {
   syncThemeIcon();
   sidebarTab('chats');
 
-  if (window.BarangayDB) await window.BarangayDB.initDB();
+  if (window.AurenAIDB) await window.AurenAIDB.initDB();
   loadKBDisabled();
 
   // Is this a published copy of somebody's AI? Decided before anything
@@ -144,13 +144,13 @@ window.addEventListener('load', async () => {
   if (welcomeTitleEl) welcomeTitleEl.textContent = AI_NAME;
 
   if (window.IS_VISITOR) {
-    // The owner's published file IS the configuration — their sources are
+    // The owner's published file IS the configuration � their sources are
     // the only ones, so the brand-kit seed is skipped (a visitor should
     // never see a document the owner didn't choose to ship).
     applySettings(hydratePublishedSettings(published));
   } else {
     let saved = loadSettings();
-    // Carry the seeded list forward explicitly instead of re-reading settings —
+    // Carry the seeded list forward explicitly instead of re-reading settings �
     // applySettings() rebuilds _TRAINING_FILES_MASTER from whatever it is handed,
     // so a re-read that didn't persist would erase the seed before it renders.
     const seeded = await seedDefaultSourcesIfNeeded(saved);
@@ -188,8 +188,15 @@ window.addEventListener('load', async () => {
     createSession();
   }
 
-  // The welcome/onboarding flow is camp material — a visitor came to use
+  // The welcome/onboarding flow is camp material � a visitor came to use
   // somebody's AI, not to be walked through building one.
-  if (!window.IS_VISITOR) openModal();
+  
   document.getElementById('message-input').focus();
 });
+
+
+
+
+
+
+

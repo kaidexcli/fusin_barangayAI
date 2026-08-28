@@ -1,12 +1,12 @@
-// ── SESSION MANAGEMENT ────────────────────────────────────────────────
+﻿// ── SESSION MANAGEMENT ────────────────────────────────────────────────
 
 function saveSessionsToStorage() {
-  if (window.BarangayDB) window.BarangayDB.dbSaveSessions(sessions, currentSessionId);
+  if (window.AurenAIDB) window.AurenAIDB.dbSaveSessions(sessions, currentSessionId);
 }
 
 function loadSessionsFromStorage() {
-  if (!window.BarangayDB) return false;
-  const { sessions: loaded, currentId } = window.BarangayDB.dbLoadSessions();
+  if (!window.AurenAIDB) return false;
+  const { sessions: loaded, currentId } = window.AurenAIDB.dbLoadSessions();
   if (!loaded.length) return false;
   sessions = loaded;
   currentSessionId = (currentId && loaded.some(s => s.id === currentId))
@@ -40,7 +40,7 @@ function loadSession(id) {
   messages = rebuildApiMessages(session.displayMessages);
   renderHistory();
   renderSessionMessages(session);
-  if (window.BarangayDB) window.BarangayDB.dbSetCurrentSession(currentSessionId);
+  if (window.AurenAIDB) window.AurenAIDB.dbSetCurrentSession(currentSessionId);
   if (window.innerWidth <= 640) {
     document.getElementById('sidebar').classList.remove('open');
     document.getElementById('overlay').classList.remove('visible');
@@ -169,4 +169,7 @@ function renderSessionMessages(session) {
   document.getElementById('chat-title').textContent = session.title;
   scrollToBottom();
 }
+
+
+
 

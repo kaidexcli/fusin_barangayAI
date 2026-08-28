@@ -2,7 +2,7 @@
 const API_BASE    = 'http://127.0.0.1:11434/v1';
 const API_KEY     = 'ollama';
 const MODEL       = 'qwen2.5:3b';
-const AI_NAME     = 'DEVCON';
+const AI_NAME     = 'Auren AI';
 const AI_AVATAR   = 'DV';
 const BRAND_COLOR = '#4F46E5';
 const AI_TONE     = null;   // set a string here to override the default system prompt
@@ -72,4 +72,6 @@ let isDark = false;
 let isConnected = false;
 let _KB_DISABLED = new Set(); // names of sources excluded from the model's context
 let _modelWarm = false;      // true after first successful model response in this session
+
+
 

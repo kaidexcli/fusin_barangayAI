@@ -1,4 +1,4 @@
-// ── MODEL SELECTOR ────────────────────────────────────────────────────
+﻿// ── MODEL SELECTOR ────────────────────────────────────────────────────
 // host:port shown in the picker for the default local endpoint
 const MODEL_ENDPOINT = (() => {
   try { const u = new URL(API_BASE); return u.host; } catch { return '127.0.0.1:11434'; }
@@ -30,15 +30,15 @@ const _EXPANDED_ENDPOINTS = new Set(); // bases whose model list is expanded in 
 function modelKey(m) { return `${m.base}||${m.model}`; }
 
 function loadModelPrefs() {
-  if (!(window.BarangayDB && window.BarangayDB.dbGetItem)) return;
-  _DISABLED_MODELS  = new Set(window.BarangayDB.dbGetItem('disabled_models', []) || []);
-  _REMOVED_ENDPOINTS = new Set(window.BarangayDB.dbGetItem('removed_endpoints', []) || []);
+  if (!(window.AurenAIDB && window.AurenAIDB.dbGetItem)) return;
+  _DISABLED_MODELS  = new Set(window.AurenAIDB.dbGetItem('disabled_models', []) || []);
+  _REMOVED_ENDPOINTS = new Set(window.AurenAIDB.dbGetItem('removed_endpoints', []) || []);
 }
 function persistDisabledModels() {
-  if (window.BarangayDB && window.BarangayDB.dbSetItem) window.BarangayDB.dbSetItem('disabled_models', [..._DISABLED_MODELS]);
+  if (window.AurenAIDB && window.AurenAIDB.dbSetItem) window.AurenAIDB.dbSetItem('disabled_models', [..._DISABLED_MODELS]);
 }
 function persistRemovedEndpoints() {
-  if (window.BarangayDB && window.BarangayDB.dbSetItem) window.BarangayDB.dbSetItem('removed_endpoints', [..._REMOVED_ENDPOINTS]);
+  if (window.AurenAIDB && window.AurenAIDB.dbSetItem) window.AurenAIDB.dbSetItem('removed_endpoints', [..._REMOVED_ENDPOINTS]);
 }
 
 const modelIcon = '<svg class="model-dd-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/><path d="M9 15h6"/></svg>';
@@ -711,11 +711,11 @@ async function discoverModels(base, key) {
 
 // Persist user-added endpoints so they survive reloads.
 function saveModels() {
-  if (!(window.BarangayDB && window.BarangayDB.dbSaveModels)) return;
+  if (!(window.AurenAIDB && window.AurenAIDB.dbSaveModels)) return;
   const userModels = MODEL_LIST
     .filter(m => m.source === 'user')
     .map(({ model, endpoint, base, key, kind }) => ({ model, endpoint, base, key, kind, source: 'user' }));
-  window.BarangayDB.dbSaveModels(userModels);
+  window.AurenAIDB.dbSaveModels(userModels);
 }
 
 function addModelEntry({ model, base, key, kind, source = 'user', endpoint: label }) {
@@ -771,8 +771,8 @@ async function initModelRegistry() {
     return;
   }
 
-  if (window.BarangayDB && window.BarangayDB.dbLoadModels) {
-    for (const m of window.BarangayDB.dbLoadModels()) {
+  if (window.AurenAIDB && window.AurenAIDB.dbLoadModels) {
+    for (const m of window.AurenAIDB.dbLoadModels()) {
       if (_REMOVED_ENDPOINTS.has(m.base)) continue;
       addModelEntry({ model: m.model, base: m.base, key: m.key, kind: m.kind, source: 'user' });
     }
@@ -976,4 +976,7 @@ function renderConnState(state) {
 
 checkConnectivity({ announce: true });
 setInterval(() => { checkConnectivity(); refreshEndpointStatuses(); }, 15000);
+
+
+
 

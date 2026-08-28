@@ -1,4 +1,4 @@
-// ── THINKING TOGGLE ───────────────────────────────────────────────────
+﻿// ── THINKING TOGGLE ───────────────────────────────────────────────────
 function syncThinkingUI() {
   const on = !!window._THINKING_ENABLED;
   const btn = document.getElementById('thinking-btn');
@@ -258,11 +258,11 @@ async function sendMessage(anchor) {
     // Retrieval: score every chunk against the user's message via TF-IDF +
     // cosine similarity (plain JS, no embedding model/network call) and keep
     // only the top-K most relevant, instead of dumping whole files.
-    const allChunks = window.BarangayRAG.buildChunkIndex(_trainingFiles);
+    const allChunks = window.AurenAIRAG.buildChunkIndex(_trainingFiles);
     _totalChunkCount = allChunks.length;
 
     if (allChunks.length) {
-      const top = window.BarangayRAG.retrieveTopChunks(text, allChunks);
+      const top = window.AurenAIRAG.retrieveTopChunks(text, allChunks);
       _retrievedCount = top.length;
       _kbSources = top.map((c, i) => ({
         n: i + 1, file: c.file, index: c.index, total: c.total,
@@ -972,4 +972,7 @@ async function sendMessage(anchor) {
     document.getElementById('message-input').focus();
   }
 }
+
+
+
 
