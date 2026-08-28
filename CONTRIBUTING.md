@@ -1,6 +1,6 @@
-# Contributing to Barangay AI
+# Contributing to Auren AI
 
-Thanks for wanting to help. This project exists so people at DEVCON camps and in barangays can run their own private AI — contributions that make it simpler, faster on low-end laptops, or friendlier in Filipino languages are especially welcome.
+Thanks for wanting to help. This project exists so people at Auren AI camps and in Auren AIs can run their own private AI — contributions that make it simpler, faster on low-end laptops, or friendlier in Filipino languages are especially welcome.
 
 No build step, no framework, no bundler. If you can edit a file and refresh a browser tab, you can contribute.
 
@@ -18,11 +18,11 @@ No build step, no framework, no bundler. If you can edit a file and refresh a br
 
 `main` is protected: nobody pushes to it directly, including the maintainer. Every change lands through a pull request.
 
-1. **Fork** [`Spod101/barangayAI`](https://github.com/Spod101/barangayAI) (Fork button, top-right on GitHub), then clone your fork:
+1. **Fork** [`Spod101/auren_ai`](https://github.com/Spod101/auren_ai) (Fork button, top-right on GitHub), then clone your fork:
 
    ```bash
-   git clone https://github.com/YOUR-USERNAME/barangayAI.git
-   cd barangayAI
+   git clone https://github.com/YOUR-USERNAME/auren_ai.git
+   cd auren_ai
    ```
 
 2. **Branch** off `main`. Name it after what it does:
@@ -43,7 +43,7 @@ No build step, no framework, no bundler. If you can edit a file and refresh a br
 
    Imperative mood, no trailing period. A `feat:` / `fix:` / `docs:`-style prefix is welcome but not required.
 
-5. **Push** to your fork and **open a pull request** against `Spod101/barangayAI` `main`.
+5. **Push** to your fork and **open a pull request** against `Spod101/auren_ai` `main`.
 
 6. A maintainer reviews it. Expect comments — they're about the code, not about you. Push follow-up commits to the same branch and the PR updates itself.
 
@@ -120,3 +120,6 @@ User-facing text should read plainly for someone who isn't a developer. If you t
 ## License
 
 By contributing, you agree that your contributions are licensed under the [MIT License](LICENSE), same as the rest of the project.
+
+
+
