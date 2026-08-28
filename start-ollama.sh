@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ─────────────────────────────────────────────────────────────────────
-#  Barangay AI — start Ollama so the browser can reach it. (macOS/Linux)
+#  Auren AI — start Ollama so the browser can reach it. (macOS/Linux)
 #
 #  Run with:  ./start-ollama.sh      (once:  chmod +x start-ollama.sh)
 #
@@ -66,3 +66,5 @@ echo
 
 export OLLAMA_ORIGINS="*"
 exec ollama serve
+
+
