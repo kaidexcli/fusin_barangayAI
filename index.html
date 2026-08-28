@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A private, offline-capable AI chat app by Auren AI. Runs entirely in your browser on top of a local language model � no accounts, no cloud, no server. Chat in English, Filipino, Taglish, Bisaya, Hiligaynon, or Ilocano, and ground answers on your own documents.">
+<meta name="description" content="A private, offline-capable AI chat app by Auren AI. Runs entirely in your browser on top of a local language model - no accounts, no cloud, no server. Chat in English, Filipino, Taglish, Bisaya, Hiligaynon, or Ilocano, and ground answers on your own documents.">
 <meta name="author" content="Auren AI">
 <meta name="keywords" content="Auren AI, Auren AI, local AI, offline AI, Ollama, private AI chat, Filipino AI, Taglish, RAG, digital literacy">
 <meta name="theme-color" content="#17132E" media="(prefers-color-scheme: dark)">
@@ -13,28 +13,28 @@
 
 <link rel="canonical" href="https://auren-ai.vercel.app/">
 
-<!-- Open Graph / social previews. Absolute URLs � crawlers fetch these
+<!-- Open Graph / social previews. Absolute URLs - crawlers fetch these
      without a page context to resolve relative paths against. -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Auren AI">
 <meta property="og:url" content="https://auren-ai.vercel.app/">
-<meta property="og:title" content="Auren AI � private, offline AI for everyone">
-<meta property="og:description" content="A private, offline-capable AI chat app by Auren AI. Runs entirely in your browser on top of a local language model � no accounts, no cloud, no server.">
+<meta property="og:title" content="Auren AI - private, offline AI for everyone">
+<meta property="og:description" content="A private, offline-capable AI chat app by Auren AI. Runs entirely in your browser on top of a local language model - no accounts, no cloud, no server.">
 <meta property="og:image" content="https://auren-ai.vercel.app/assets/poster.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1536">
 <meta property="og:image:height" content="1024">
-<meta property="og:image:alt" content="Auren AI poster � Auren AI">
+<meta property="og:image:alt" content="Auren AI poster - Auren AI">
 <meta property="og:locale" content="en_PH">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Auren AI � private, offline AI for everyone">
-<meta name="twitter:description" content="A private, offline-capable AI chat app by Auren AI. Runs entirely in your browser on top of a local language model � no accounts, no cloud, no server.">
+<meta name="twitter:title" content="Auren AI - private, offline AI for everyone">
+<meta name="twitter:description" content="A private, offline-capable AI chat app by Auren AI. Runs entirely in your browser on top of a local language model - no accounts, no cloud, no server.">
 <meta name="twitter:image" content="https://auren-ai.vercel.app/assets/poster.png">
-<meta name="twitter:image:alt" content="Auren AI poster � Auren AI">
-<title>Auren AI � Auren AI</title>
+<meta name="twitter:image:alt" content="Auren AI poster - Auren AI">
+<title>Auren AI</title>
 <script>
-  // Resolve theme before first paint � defaults to dark, honors a saved choice.
+  // Resolve theme before first paint - defaults to dark, honors a saved choice.
   (function () {
     var saved = null;
     try { saved = localStorage.getItem('auren_ai_theme'); } catch (e) {}
@@ -96,7 +96,7 @@
 
 <div class="sidebar-overlay" id="overlay"></div>
 
-<!-- MOBILE-ONLY sidebar trigger � the icon rail (the only other way to reach
+<!-- MOBILE-ONLY sidebar trigger - the icon rail (the only other way to reach
      the sidebar) is hidden below 640px, and the header itself is hidden on
      the welcome screen, so this floating button is the sole entry point
      while no conversation is active. -->
@@ -132,7 +132,7 @@
   <div class="sidebar-brand">
     <div class="logo-wrapper">
       <div class="brand-text">
-        <img class="brand-wordmark" src="assets/logos/light_logo.png" alt="Auren AI � AI Sa Auren AI">
+        <img class="brand-wordmark" src="assets/logos/light_logo.png" alt="Auren AI - AI Sa Auren AI">
       </div>
     </div>
     <button class="sidebar-collapse-btn" onclick="toggleSidebar()" title="Collapse sidebar">
@@ -159,12 +159,12 @@
     </div>
   </div>
 
-  <!-- SOURCES PANEL � same store as Settings ? Training -->
+  <!-- SOURCES PANEL - same store as Settings ? Training -->
   <div class="kb-panel" id="kb-panel">
     <div class="kb-head">
       <span class="kb-title">Sources</span>
       <span class="kb-total" id="kb-total"></span>
-      <button class="kb-add" data-owner-only onclick="addSourceClick()" title="Add source files � grounds answers in your own content">+ Add</button>
+      <button class="kb-add" data-owner-only onclick="addSourceClick()" title="Add source files - grounds answers in your own content">+ Add</button>
     </div>
     <div class="kb-list" id="kb-list"></div>
   </div>
@@ -183,13 +183,13 @@
             <path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/>
           </svg>
         </div>
-        <!-- Rewritten by renderConnIdentity() to the live server � family;
+        <!-- Rewritten by renderConnIdentity() to the live server - family;
              the default here is what a first run shows. -->
-        <div class="sidebar-wifi-ssid" id="sidebar-wifi-ssid">Ollama � Qwen</div>
+        <div class="sidebar-wifi-ssid" id="sidebar-wifi-ssid">Ollama - Qwen</div>
       </div>
       <div class="sidebar-wifi-status checking" id="sidebar-wifi-status">
         <div class="swifi-dot"></div>
-        <span id="sidebar-wifi-text">Checking connection�</span>
+        <span id="sidebar-wifi-text">Checking connection-</span>
       </div>
     </div>
   </div>
@@ -215,7 +215,7 @@
     <div class="header-actions">
       <div class="status-chip checking" id="header-status-chip">
         <div class="status-dot" id="header-status-dot"></div>
-        <span id="header-status-text">Checking�</span>
+        <span id="header-status-text">Checking-</span>
       </div>
       
       
@@ -265,7 +265,7 @@
     <!-- Model picker (floats above input-box) -->
     <div class="model-dropdown" id="model-dropdown" data-owner-only data-visitor-ok>
       <div class="model-dd-search-row">
-        <input type="text" class="model-dd-search" id="model-dd-search" placeholder="Search models�" oninput="filterModels(this.value)" autocomplete="off">
+        <input type="text" class="model-dd-search" id="model-dd-search" placeholder="Search models-" oninput="filterModels(this.value)" autocomplete="off">
         <button class="model-dd-add" data-owner-only title="Add a model" onclick="openAddModels()">+</button>
       </div>
       <div class="model-dd-recent-label">Recent</div>
@@ -274,7 +274,7 @@
     <div class="input-box">
       <!-- Mirrors the textarea's typography off-screen. Once the draft is
            wider than the slot left between the controls, the composer moves
-           the text onto its own full-width row above them � the textarea
+           the text onto its own full-width row above them - the textarea
            itself can't report this, since it always fills the width it's
            given. Kept inside .input-box so it inherits the same font. -->
       <span class="composer-measure" id="composer-measure" aria-hidden="true"></span>
@@ -284,7 +284,7 @@
              deep thinking, web search, swap the model) changes what the AI is
              or spends the owner's quota. -->
         <div class="tools-wrap" data-owner-only>
-          <button class="tools-btn" id="tools-btn" onclick="toggleToolsDropdown()" title="Tools � sources, deep thinking, web search" aria-haspopup="true" aria-expanded="false">
+          <button class="tools-btn" id="tools-btn" onclick="toggleToolsDropdown()" title="Tools - sources, deep thinking, web search" aria-haspopup="true" aria-expanded="false">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </button>
           <div class="tools-dropdown" id="tools-dropdown">
@@ -294,16 +294,16 @@
               <span class="tools-item-label" id="model-select-label-mobile">Select model</span>
             </button>
             <div class="tools-section-divider tools-item-model"></div>
-            <button class="tools-item" id="kb-chip" onclick="addSourceClick(); closeToolsDropdown();" title="Add files � grounds answers in your own content">
+            <button class="tools-item" id="kb-chip" onclick="addSourceClick(); closeToolsDropdown();" title="Add files - grounds answers in your own content">
               <span class="tools-item-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg></span>
               <span class="tools-item-label">Add file</span>
             </button>
-            <button class="tools-item" id="thinking-btn" onclick="toggleThinkingQuick()" aria-pressed="false" title="Deep thinking is OFF � click to enable">
+            <button class="tools-item" id="thinking-btn" onclick="toggleThinkingQuick()" aria-pressed="false" title="Deep thinking is OFF - click to enable">
               <span class="tools-item-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 1.5.5 2.5 1 3.5.5 1 1 2 1 3.5h6c0-1.5.5-2.5 1-3.5.5-1 1-2 1-3.5a5 5 0 0 0-5-5z"/><path d="M9 21h6"/><path d="M10 18h4"/></svg></span>
               <span class="tools-item-label">Deep thinking</span>
               <span class="tools-item-check">?</span>
             </button>
-            <button class="tools-item" id="web-search-btn" onclick="toggleWebSearchQuick()" aria-pressed="false" title="Web search is OFF � click to enable">
+            <button class="tools-item" id="web-search-btn" onclick="toggleWebSearchQuick()" aria-pressed="false" title="Web search is OFF - click to enable">
               <span class="tools-item-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18"/></svg></span>
               <span class="tools-item-label">Web search</span>
               <span class="tools-item-check">?</span>
@@ -327,7 +327,7 @@
         </button>
       </div>
     </div>
-    <!-- Camp pitch material � owner-only, and stripped on ANY hosted copy by
+    <!-- Camp pitch material - owner-only, and stripped on ANY hosted copy by
          hideOwnerPitchFooter() (app/publish.js), published or not. A visitor
          gets the creator's credit line in its place. -->
     <div class="input-tip" id="input-tip" data-owner-only>
@@ -376,7 +376,7 @@
         <div class="endpoint-row">
           <input class="settings-input" id="local-endpoint" type="text" placeholder="Paste endpoint URL, e.g. http://127.0.0.1:11434/v1" autocomplete="off">
         </div>
-        <input class="settings-input" id="local-key" type="password" placeholder="API key (optional � for protected local endpoints)" autocomplete="off">
+        <input class="settings-input" id="local-key" type="password" placeholder="API key (optional - for protected local endpoints)" autocomplete="off">
         <div class="endpoint-actions">
           <button class="endpoint-btn ghost" id="local-test-btn" onclick="testEndpoint('local')">Test</button>
           <button class="endpoint-btn solid" id="local-add-btn" onclick="addEndpoint('local')">Add</button>
@@ -386,7 +386,7 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg>
         </button>
         <div class="quickstart-body" id="quickstart-body" hidden>
-          <p>Run a model on your own computer with <strong>Ollama</strong> � free, private, and works offline.</p>
+          <p>Run a model on your own computer with <strong>Ollama</strong> - free, private, and works offline.</p>
 
           <div class="qs-step">
             <span class="qs-num">1</span>
@@ -400,7 +400,7 @@
             <span class="qs-num">2</span>
             <div class="qs-text">
               <strong>Download a model</strong>
-              <span>In a terminal, pull a small model to start (�2&nbsp;GB):</span>
+              <span>In a terminal, pull a small model to start (-2&nbsp;GB):</span>
               <code>ollama pull qwen2.5:3b</code>
             </div>
           </div>
@@ -409,9 +409,9 @@
             <span class="qs-num">3</span>
             <div class="qs-text">
               <strong>Start the server with the bundled script</strong>
-              <span>Run it from the project folder � it frees port 11434 first, then starts Ollama with browser access enabled. Double-clicking the file works too. <em>Leave that terminal open while you chat.</em></span>
+              <span>Run it from the project folder - it frees port 11434 first, then starts Ollama with browser access enabled. Double-clicking the file works too. <em>Leave that terminal open while you chat.</em></span>
               <code data-ollama-cmd="script">./start-ollama.sh</code>
-              <span>Rather type it yourself? Same thing in one line � <code>OLLAMA_ORIGINS</code> is what lets the browser reach it:</span>
+              <span>Rather type it yourself? Same thing in one line - <code>OLLAMA_ORIGINS</code> is what lets the browser reach it:</span>
               <code data-ollama-cmd="restart">pkill -f ollama; OLLAMA_ORIGINS=* ollama serve</code>
             </div>
           </div>
@@ -422,7 +422,7 @@
               <strong>Connect it here</strong>
               <span>Paste this endpoint in the field above, then click <strong>Add</strong>:</span>
               <code>http://127.0.0.1:11434/v1</code>
-              <span>Use the numbers, not <code>localhost</code>: on Windows <code>localhost</code> usually resolves to IPv6 <code>::1</code> first, while Ollama listens on IPv4 only � so <code>localhost</code> gets refused before it ever reaches the server.</span>
+              <span>Use the numbers, not <code>localhost</code>: on Windows <code>localhost</code> usually resolves to IPv6 <code>::1</code> first, while Ollama listens on IPv4 only - so <code>localhost</code> gets refused before it ever reaches the server.</span>
             </div>
           </div>
           <p class="qs-tip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:4px"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.2 1 1.9h6c.1-.7.4-1.4 1-1.9A7 7 0 0 0 12 2z"/></svg>Tip: bigger models (<code>llama3.1:8b</code>, <code>qwen2.5:7b</code>) are smarter but need more RAM. Start small and scale up.</p>
@@ -462,7 +462,7 @@
   </div>
 </div>
 
-<!-- OLLAMA CHECK MODAL � shown when a one-click model download can't reach Ollama -->
+<!-- OLLAMA CHECK MODAL - shown when a one-click model download can't reach Ollama -->
 <div class="settings-modal" id="ollama-check-modal" onclick="handleOllamaCheckBackdrop(event)">
   <div class="settings-card" id="ollama-check-card" style="max-width:400px">
     <div class="settings-header">
@@ -479,22 +479,22 @@
     </div>
     <div class="settings-body">
       <p class="modal-text" style="margin-bottom:10px">One-click downloads pull the model straight through Ollama, so it needs to be installed and running first.</p>
-      <p class="modal-text" style="font-size:12.5px;color:var(--text-muted);margin-bottom:14px">Already have it? Run the bundled script from the project folder � <code data-ollama-cmd="script">./start-ollama.sh</code> � it frees the port and starts Ollama with browser access in one go, then retry below. Prefer one line? <code data-ollama-cmd="restart">pkill -f ollama; OLLAMA_ORIGINS=* ollama serve</code>.</p>
+      <p class="modal-text" style="font-size:12.5px;color:var(--text-muted);margin-bottom:14px">Already have it? Run the bundled script from the project folder - <code data-ollama-cmd="script">./start-ollama.sh</code> - it frees the port and starts Ollama with browser access in one go, then retry below. Prefer one line? <code data-ollama-cmd="restart">pkill -f ollama; OLLAMA_ORIGINS=* ollama serve</code>.</p>
       <div id="ollama-check-note" class="rec-cpu-note" style="color:#EF4444" hidden></div>
       <div class="endpoint-actions">
         <button class="endpoint-btn ghost" style="flex:1" onclick="openOllamaDownloadPage()">Get Ollama ?</button>
-        <button class="endpoint-btn solid" style="flex:1" id="ollama-check-retry-btn" onclick="retryOllamaCheck()">I've installed it � Retry</button>
+        <button class="endpoint-btn solid" style="flex:1" id="ollama-check-retry-btn" onclick="retryOllamaCheck()">I've installed it - Retry</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- PULL TERMINAL MODAL � mimics a terminal window showing the live "ollama pull" output -->
+<!-- PULL TERMINAL MODAL - mimics a terminal window showing the live "ollama pull" output -->
 <div class="settings-modal" id="pull-terminal-modal" onclick="handlePullTerminalBackdrop(event)">
   <div class="settings-card pull-terminal-card" id="pull-terminal-card">
     <div class="pull-terminal-titlebar">
       <span class="pull-terminal-dots"><span></span><span></span><span></span></span>
-      <span class="pull-terminal-title" id="pull-terminal-title">Downloading�</span>
+      <span class="pull-terminal-title" id="pull-terminal-title">Downloading-</span>
       <button class="pull-terminal-close" onclick="closePullTerminal()" aria-label="Close">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
@@ -508,7 +508,7 @@
      no internet used to leave a blank page. See vendor/README.md. -->
 <script src="vendor/pdf.min.mjs" type="module"></script>
 <script type="module">
-  // pdf.js worker � required for PDF parsing
+  // pdf.js worker - required for PDF parsing
   if (window.pdfjsLib || window['pdfjs-dist/build/pdf']) {
     const lib = window.pdfjsLib || window['pdfjs-dist/build/pdf'];
     lib.GlobalWorkerOptions.workerSrc = 'vendor/pdf.worker.min.mjs';
