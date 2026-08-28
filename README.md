@@ -1,10 +1,12 @@
-# Barangay AI
 
-A polished, fully client-side AI chat app by **DEVCON.PH** — built to run on top of a **local** large language model so anyone can have a private, offline-capable AI assistant. No accounts, no cloud, no server. Just a handful of files and your browser.
 
-Built for DEVCON camps and barangay-level digital literacy: open one HTML file, point it at a local model, and start chatting — in English, Filipino, Taglish, or your own regional language.
+# Auren AI
 
-**Repository:** [github.com/Spod101/barangayAI](https://github.com/Spod101/barangayAI)
+A polished, fully client-side AI chat app by **Auren AI** — built to run on top of a **local** large language model so anyone can have a private, offline-capable AI assistant. No accounts, no cloud, no server. Just a handful of files and your browser.
+
+Built for Auren AI camps and Auren AI-level digital literacy: open one HTML file, point it at a local model, and start chatting — in English, Filipino, Taglish, or your own regional language.
+
+**Repository:** [github.com/Spod101/auren_ai](https://github.com/Spod101/auren_ai)
 
 ---
 
@@ -14,7 +16,7 @@ Built for DEVCON camps and barangay-level digital literacy: open one HTML file, 
 - **Conversation history** — multiple sessions, saved durably in your browser via SQLite (sql.js + IndexedDB). Your chats never leave your device.
 - **Filipino language support** — reply in **English, Filipino (Tagalog), Taglish, Bisaya, Hiligaynon, or Ilocano**, with grammar rules tuned to keep responses natural and free of Indonesian/Malay contamination.
 - **Customizable persona** — name your AI, pick a tone (friendly, formal, teacher, strict), or write your own system prompt. There's even an AI-assisted prompt expander.
-- **Ground it on your docs** — upload `.txt`, `.md`, `.json`, `.csv`, `.log`, `.pdf`, or `.docx` files as knowledge the AI can draw on. Ships pre-loaded with the DEVCON 17 brand kit so answers are grounded from the first run (removable like any other source).
+- **Ground it on your docs** — upload `.txt`, `.md`, `.json`, `.csv`, `.log`, `.pdf`, or `.docx` files as knowledge the AI can draw on. Ships pre-loaded with the Auren AI 17 brand kit so answers are grounded from the first run (removable like any other source).
 - **Shows its receipts** — every answer can show exactly which chunk of which of your files it used, the similarity score that earned each one its place in the prompt, and the **literal prompt that was sent to the model**. Retrieval is a mechanism you can inspect and tune, not a black box.
 - **Works with the internet unplugged** — libraries and fonts are vendored, and a service worker precaches the whole app on first visit. After that the only thing that has to be reachable is your model, which is on your own machine.
 - **Web search** — optional live web results via [Tavily](https://tavily.com) (bring your own API key).
@@ -84,14 +86,14 @@ echo 'export OLLAMA_ORIGINS="*"' >> ~/.zshrc
 
 ### 3. Get the code
 
-Clone the repo — or [download it as a ZIP](https://github.com/Spod101/barangayAI/archive/refs/heads/main.zip) if you don't have Git:
+Clone the repo — or [download it as a ZIP](https://github.com/Spod101/auren_ai/archive/refs/heads/main.zip) if you don't have Git:
 
 ```bash
-git clone https://github.com/Spod101/barangayAI.git
-cd barangayAI
+git clone https://github.com/Spod101/auren_ai.git
+cd auren_ai
 ```
 
-Planning to change anything and send it back? [Fork it](https://github.com/Spod101/barangayAI/fork) first and clone your own fork instead — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Planning to change anything and send it back? [Fork it](https://github.com/Spod101/auren_ai/fork) first and clone your own fork instead — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### 4. Open the app
 
@@ -120,7 +122,7 @@ All defaults live in the **CONFIG block at the top of [`app/config.js`](app/conf
 const API_BASE     = 'http://127.0.0.1:11434/v1';  // your local model endpoint
 const API_KEY      = 'ollama';                       // any value works for Ollama
 const MODEL        = 'qwen2.5:3b';                   // default model id
-const AI_NAME      = 'DEVCON';                        // display name
+const AI_NAME      = 'Auren AI';                        // display name
 const AI_AVATAR    = 'DV';                            // avatar initials
 const BRAND_COLOR  = '#4F46E5';
 const ACCENT_COLOR = '#00A8E8';
@@ -177,7 +179,7 @@ Web search is off until you add a key. Get one from [Tavily](https://tavily.com)
 ## Project structure
 
 ```
-barangayAI/
+auren_ai/
 ├── start-ollama.cmd    # one-click: free port 11434, then serve with browser access (Windows)
 ├── start-ollama.sh     # same, for macOS / Linux
 ├── index.html          # markup only
@@ -203,13 +205,13 @@ barangayAI/
 ├── vendor/             # sql.js, pdf.js, mammoth.js, fonts — committed, not CDN (see vendor/README.md)
 ├── assets/
 │   ├── logos/          # vendor + brand logos shown in the model picker and welcome screen
-│   └── DEVCON-17-Brand-Kit-Aug-6-2026.md   # seeded as the default Source on first run (app/training.js)
+│   └── Auren AI-17-Brand-Kit-Aug-6-2026.md   # seeded as the default Source on first run (app/training.js)
 └── README.md
 ```
 
 ### Changing the pre-loaded Source
 
-The app ships one Source already loaded so answers are grounded on first run. To swap in your own document, replace `assets/DEVCON-17-Brand-Kit-Aug-6-2026.md` and update the name in `SEED_SOURCE` near the top of the seed block in `app/training.js`. The markdown is read at runtime, so your edit shows up on the next reload — nothing to rebuild.
+The app ships one Source already loaded so answers are grounded on first run. To swap in your own document, replace `assets/Auren AI-17-Brand-Kit-Aug-6-2026.md` and update the name in `SEED_SOURCE` near the top of the seed block in `app/training.js`. The markdown is read at runtime, so your edit shows up on the next reload — nothing to rebuild.
 
 The seed only ever applies to a library that is empty or still holds the untouched default; it never injects itself into sources you added. It also needs the app served over `http://` (see Quick start) — `fetch()` is blocked at the `file://` origin.
 
@@ -276,4 +278,7 @@ Released under the [MIT License](LICENSE) — free to use, modify, fork, and sha
 
 ---
 
-Made with 💙 by [DEVCON.PH](https://devcon.ph)
+Made with 💙 by [Auren AI](https://Auren AI)
+
+
+
