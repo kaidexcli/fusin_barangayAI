@@ -1,4 +1,4 @@
-// ── SQLite persistence layer ──────────────────────────────────────────
+﻿// ── SQLite persistence layer ──────────────────────────────────────────
 // Uses sql.js (SQLite compiled to WASM) with IndexedDB for durability.
 // All SQLite queries are synchronous; only IndexedDB I/O is async.
 //
@@ -10,7 +10,7 @@
 // only when they actually change.
 // ─────────────────────────────────────────────────────────────────────
 
-const _IDB_NAME    = 'barangayai_db';
+const _IDB_NAME    = 'auren_ai_db';
 const _IDB_VERSION = 2;             // v2 added the `sources` store
 const _IDB_STORE   = 'sqlitedb';
 const _IDB_KEY     = 'main';
@@ -150,7 +150,7 @@ async function _idbSaveSources(files) {
 // whole library, instead of once per message the way rag.js would otherwise
 // have to (buildChunkIndex falls back to chunking on the fly when they're absent).
 function _hydrateSources(records) {
-  const chunk = (typeof window !== 'undefined' && window.BarangayRAG && window.BarangayRAG.chunkText) || null;
+  const chunk = (typeof window !== 'undefined' && window.AurenAIRAG && window.AurenAIRAG.chunkText) || null;
   return (records || []).map(r => ({
     name:    r.name,
     size:    r.size || 0,
@@ -264,9 +264,9 @@ function _createSchema() {
 
 function _migrateFromLocalStorage() {
   try {
-    const rawSessions = localStorage.getItem('barangayai_sessions');
-    const currentId   = localStorage.getItem('barangayai_current_session');
-    const rawSettings = localStorage.getItem('barangayai_settings');
+    const rawSessions = localStorage.getItem('auren_ai_sessions');
+    const currentId   = localStorage.getItem('auren_ai_current_session');
+    const rawSettings = localStorage.getItem('auren_ai_settings');
 
     if (rawSessions) {
       const parsed = JSON.parse(rawSessions);
@@ -589,7 +589,7 @@ function dbSaveSettings(s) {
   // rewriting the whole library each time would put back exactly the megabytes
   // that moving it out of the SQLite file removed.
   if (!_sourcesEqual(incoming, _sources)) {
-    const chunk = (window.BarangayRAG && window.BarangayRAG.chunkText) || null;
+    const chunk = (window.AurenAIRAG && window.AurenAIRAG.chunkText) || null;
     _sources = incoming.map(f => ({
       name:    f.name,
       size:    f.size || 0,
@@ -653,7 +653,7 @@ function dbGetItem(key, fallback) {
 
 // ── Exports ───────────────────────────────────────────────────────────
 
-window.BarangayDB = {
+window.AurenAIDB = {
   initDB,
   dbSaveSessions,
   dbLoadSessions,
@@ -666,3 +666,7 @@ window.BarangayDB = {
   dbGetItem,
   dbFlush,
 };
+
+
+
+
