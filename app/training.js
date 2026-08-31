@@ -1,4 +1,4 @@
-﻿// ── TRAINING TAB ──────────────────────────────────────────────────────
+// ── TRAINING TAB ──────────────────────────────────────────────────────
 window.switchSettingsTab = switchSettingsTab;
 window.handleTrainingDrop = handleTrainingDrop;
 window.handleTrainingFiles = handleTrainingFiles;
@@ -270,6 +270,8 @@ function addSourceClick() {
 // pointing its draft array at a copy of the current master list.
 async function handleSourceFiles(fileList) {
   if (!fileList || !fileList.length) return;
+  if (window.IS_VISITOR) return; // Visitors cannot upload sources
+
   const priorDraft = window._TRAINING_FILES_DRAFT;
   window._TRAINING_FILES_DRAFT = (window._TRAINING_FILES_MASTER || []).slice();
   try {
@@ -278,22 +280,30 @@ async function handleSourceFiles(fileList) {
   } finally {
     window._TRAINING_FILES_DRAFT = priorDraft;
   }
-  window._TRAINING_FILES_ACTIVE = window._TRAINING_FILES_MASTER.filter(f => !_KB_DISABLED.has(f.name));
+  _rebuildActiveFiles();
   persistKBMaster();
   renderSourcesPanel();
 }
 
+// Rebuild active files for RAG from master minus disabled.
+function _rebuildActiveFiles() {
+  const master = (window._TRAINING_FILES_MASTER || []);
+  window._TRAINING_FILES_ACTIVE = master.filter(f => !_KB_DISABLED.has(f.name));
+}
+
 function toggleSource(name, on) {
+  if (window.IS_VISITOR) return;
   if (on) _KB_DISABLED.delete(name); else _KB_DISABLED.add(name);
-  window._TRAINING_FILES_ACTIVE = (window._TRAINING_FILES_MASTER || []).filter(f => !_KB_DISABLED.has(f.name));
+  _rebuildActiveFiles();
   saveKBDisabled();
   renderSourcesPanel();
 }
 
 function removeSource(name) {
+  if (window.IS_VISITOR) return;
   window._TRAINING_FILES_MASTER = (window._TRAINING_FILES_MASTER || []).filter(f => f.name !== name);
   _KB_DISABLED.delete(name);
-  window._TRAINING_FILES_ACTIVE = window._TRAINING_FILES_MASTER.filter(f => !_KB_DISABLED.has(f.name));
+  _rebuildActiveFiles();
   saveKBDisabled();
   persistKBMaster();
   renderSourcesPanel();

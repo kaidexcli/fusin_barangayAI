@@ -1,4 +1,4 @@
-﻿// ── SQLite persistence layer ──────────────────────────────────────────
+// ── SQLite persistence layer ──────────────────────────────────────────
 // Uses sql.js (SQLite compiled to WASM) with IndexedDB for durability.
 // All SQLite queries are synchronous; only IndexedDB I/O is async.
 //
@@ -11,7 +11,7 @@
 // ─────────────────────────────────────────────────────────────────────
 
 const _IDB_NAME    = 'auren_ai_db';
-const _IDB_VERSION = 2;             // v2 added the `sources` store
+const _IDB_VERSION = 3;             // v3 added per-user source isolation
 const _IDB_STORE   = 'sqlitedb';
 const _IDB_KEY     = 'main';
 const _IDB_SOURCES = 'sources';
@@ -21,6 +21,31 @@ let _db = null;
 // initDB() so dbLoadSettings() can stay synchronous — every caller of it
 // (app/settings.js, app/training.js, app/publish.js, app/onboarding.js) is.
 let _sources = [];
+
+// ── Anonymous user ID ─────────────────────────────────────────────────
+// A random ID assigned once per browser and persisted in localStorage. It
+// never leaves the device — the only purpose is to namespace one user's
+// uploads away from another's inside the shared IndexedDB. On a fresh
+// visit localStorage.getItem returns null, a new ID is minted, and that ID
+// is reused for every subsequent session in this browser.
+const _USER_ID_KEY = 'auren_ai_user_id';
+let _userId = null;
+
+function _ensureUserId() {
+  if (_userId) return _userId;
+  try {
+    _userId = localStorage.getItem(_USER_ID_KEY);
+    if (!_userId) {
+      _userId = 'u_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+      localStorage.setItem(_USER_ID_KEY, _userId);
+    }
+  } catch (e) {
+    // Private browsing or storage disabled — fall back to a session-only ID.
+    // The sources won't survive a tab close, but nothing breaks.
+    _userId = 'u_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+  }
+  return _userId;
+}
 // Which stored row currently carries a prompt snapshot, per session. Only the
 // newest answer keeps one (see _messageMeta), so when a newer answer arrives the
 // previous row has to give its snapshot up — this is how that row is found
@@ -109,10 +134,16 @@ async function _idbSave(data) {
 async function _idbLoadSources() {
   try {
     const idb = await _idbOpen();
+    const uid = _ensureUserId();
     return await new Promise(resolve => {
       const tx  = idb.transaction(_IDB_SOURCES, 'readonly');
       const req = tx.objectStore(_IDB_SOURCES).getAll();
-      req.onsuccess = () => resolve(Array.isArray(req.result) ? req.result : []);
+      req.onsuccess = () => {
+        const all = Array.isArray(req.result) ? req.result : [];
+        // Only return sources belonging to the current user ID (or legacy unassigned on first load)
+        const userSources = all.filter(r => r._userId === uid || (!r._userId && all.length > 0));
+        resolve(userSources);
+      };
       req.onerror   = () => resolve([]);
     });
   } catch (e) {
@@ -120,26 +151,36 @@ async function _idbLoadSources() {
   }
 }
 
-// Wholesale replace, which is the semantic dbSaveSettings has always had. Only
-// called when the list actually changed — see _sourcesEqual.
+// Wholesale replace for the current user's sources only.
+// Other users' sources are preserved in IndexedDB.
 async function _idbSaveSources(files) {
   const idb = await _idbOpen();
+  const uid = _ensureUserId();
   return new Promise((resolve, reject) => {
     const tx    = idb.transaction(_IDB_SOURCES, 'readwrite');
     const store = tx.objectStore(_IDB_SOURCES);
-    store.clear();
-    // `chunks` is deliberately not stored. It is derived from `content` and cost
-    // more than the content itself — 9.18 MB of JSON for 8 MB of text, because
-    // chunks overlap by design. Recomputed on load instead, which is the same
-    // trade app/publish.js already makes for my-ai.json.
-    for (const f of files) {
-      store.put({
-        name:    f.name,
-        size:    f.size || 0,
-        content: f.content || '',
-        addedAt: f.addedAt || Date.now(),
-      }, f.name);
-    }
+    const cursorReq = store.openCursor();
+    cursorReq.onsuccess = e => {
+      const cursor = e.target.result;
+      if (cursor) {
+        // Delete only this user's records (or legacy unassigned records)
+        if (cursor.value && (cursor.value._userId === uid || !cursor.value._userId)) {
+          cursor.delete();
+        }
+        cursor.continue();
+      } else {
+        // Insert this user's sources with a composite key `${uid}:${f.name}`
+        for (const f of files) {
+          store.put({
+            _userId: uid,
+            name:    f.name,
+            size:    f.size || 0,
+            content: f.content || '',
+            addedAt: f.addedAt || Date.now(),
+          }, uid + ':' + f.name);
+        }
+      }
+    };
     tx.oncomplete = () => resolve();
     tx.onerror    = () => reject(tx.error);
     tx.onabort    = () => reject(tx.error || new Error('transaction aborted'));
@@ -364,6 +405,7 @@ async function initDB() {
   _db = saved ? new SQL.Database(saved) : new SQL.Database();
   _createSchema();
 
+  _ensureUserId();
   const stored = await _idbLoadSources();
   _sources = _hydrateSources(stored);
 
@@ -371,7 +413,7 @@ async function initDB() {
   if (!stored.length) await _adoptLegacySources(); // old table, or that import
 
   _persistDB();
-  console.log(`[DB] SQLite ready · ${_sources.length} source${_sources.length === 1 ? '' : 's'}`);
+  console.log(`[DB] SQLite ready · ${_sources.length} source${_sources.length === 1 ? '' : 's'} (user ${_userId})`);
 }
 
 // ── Public: sessions ──────────────────────────────────────────────────
@@ -624,6 +666,10 @@ function dbLoadSettings() {
   return s;
 }
 
+function dbGetUserId() {
+  return _ensureUserId();
+}
+
 // ── Public: model endpoints ───────────────────────────────────────────
 
 function dbSaveModels(models) {
@@ -665,6 +711,7 @@ window.AurenAIDB = {
   dbSetItem,
   dbGetItem,
   dbFlush,
+  dbGetUserId,
 };
 
 

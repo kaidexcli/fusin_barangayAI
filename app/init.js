@@ -1,4 +1,4 @@
-﻿// -- WELCOME SCREEN ----------------------------------------------------
+// -- WELCOME SCREEN ----------------------------------------------------
 function resetWelcomeScreen() {
   cancelPromptEdit();   // an editor for a thread that just went away
   const main = document.querySelector('.main');

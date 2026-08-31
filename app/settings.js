@@ -1,4 +1,4 @@
-﻿// ── PERSONALIZATION ───────────────────────────────────────────────────
+// ── PERSONALIZATION ───────────────────────────────────────────────────
 
 function loadSettings() {
   if (window.AurenAIDB) return window.AurenAIDB.dbLoadSettings();
