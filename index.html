@@ -46,16 +46,113 @@
 </head>
 <body>
 
-<svg class="bg-scene" aria-hidden="true" focusable="false" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+<svg class="bg-scene" aria-hidden="true" focusable="false" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <!-- Aurora Gaussian Blur Filters -->
+    <filter id="aurora-blur-curtain" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="36" result="blur"/>
+    </filter>
+    <filter id="aurora-blur-intense" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="55" result="blur"/>
+    </filter>
+    <filter id="aurora-blur-rays" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+    </filter>
+
+    <!-- Aurora Gradients -->
+    <!-- Violet to Magenta High-Altitude Veil -->
+    <linearGradient id="aurora-grad-veil" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#ec4899" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#00f0ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00ff87" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Arctic Cyan to Electric Turquoise Ribbon -->
+    <linearGradient id="aurora-grad-cyan" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.9"/>
+      <stop offset="38%" stop-color="#00ff87" stop-opacity="0.8"/>
+      <stop offset="75%" stop-color="#8b5cf6" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Low-Altitude Atomic Oxygen Neon Emerald -->
+    <linearGradient id="aurora-grad-emerald" x1="0%" y1="25%" x2="100%" y2="75%">
+      <stop offset="0%" stop-color="#00ff87" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#00ff87" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.9"/>
+      <stop offset="82%" stop-color="#10e891" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Vertical Ray Streaks Gradient -->
+    <linearGradient id="aurora-grad-ray" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00ff87" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#00ff87" stop-opacity="0.8"/>
+      <stop offset="65%" stop-color="#00f0ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Sparkle shape -->
     <symbol id="bg-sparkle-shape" viewBox="-10 -10 20 20">
       <path d="M0,-10 C1,-3 3,-1 10,0 C3,1 1,3 0,10 C-1,3 -3,1 -10,0 C-3,-1 -1,-3 0,-10 Z"/>
     </symbol>
   </defs>
 
-  <!-- Small circuit/constellation node-graph, echoing the hero art's
-       upper-right connected-dot cluster -->
-  <g class="bg-constellation" fill="none" stroke="var(--dc-accent)" stroke-width="1">
+  <!-- 1. Deep Celestial Starfield -->
+  <g class="bg-stars">
+    <circle cx="95" cy="110" r="1.2" fill="#ffffff" opacity="0.85"/>
+    <circle cx="210" cy="75" r="1.8" fill="#e0f7ff" opacity="0.9"/>
+    <circle cx="340" cy="190" r="1" fill="#ffffff" opacity="0.7"/>
+    <circle cx="480" cy="85" r="1.5" fill="#80f7ff" opacity="0.8"/>
+    <circle cx="620" cy="140" r="1" fill="#ffffff" opacity="0.6"/>
+    <circle cx="750" cy="60" r="2.2" fill="#ffffff" opacity="0.95"/>
+    <circle cx="890" cy="165" r="1.4" fill="#a78bfa" opacity="0.75"/>
+    <circle cx="1020" cy="90" r="1" fill="#ffffff" opacity="0.8"/>
+    <circle cx="1140" cy="130" r="1.6" fill="#00ff87" opacity="0.85"/>
+    <circle cx="1270" cy="70" r="1.2" fill="#ffffff" opacity="0.75"/>
+    <circle cx="1380" cy="115" r="1.8" fill="#80f7ff" opacity="0.9"/>
+    <circle cx="150" cy="380" r="1" fill="#ffffff" opacity="0.6"/>
+    <circle cx="290" cy="480" r="1.4" fill="#e0f7ff" opacity="0.7"/>
+    <circle cx="430" cy="620" r="1" fill="#ffffff" opacity="0.5"/>
+    <circle cx="670" cy="510" r="1.6" fill="#80f7ff" opacity="0.8"/>
+    <circle cx="850" cy="580" r="1.2" fill="#ffffff" opacity="0.7"/>
+    <circle cx="1030" cy="490" r="1.5" fill="#00ff87" opacity="0.75"/>
+    <circle cx="1220" cy="590" r="1" fill="#ffffff" opacity="0.6"/>
+    <circle cx="1360" cy="460" r="1.7" fill="#ffffff" opacity="0.85"/>
+    <circle cx="530" cy="770" r="1.2" fill="#e0f7ff" opacity="0.65"/>
+    <circle cx="820" cy="790" r="1.5" fill="#80f7ff" opacity="0.75"/>
+    <circle cx="1180" cy="750" r="1.1" fill="#ffffff" opacity="0.6"/>
+  </g>
+
+  <!-- 2. Aurora Ribbons & Curtains -->
+  <!-- Upper Ionosphere Violet/Magenta Veil -->
+  <path class="aurora-curtain aurora-curtain-1" filter="url(#aurora-blur-intense)" fill="url(#aurora-grad-veil)"
+    d="M-120,-60 C240,110 650,-50 1020,130 C1250,230 1420,90 1560,50 L1560,340 C1380,270 1060,400 780,220 C480,50 180,290 -120,190 Z"/>
+
+  <!-- Mid-Altitude Arctic Cyan Arc -->
+  <path class="aurora-curtain aurora-curtain-2" filter="url(#aurora-blur-curtain)" fill="url(#aurora-grad-cyan)"
+    d="M-80,70 C220,-40 580,170 940,40 C1220,-70 1440,150 1540,90 L1540,370 C1320,270 1080,410 740,250 C440,110 140,330 -80,210 Z"/>
+
+  <!-- Lower Atomic Oxygen Emerald Luminous Wave -->
+  <path class="aurora-curtain aurora-curtain-3" filter="url(#aurora-blur-curtain)" fill="url(#aurora-grad-emerald)"
+    d="M-100,160 C180,60 490,230 840,100 C1140,10 1340,210 1540,150 L1540,410 C1280,310 1030,430 660,270 C300,140 80,370 -100,280 Z"/>
+
+  <!-- Vertical Fluted Aurora Ray Columns -->
+  <g class="aurora-rays" filter="url(#aurora-blur-rays)">
+    <rect x="140" y="40" width="28" height="280" rx="14" fill="url(#aurora-grad-ray)"/>
+    <rect x="260" y="10" width="34" height="340" rx="17" fill="url(#aurora-grad-ray)"/>
+    <rect x="410" y="50" width="30" height="310" rx="15" fill="url(#aurora-grad-ray)"/>
+    <rect x="580" y="20" width="40" height="360" rx="20" fill="url(#aurora-grad-ray)"/>
+    <rect x="730" y="0" width="36" height="380" rx="18" fill="url(#aurora-grad-ray)"/>
+    <rect x="890" y="40" width="32" height="320" rx="16" fill="url(#aurora-grad-ray)"/>
+    <rect x="1050" y="20" width="38" height="350" rx="19" fill="url(#aurora-grad-ray)"/>
+    <rect x="1210" y="60" width="30" height="300" rx="15" fill="url(#aurora-grad-ray)"/>
+    <rect x="1340" y="30" width="34" height="330" rx="17" fill="url(#aurora-grad-ray)"/>
+  </g>
+
+  <!-- 3. Polar Constellation & Sparkles -->
+  <g class="bg-constellation" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="1.2">
     <line x1="1180" y1="20" x2="1180" y2="120"/>
     <line x1="1180" y1="120" x2="1260" y2="180"/>
     <line x1="1260" y1="180" x2="1340" y2="140"/>
@@ -63,35 +160,19 @@
     <line x1="1180" y1="120" x2="1100" y2="180"/>
   </g>
   <g class="bg-constellation" stroke="none">
-    <circle cx="1180" cy="20" r="2.5" fill="var(--scene-gold)"/>
-    <circle cx="1180" cy="120" r="2" fill="var(--dc-accent)"/>
-    <circle cx="1260" cy="180" r="2.5" fill="var(--scene-gold)"/>
-    <circle cx="1340" cy="140" r="2" fill="var(--dc-accent)"/>
-    <circle cx="1310" cy="260" r="2" fill="var(--dc-accent)"/>
-    <circle cx="1100" cy="180" r="2" fill="var(--dc-accent)"/>
+    <circle cx="1180" cy="20" r="3" fill="#00ff87"/>
+    <circle cx="1180" cy="120" r="2.5" fill="#00f0ff"/>
+    <circle cx="1260" cy="180" r="3" fill="#00ff87"/>
+    <circle cx="1340" cy="140" r="2.5" fill="#00f0ff"/>
+    <circle cx="1310" cy="260" r="2.5" fill="#a78bfa"/>
+    <circle cx="1100" cy="180" r="2.5" fill="#00f0ff"/>
   </g>
 
-  <!-- Dust/ember particle field, scattered across the whole scene rather
-       than one corner, like the drifting motes around the hero art's
-       track and skyline -->
-  <g class="bg-particles">
-    <circle cx="1180" cy="90" r="3" fill="var(--scene-dust)"/>
-    <circle cx="1310" cy="80" r="2" fill="var(--dc-accent)"/>
-    <circle cx="1380" cy="200" r="3" fill="var(--scene-gold)"/>
-    <circle cx="1000" cy="180" r="2" fill="var(--dc-accent)"/>
-    <circle cx="120" cy="120" r="2" fill="var(--scene-dust)"/>
-    <circle cx="60" cy="300" r="2.5" fill="var(--scene-gold)"/>
-    <circle cx="700" cy="500" r="2" fill="var(--scene-gold)"/>
-    <circle cx="950" cy="620" r="2" fill="var(--dc-accent)"/>
-    <circle cx="300" cy="780" r="2.5" fill="var(--dc-orange)"/>
-    <circle cx="1050" cy="700" r="2" fill="var(--dc-violet)"/>
-  </g>
-
-  <!-- Four-point sparkle flourishes at a few focal points, echoing the
-       star in the "17?" mark -->
-  <use class="bg-sparkle" href="#bg-sparkle-shape" x="1106" y="686" width="28" height="28" fill="var(--scene-gold)"/>
-  <use class="bg-sparkle" href="#bg-sparkle-shape" x="541" y="771" width="18" height="18" fill="var(--dc-accent)"/>
-  <use class="bg-sparkle" href="#bg-sparkle-shape" x="142" y="492" width="16" height="16" fill="var(--dc-violet)"/>
+  <!-- Four-point sparkle flourishes -->
+  <use class="bg-sparkle" href="#bg-sparkle-shape" x="1106" y="686" width="28" height="28" fill="#00ff87"/>
+  <use class="bg-sparkle" href="#bg-sparkle-shape" x="541" y="771" width="20" height="20" fill="#00f0ff"/>
+  <use class="bg-sparkle" href="#bg-sparkle-shape" x="142" y="492" width="18" height="18" fill="#8b5cf6"/>
+  <use class="bg-sparkle" href="#bg-sparkle-shape" x="920" y="320" width="22" height="22" fill="#ec4899"/>
 </svg>
 
 <div class="sidebar-overlay" id="overlay"></div>
