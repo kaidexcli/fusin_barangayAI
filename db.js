@@ -10,7 +10,7 @@
 // only when they actually change.
 // ─────────────────────────────────────────────────────────────────────
 
-const _IDB_NAME    = 'auren_ai_db';
+const _IDB_NAME    = 'loompoint_db';
 const _IDB_VERSION = 3;             // v3 added per-user source isolation
 const _IDB_STORE   = 'sqlitedb';
 const _IDB_KEY     = 'main';
@@ -28,13 +28,13 @@ let _sources = [];
 // uploads away from another's inside the shared IndexedDB. On a fresh
 // visit localStorage.getItem returns null, a new ID is minted, and that ID
 // is reused for every subsequent session in this browser.
-const _USER_ID_KEY = 'auren_ai_user_id';
+const _USER_ID_KEY = 'loompoint_user_id';
 let _userId = null;
 
 function _ensureUserId() {
   if (_userId) return _userId;
   try {
-    _userId = localStorage.getItem(_USER_ID_KEY);
+    _userId = localStorage.getItem(_USER_ID_KEY) || localStorage.getItem('auren_ai_user_id');
     if (!_userId) {
       _userId = 'u_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
       localStorage.setItem(_USER_ID_KEY, _userId);
@@ -191,7 +191,8 @@ async function _idbSaveSources(files) {
 // whole library, instead of once per message the way rag.js would otherwise
 // have to (buildChunkIndex falls back to chunking on the fly when they're absent).
 function _hydrateSources(records) {
-  const chunk = (typeof window !== 'undefined' && window.AurenAIRAG && window.AurenAIRAG.chunkText) || null;
+  const rag = typeof window !== 'undefined' && window.LoompointRAG;
+  const chunk = (rag && rag.chunkText) || null;
   return (records || []).map(r => ({
     name:    r.name,
     size:    r.size || 0,
@@ -305,9 +306,9 @@ function _createSchema() {
 
 function _migrateFromLocalStorage() {
   try {
-    const rawSessions = localStorage.getItem('auren_ai_sessions');
-    const currentId   = localStorage.getItem('auren_ai_current_session');
-    const rawSettings = localStorage.getItem('auren_ai_settings');
+    const rawSessions = localStorage.getItem('loompoint_sessions') || localStorage.getItem('auren_ai_sessions');
+    const currentId   = localStorage.getItem('loompoint_current_session') || localStorage.getItem('auren_ai_current_session');
+    const rawSettings = localStorage.getItem('loompoint_settings') || localStorage.getItem('auren_ai_settings');
 
     if (rawSessions) {
       const parsed = JSON.parse(rawSessions);
@@ -631,7 +632,8 @@ function dbSaveSettings(s) {
   // rewriting the whole library each time would put back exactly the megabytes
   // that moving it out of the SQLite file removed.
   if (!_sourcesEqual(incoming, _sources)) {
-    const chunk = (window.AurenAIRAG && window.AurenAIRAG.chunkText) || null;
+    const rag = window.LoompointRAG;
+    const chunk = (rag && rag.chunkText) || null;
     _sources = incoming.map(f => ({
       name:    f.name,
       size:    f.size || 0,
@@ -699,7 +701,7 @@ function dbGetItem(key, fallback) {
 
 // ── Exports ───────────────────────────────────────────────────────────
 
-window.AurenAIDB = {
+window.LoompointDB = {
   initDB,
   dbSaveSessions,
   dbLoadSessions,
@@ -713,6 +715,7 @@ window.AurenAIDB = {
   dbFlush,
   dbGetUserId,
 };
+window.AurenAIDB = window.LoompointDB;
 
 
 

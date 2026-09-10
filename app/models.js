@@ -1,4 +1,4 @@
-﻿// ── MODEL SELECTOR ────────────────────────────────────────────────────
+// ── MODEL SELECTOR ────────────────────────────────────────────────────
 // host:port shown in the picker for the default local endpoint
 const MODEL_ENDPOINT = (() => {
   try { const u = new URL(API_BASE); return u.host; } catch { return '127.0.0.1:11434'; }
@@ -30,15 +30,18 @@ const _EXPANDED_ENDPOINTS = new Set(); // bases whose model list is expanded in 
 function modelKey(m) { return `${m.base}||${m.model}`; }
 
 function loadModelPrefs() {
-  if (!(window.AurenAIDB && window.AurenAIDB.dbGetItem)) return;
-  _DISABLED_MODELS  = new Set(window.AurenAIDB.dbGetItem('disabled_models', []) || []);
-  _REMOVED_ENDPOINTS = new Set(window.AurenAIDB.dbGetItem('removed_endpoints', []) || []);
+  const db = window.LoompointDB;
+  if (!(db && db.dbGetItem)) return;
+  _DISABLED_MODELS  = new Set(db.dbGetItem('disabled_models', []) || []);
+  _REMOVED_ENDPOINTS = new Set(db.dbGetItem('removed_endpoints', []) || []);
 }
 function persistDisabledModels() {
-  if (window.AurenAIDB && window.AurenAIDB.dbSetItem) window.AurenAIDB.dbSetItem('disabled_models', [..._DISABLED_MODELS]);
+  const db = window.LoompointDB;
+  if (db && db.dbSetItem) db.dbSetItem('disabled_models', [..._DISABLED_MODELS]);
 }
 function persistRemovedEndpoints() {
-  if (window.AurenAIDB && window.AurenAIDB.dbSetItem) window.AurenAIDB.dbSetItem('removed_endpoints', [..._REMOVED_ENDPOINTS]);
+  const db = window.LoompointDB;
+  if (db && db.dbSetItem) db.dbSetItem('removed_endpoints', [..._REMOVED_ENDPOINTS]);
 }
 
 const modelIcon = '<svg class="model-dd-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/><path d="M9 15h6"/></svg>';
@@ -711,11 +714,12 @@ async function discoverModels(base, key) {
 
 // Persist user-added endpoints so they survive reloads.
 function saveModels() {
-  if (!(window.AurenAIDB && window.AurenAIDB.dbSaveModels)) return;
+  const db = window.LoompointDB;
+  if (!(db && db.dbSaveModels)) return;
   const userModels = MODEL_LIST
     .filter(m => m.source === 'user')
     .map(({ model, endpoint, base, key, kind }) => ({ model, endpoint, base, key, kind, source: 'user' }));
-  window.AurenAIDB.dbSaveModels(userModels);
+  db.dbSaveModels(userModels);
 }
 
 function addModelEntry({ model, base, key, kind, source = 'user', endpoint: label }) {
@@ -771,8 +775,9 @@ async function initModelRegistry() {
     return;
   }
 
-  if (window.AurenAIDB && window.AurenAIDB.dbLoadModels) {
-    for (const m of window.AurenAIDB.dbLoadModels()) {
+  const db = window.LoompointDB;
+  if (db && db.dbLoadModels) {
+    for (const m of db.dbLoadModels()) {
       if (_REMOVED_ENDPOINTS.has(m.base)) continue;
       addModelEntry({ model: m.model, base: m.base, key: m.key, kind: m.kind, source: 'user' });
     }

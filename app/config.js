@@ -2,8 +2,8 @@
 const API_BASE    = 'http://127.0.0.1:11434/v1';
 const API_KEY     = 'ollama';
 const MODEL       = 'qwen2.5:3b';
-const AI_NAME     = 'Auren AI';
-const AI_AVATAR   = 'DV';
+const AI_NAME     = 'Loompoint';
+const AI_AVATAR   = 'LP';
 const BRAND_COLOR = '#4F46E5';
 const AI_TONE     = null;   // set a string here to override the default system prompt
 const SUGGESTIONS = null;   // set an array of { icon, label, desc, prompt } to override suggestion cards

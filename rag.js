@@ -1,4 +1,4 @@
-﻿// ── Simple RAG layer ──────────────────────────────────────────────────
+// ── Simple RAG layer ──────────────────────────────────────────────────
 // Chunks training file content at upload time, then scores chunks against
 // the user's message with classic TF-IDF + cosine similarity so only the
 // top-K relevant chunks go into the prompt instead of the whole file.
@@ -111,11 +111,12 @@ function retrieveTopChunks(query, chunkItems, topK = RAG_TOP_K) {
   return scored.filter(c => c.score > 0).slice(0, Math.min(topK, scored.length));
 }
 
-window.AurenAIRAG = {
+window.LoompointRAG = {
   chunkText,
   buildChunkIndex,
   retrieveTopChunks,
 };
+window.AurenAIRAG = window.LoompointRAG;
 
 
 

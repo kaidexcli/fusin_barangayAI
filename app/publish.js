@@ -69,7 +69,7 @@ function hydratePublishedSettings(cfg) {
     name: f.name,
     size: f.size || (f.content || '').length,
     content: f.content || '',
-    chunks: window.AurenAIRAG ? window.AurenAIRAG.chunkText(f.content || '') : [],
+    chunks: window.LoompointRAG ? window.LoompointRAG.chunkText(f.content || '') : [],
     addedAt: f.addedAt || Date.now(),
   }));
   // maxlength="40" guards the Settings field, but nothing guards a hand-edited

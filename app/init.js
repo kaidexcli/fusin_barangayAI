@@ -17,15 +17,15 @@ function resetWelcomeScreen() {
   const greeting = window._GREETING_ACTIVE || greetings[Math.floor(Math.random() * greetings.length)];
   const _activeName = window._AI_NAME_ACTIVE || AI_NAME;
   ws.innerHTML = `
-    <img class="welcome-icon" src="assets/logos/17_logo.png" alt="DEVCON 17">
+    <img class="welcome-icon" src="assets/logos/17_logo.png" alt="Loompoint 17">
     <div class="welcome-hero">
       <div class="welcome-title">${_activeName}</div>
       <div class="welcome-greeting">${greeting} <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path d="M5 3v4"/><path d="M3 5h4"/><path d="M19 17v4"/><path d="M17 19h4"/></svg></div>
     </div>
     <div class="welcome-brief" id="welcome-brief">${welcomeBriefHTML()}</div>
     <div class="suggestion-chips" id="suggestion-grid-welcome">
-      <button class="suggestion-chip" onclick="suggest('What is Auren AI Auren AI Code Camps? What will I learn and build today?')">
-        <span class="suggestion-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span> About Auren AI
+      <button class="suggestion-chip" onclick="suggest('What is Loompoint? What will I learn and build today?')">
+        <span class="suggestion-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span> About Loompoint
       </button>
       <button class="suggestion-chip" onclick="suggest('I am a beginner at a local-AI code camp. Give me a simple first coding exercise in [the language you want to learn] that calls a local Ollama API endpoint and prints the response.')">
         <span class="suggestion-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span> Start Coding
@@ -120,7 +120,7 @@ window.addEventListener('load', async () => {
   syncThemeIcon();
   sidebarTab('chats');
 
-  if (window.AurenAIDB) await window.AurenAIDB.initDB();
+  if (window.LoompointDB) await window.LoompointDB.initDB();
   loadKBDisabled();
 
   // Is this a published copy of somebody's AI? Decided before anything

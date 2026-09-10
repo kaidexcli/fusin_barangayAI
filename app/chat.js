@@ -23,7 +23,10 @@ document.getElementById('overlay').addEventListener('click', () => {
 function toggleTheme() {
   isDark = !isDark;
   document.documentElement.setAttribute('data-theme', isDark ? 'dark' : '');
-  try { localStorage.setItem('auren_ai_theme', isDark ? 'dark' : 'light'); } catch (e) {}
+  try {
+    localStorage.setItem('loompoint_theme', isDark ? 'dark' : 'light');
+    localStorage.setItem('auren_ai_theme', isDark ? 'dark' : 'light');
+  } catch (e) {}
   syncThemeIcon();
 }
 
@@ -745,7 +748,7 @@ function rebuildApiMessages(displayMessages) {
 }
 
 // Two kinds of chip, told apart by the prompt itself. A self-contained prompt
-// ("About Auren AI") is already a whole question, so clicking it sends. A
+// ("About Loompoint") is already a whole question, so clicking it sends. A
 // prompt carrying a `[...]` slot needs the user's own text first, so clicking
 // it stages the prompt in the composer with the slot selected — the next
 // keystroke or paste replaces it. Reading the intent off the prompt rather
@@ -1276,8 +1279,8 @@ function appendTypingIndicator() {
               <div class="thinking-edu-links">
                 <a href="https://ollama.com" target="_blank" rel="noopener">Ollama docs</a>
                 <a href="https://ollama.com/library/qwen2.5" target="_blank" rel="noopener">Qwen 2.5</a>
-                <a href="https://github.com/Spod101/auren_ai" target="_blank" rel="noopener">GitHub repo</a>
-                <a href="https://Auren AI" target="_blank" rel="noopener">Auren AI</a>
+                <a href="https://github.com/Spod101/loompoint" target="_blank" rel="noopener">GitHub repo</a>
+                <a href="https://loompoint.vercel.app" target="_blank" rel="noopener">Loompoint</a>
               </div>
             </div>
           </div>

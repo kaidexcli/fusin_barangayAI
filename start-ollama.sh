@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ─────────────────────────────────────────────────────────────────────
-#  Auren AI — start Ollama so the browser can reach it. (macOS/Linux)
+#  Loompoint — start Ollama so the browser can reach it. (macOS/Linux)
 #
 #  Run with:  ./start-ollama.sh      (once:  chmod +x start-ollama.sh)
 #

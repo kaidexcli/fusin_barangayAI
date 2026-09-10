@@ -3,41 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A private, offline-capable AI chat app by Auren AI. Runs entirely in your browser on top of a local language model - no accounts, no cloud, no server. Chat in English, Filipino, Taglish, Bisaya, Hiligaynon, or Ilocano, and ground answers on your own documents.">
-<meta name="author" content="Auren AI">
-<meta name="keywords" content="Auren AI, Auren AI, local AI, offline AI, Ollama, private AI chat, Filipino AI, Taglish, RAG, digital literacy">
+<meta name="description" content="A private, offline-capable AI chat app by Loompoint. Runs entirely in your browser on top of a local language model - no accounts, no cloud, no server. Chat in English, Filipino, Taglish, Bisaya, Hiligaynon, or Ilocano, and ground answers on your own documents.">
+<meta name="author" content="Loompoint">
+<meta name="keywords" content="Loompoint, local AI, offline AI, Ollama, private AI chat, Filipino AI, Taglish, RAG, digital literacy">
 <meta name="theme-color" content="#17132E" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#EDEBF7" media="(prefers-color-scheme: light)">
 <link rel="icon" href="assets/poster.png">
 <link rel="apple-touch-icon" href="assets/poster.png">
 
-<link rel="canonical" href="https://auren-ai.vercel.app/">
+<link rel="canonical" href="https://loompoint.vercel.app/">
 
 <!-- Open Graph / social previews. Absolute URLs - crawlers fetch these
      without a page context to resolve relative paths against. -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Auren AI">
-<meta property="og:url" content="https://auren-ai.vercel.app/">
-<meta property="og:title" content="Auren AI - private, offline AI for everyone">
-<meta property="og:description" content="A private, offline-capable AI chat app by Auren AI. Runs entirely in your browser on top of a local language model - no accounts, no cloud, no server.">
-<meta property="og:image" content="https://auren-ai.vercel.app/assets/poster.png">
+<meta property="og:site_name" content="Loompoint">
+<meta property="og:url" content="https://loompoint.vercel.app/">
+<meta property="og:title" content="Loompoint - private, offline AI for everyone">
+<meta property="og:description" content="A private, offline-capable AI chat app by Loompoint. Runs entirely in your browser on top of a local language model - no accounts, no cloud, no server.">
+<meta property="og:image" content="https://loompoint.vercel.app/assets/poster.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1536">
 <meta property="og:image:height" content="1024">
-<meta property="og:image:alt" content="Auren AI poster - Auren AI">
+<meta property="og:image:alt" content="Loompoint poster - Loompoint">
 <meta property="og:locale" content="en_PH">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Auren AI - private, offline AI for everyone">
-<meta name="twitter:description" content="A private, offline-capable AI chat app by Auren AI. Runs entirely in your browser on top of a local language model - no accounts, no cloud, no server.">
-<meta name="twitter:image" content="https://auren-ai.vercel.app/assets/poster.png">
-<meta name="twitter:image:alt" content="Auren AI poster - Auren AI">
-<title>Auren AI</title>
+<meta name="twitter:title" content="Loompoint - private, offline AI for everyone">
+<meta name="twitter:description" content="A private, offline-capable AI chat app by Loompoint. Runs entirely in your browser on top of a local language model - no accounts, no cloud, no server.">
+<meta name="twitter:image" content="https://loompoint.vercel.app/assets/poster.png">
+<meta name="twitter:image:alt" content="Loompoint poster - Loompoint">
+<title>Loompoint</title>
 <script>
   // Resolve theme before first paint - defaults to dark, honors a saved choice.
   (function () {
     var saved = null;
-    try { saved = localStorage.getItem('auren_ai_theme'); } catch (e) {}
+    try { saved = localStorage.getItem('loompoint_theme') || localStorage.getItem('auren_ai_theme'); } catch (e) {}
     if (saved !== 'light') document.documentElement.setAttribute('data-theme', 'dark');
   })();
 </script>
@@ -132,7 +132,7 @@
   <div class="sidebar-brand">
     <div class="logo-wrapper">
       <div class="brand-text">
-        <img class="brand-wordmark" src="assets/logos/light_logo.png" alt="Auren AI - AI Sa Auren AI">
+        <img class="brand-wordmark" src="assets/logos/light_logo.png" alt="Loompoint">
       </div>
     </div>
     <button class="sidebar-collapse-btn" onclick="toggleSidebar()" title="Collapse sidebar">
@@ -209,7 +209,7 @@
     <div class="header-title">
       <!-- No model pill here: the status chip on the right already names the
            active model, and the composer names it again. -->
-      <h1 id="chat-title" contenteditable="true" spellcheck="false" title="Click to rename this conversation" onblur="commitTitleRename(this)" onkeydown="handleTitleKey(event, this)">Auren AI</h1>
+      <h1 id="chat-title" contenteditable="true" spellcheck="false" title="Click to rename this conversation" onblur="commitTitleRename(this)" onkeydown="handleTitleKey(event, this)">Loompoint</h1>
     </div>
 
     <div class="header-actions">
@@ -228,15 +228,15 @@
   <div class="chat-area" id="chat-area">
     <!-- Welcome screen -->
     <div class="welcome-screen" id="welcome-screen">
-      <img class="welcome-icon" src="assets/logos/17_logo.png" alt="Auren AI 17">
+      <img class="welcome-icon" src="assets/logos/17_logo.png" alt="Loompoint 17">
       <div class="welcome-hero">
-        <div class="welcome-title">Auren AI</div>
+        <div class="welcome-title">Loompoint</div>
         <div class="welcome-greeting" id="welcome-greeting"><span id="welcome-greeting-text">Good to see you!</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path d="M5 3v4"/><path d="M3 5h4"/><path d="M19 17v4"/><path d="M17 19h4"/></svg></div>
       </div>
       <div class="welcome-brief" id="welcome-brief">Built by Benedict Fusin</div>
       <div class="suggestion-chips" id="suggestion-grid">
-        <button class="suggestion-chip" onclick="suggest('What is Auren AI Code Camps? What will I learn and build today?')">
-          <span class="suggestion-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span> About Auren AI
+        <button class="suggestion-chip" onclick="suggest('What is Loompoint? What will I learn and build today?')">
+          <span class="suggestion-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span> About Loompoint
         </button>
         <button class="suggestion-chip" onclick="suggest('I am a beginner at a local-AI code camp. Give me a simple first coding exercise in [the language you want to learn] that calls a local Ollama API endpoint and prints the response.')">
           <span class="suggestion-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span> Start Coding

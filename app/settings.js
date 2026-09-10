@@ -1,12 +1,12 @@
 // ── PERSONALIZATION ───────────────────────────────────────────────────
 
 function loadSettings() {
-  if (window.AurenAIDB) return window.AurenAIDB.dbLoadSettings();
+  if (window.LoompointDB) return window.LoompointDB.dbLoadSettings();
   return {};
 }
 
 function saveSettings(s) {
-  if (window.AurenAIDB) window.AurenAIDB.dbSaveSettings(s);
+  if (window.LoompointDB) window.LoompointDB.dbSaveSettings(s);
 }
 
 function applySettings(s) {

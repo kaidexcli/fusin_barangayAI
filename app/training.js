@@ -55,7 +55,7 @@ async function extractDocxText(file) {
   return text;
 }
 
-// RAG chunking/retrieval lives in rag.js (window.AurenAIRAG) — see
+// RAG chunking/retrieval lives in rag.js (window.LoompointRAG) — see
 // handleTrainingFiles() below for chunking at upload time and sendMessage()
 // for retrieval at query time.
 
@@ -87,7 +87,8 @@ async function handleTrainingFiles(fileList) {
       else if (TRAINING_DOCX_EXT.includes(ext)) content = await extractDocxText(file);
       else                                      content = await file.text();
       if (!content || !content.trim()) { skipped.push(`${file.name} (no extractable text)`); continue; }
-      const chunks = window.AurenAIRAG.chunkText(content);
+      const rag = window.LoompointRAG;
+      const chunks = rag ? rag.chunkText(content) : [];
       draft.push({ name: file.name, size: file.size, content, chunks, addedAt: Date.now() });
       added++;
     } catch (err) {
@@ -95,7 +96,7 @@ async function handleTrainingFiles(fileList) {
       // gets something a student can act on. Library errors are written for
       // library authors — mammoth's way of saying "this is not a .docx" is to
       // complain about a missing zip central directory, which helps nobody
-      // standing in a Auren AI hall with a file that won't upload.
+      // standing in a Loompoint hall with a file that won't upload.
       console.error('Training extract error:', err);
       const why = TRAINING_PDF_EXT.includes(ext)
         ? 'could not be read — it may be damaged or password-protected'
@@ -156,17 +157,20 @@ function formatBytes(n) {
 
 function loadKBDisabled() {
   let raw = null;
-  try { if (window.AurenAIDB) raw = window.AurenAIDB.dbGetItem('kb_disabled_sources', null); } catch (e) {}
+  const db = window.LoompointDB;
+  try { if (db) raw = db.dbGetItem('kb_disabled_sources', null); } catch (e) {}
   _KB_DISABLED = new Set(Array.isArray(raw) ? raw : []);
 }
 function saveKBDisabled() {
-  try { if (window.AurenAIDB) window.AurenAIDB.dbSetItem('kb_disabled_sources', [..._KB_DISABLED]); } catch (e) {}
+  const db = window.LoompointDB;
+  try { if (db) db.dbSetItem('kb_disabled_sources', [..._KB_DISABLED]); } catch (e) {}
 }
 function persistKBMaster() {
-  if (!window.AurenAIDB) return;
-  const s = window.AurenAIDB.dbLoadSettings() || {};
+  const db = window.LoompointDB;
+  if (!db) return;
+  const s = db.dbLoadSettings() || {};
   s.training_files = window._TRAINING_FILES_MASTER || [];
-  window.AurenAIDB.dbSaveSettings(s);
+  db.dbSaveSettings(s);
 }
 
 // ── DEFAULT (SEEDED) SOURCE ────────────────────────────────────────────
@@ -178,14 +182,14 @@ function persistKBMaster() {
 // fetch() is blocked at the file:// origin, so opening index.html straight
 // off disk leaves the Sources panel empty.
 const SEED_SOURCE = {
-  name: 'Auren AI-17-Brand-Kit-Aug-6-2026.md',
-  path: 'assets/Auren AI-17-Brand-Kit-Aug-6-2026.md',
+  name: 'Loompoint-17-Brand-Kit-Aug-6-2026.md',
+  path: 'assets/Loompoint-17-Brand-Kit-Aug-6-2026.md',
 };
 
 // The placeholder that shipped before the brand kit existed. Installs that
 // still carry it untouched get upgraded in place; anyone who deleted it
 // keeps their empty library.
-const LEGACY_SEED_NAME = 'Auren AI-Auren AI-ai-overview.pdf';
+const LEGACY_SEED_NAMES = ['Auren AI-Auren AI-ai-overview.pdf', 'Auren AI-17-Brand-Kit-Aug-6-2026.md'];
 
 async function loadSeedText() {
   const res = await fetch(SEED_SOURCE.path, { cache: 'no-cache' });
@@ -210,10 +214,11 @@ async function loadSeedText() {
 // dbSaveSettings is a silent no-op, and a re-read would hand back an empty
 // library that overwrites the seed we just put in memory.
 async function seedDefaultSourcesIfNeeded(settings) {
-  if (!window.AurenAIDB) return null;
+  const db = window.LoompointDB;
+  if (!db) return null;
 
   const existing = Array.isArray(settings.training_files) ? settings.training_files : [];
-  const onlyLegacySeed = existing.length === 1 && existing[0]?.name === LEGACY_SEED_NAME;
+  const onlyLegacySeed = existing.length === 1 && LEGACY_SEED_NAMES.includes(existing[0]?.name);
 
   if (settings.sources_seeded && !onlyLegacySeed) return null;
   if (!settings.sources_seeded && existing.length && !onlyLegacySeed) return null;
@@ -226,21 +231,22 @@ async function seedDefaultSourcesIfNeeded(settings) {
     // isn't there". Leave `sources_seeded` unset so a later load (once the
     // file is restored, or the copy regenerated) still gets a chance.
     console.error(
-      `[Auren AI] Default source NOT loaded — could not read ${SEED_SOURCE.path} (${err.message || err}).\n` +
+      `[Loompoint] Default source NOT loaded — could not read ${SEED_SOURCE.path} (${err.message || err}).\n` +
       `If the address bar starts with file://, serve the folder instead: python -m http.server 8000`
     );
     return null;
   }
 
+  const rag = window.LoompointRAG;
   const seeded = [{
     name: SEED_SOURCE.name,
     size: content.length,
     content,
-    chunks: window.AurenAIRAG ? window.AurenAIRAG.chunkText(content) : [],
+    chunks: rag ? rag.chunkText(content) : [],
     addedAt: Date.now(),
   }];
   window._TRAINING_FILES_MASTER = seeded;
-  window.AurenAIDB.dbSaveSettings(Object.assign({}, settings, {
+  db.dbSaveSettings(Object.assign({}, settings, {
     training_files: seeded,
     sources_seeded: true,
   }));

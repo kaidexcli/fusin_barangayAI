@@ -13,8 +13,8 @@
 // on activate, so a stale app can never outlive a deploy.
 // ─────────────────────────────────────────────────────────────────────
 
-const CACHE_VERSION = 'v7';
-const CACHE_NAME    = `Auren AI-ai-${CACHE_VERSION}`;
+const CACHE_VERSION = 'v8';
+const CACHE_NAME    = `loompoint-ai-${CACHE_VERSION}`;
 
 // The shell: everything required to boot and hold a conversation offline.
 const PRECACHE = [
@@ -45,7 +45,7 @@ const PRECACHE = [
   'vendor/fonts/plus-jakarta-sans-variable-latin.woff2',
   'vendor/fonts/jetbrains-mono-variable-latin.woff2',
   // Seeded knowledge source — fetched at runtime by app/training.js
-  'assets/Auren AI-17-Brand-Kit-Aug-6-2026.md',
+  'assets/Loompoint-17-Brand-Kit-Aug-6-2026.md',
   'assets/logos/17_logo.png',
   'assets/logos/light_logo.png',
   'assets/logos/ollama_logo.png',
@@ -106,7 +106,7 @@ self.addEventListener('activate', event => {
   event.waitUntil((async () => {
     const names = await caches.keys();
     await Promise.all(
-      names.filter(n => n.startsWith('Auren AI-ai-') && n !== CACHE_NAME)
+      names.filter(n => (n.startsWith('loompoint-ai-') || n.startsWith('Auren AI-ai-')) && n !== CACHE_NAME)
            .map(n => caches.delete(n))
     );
     await self.clients.claim();

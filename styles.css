@@ -21,7 +21,7 @@
        dark mode lifts it off the violet ground (~5.2:1 on --bg-panel). */
     --dc-accent: color-mix(in srgb, var(--dc-blue) 92%, black);
     --dc-accent-light: color-mix(in srgb, var(--dc-blue) 10%, white);
-    /* Rounding out the brand palette to match the Auren AI 17 mark's four-dot
+    /* Rounding out the brand palette to match the Loompoint 17 mark's four-dot
        lockup (gold/orange/violet/green) so gradients can echo the logo
        instead of staying blue-only. Gold/orange/green are fixed — they are the
        logo's own dots and never read blue. Violet was the one dot that did
@@ -101,7 +101,7 @@
     --scene-gold: var(--dc-orange);
   }
 
-  /* Auren AI 17 dark theme — deep indigo/violet void (poster background) with
+  /* Loompoint 17 dark theme — deep indigo/violet void (poster background) with
      the brand blue kept for interactive elements; gold is a sparing accent
      for special highlights, echoing the poster's "17" star. */
   [data-theme="dark"] {
@@ -134,7 +134,7 @@
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* Soft violet/blue/gold glow over the void — same atmosphere as the Auren AI
+  /* Soft violet/blue/gold glow over the void — same atmosphere as the Loompoint
      17 poster, kept subtle so text and cards stay the primary focus. */
   [data-theme="dark"] body {
     background:
@@ -173,7 +173,7 @@
 
   /* Ambient scene layer — a scattered field of gently-fading particles/
      sparkles and a small constellation node-graph, echoing the smart-
-     Auren AI hero art. Fixed behind every panel via negative z-index so
+     Loompoint hero art. Fixed behind every panel via negative z-index so
      it never competes with real content. Movement is intentionally
      minimal — a slow opacity drift only, no scale/translate. */
   .bg-scene {
@@ -266,7 +266,7 @@
     border-bottom: 1px solid var(--sb-border);
   }
 
-  /* Every Auren AI avatar/CTA that uses the brand gradient — kept in one
+  /* Every Loompoint avatar/CTA that uses the brand gradient — kept in one
      place so light mode's 2-stop blue→accent and dark mode's 3-stop
      blue→violet→gold both apply everywhere consistently, not just here. */
   .avatar.ai, .modal-logo, .dc-brand-gradient {
